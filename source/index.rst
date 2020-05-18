@@ -16,7 +16,8 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 
 Please read the :doc:`Complimentary Science Software License </license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
 
-
+.. figure:: https://s3.amazonaws.com/cdn.f1000.com/images/badges/badgef1000.gif
+   :target: https://f1000.com/prime/733517098?bd=1
 
 User Guide: full table of contents
 ==================================
@@ -30,7 +31,10 @@ User Guide: full table of contents
 
 .. tools_detailed/tools_in_detail.rst
 
-   
+Citation
+========
+
+   Wagner, T., Merino, F., Stabrin, M., Moriya, T., Antoni, C., Apelbaum, A., Hagel, P., Sitsel, O., Raisch, T., Prumbaum, D., Quentin, D., Roderer, D., Tacke, S., Siebolds, B., Schubert, E., Shaikh, T.R., Lill, P., Gatsogiannis, C., Raunser, S., 2019. SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM. Communications Biology 2. https://doi.org/10.1038/s42003-019-0437-z
 
 
 Indices and tables
