@@ -9,7 +9,7 @@ The general model was trained on a lot of particles with a variety of shapes and
 
 Why should I fine-tune my model instead of training from scratch?
 
-1. From theory, using fine-tuning should reduce the risk of overfitting 1) and the amount of the required training data.
+1. From theory, using fine-tuning should reduce the risk of overfitting and the amount of the required training data.
 2. The training is much faster, as not all layers have to be trained.
 3. The training will need less GPU memory and therefore is usable with NVIDIA cards with less memory.
 

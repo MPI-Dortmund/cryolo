@@ -3,7 +3,7 @@ To visualize your results you can use the boxmanager:
 .. image:: ../img/cryolo_visualize_202003.png
     :width: 600
 
-As image_dir you select the full_data directory. As box_dir you select the :file:`CBOX` folder (or :file:`EMAN_HELIX_SEGMENTED` in case of filaments).
+As image_dir you select the full_data directory. As :guilabel:`box_dir` you select the :file:`CBOX` folder (or :file:`EMAN_HELIX_SEGMENTED` in case of filaments).
 
 .. warning::
 
