@@ -14,7 +14,9 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 * crYOLO makes training **easy** – You might use a general network model and skip training completely. However, if the general model doesn't give you satisfactory results or if you would like to improve them, you might want to train a specialized model specific for your data set by selecting particles (no selection of negative examples necessary) on a small number of micrographs.
 * crYOLO makes training **tolerant** – Don't worry if you miss quite a lot particles during creation of your training set. :ref:`crYOLO will still do the job <sparse-picking-label>`.
 
-Please read the :doc:`Complimentary Science Software License </license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
+.. note::
+
+   Please read the :doc:`Complimentary Science Software License </license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
 
 .. figure:: https://s3.amazonaws.com/cdn.f1000.com/images/badges/badgef1000.gif
    :target: https://f1000.com/prime/733517098?bd=1
