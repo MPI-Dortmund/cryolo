@@ -10,7 +10,7 @@ However, it should run on Windows as well.
 
 As the GPU accelerated version of tensorflow does not support MacOS, crYOLO does not support it either.
 
-crYOLO depends on CUDA Toolkit 9.0 and the cuDNN 7.1.2 library. It will be automatically installed
+crYOLO depends on CUDA Toolkit 9.0 and the cuDNN 7.1.2 library. These will be automatically installed
 during crYOLO installation.
 
 

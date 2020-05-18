@@ -6,7 +6,7 @@
 Welcome to crYOLO's documentation!
 ==================================
 
-Welcome, this is the user guide for crYOLO, a application for cryo-EM particle picking.
+Welcome, this is the user guide for crYOLO, an application for cryo-EM particle picking.
 
 Please read the :doc:`Complimentary Science Software License </license>` before using crYOLO.
 
