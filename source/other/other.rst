@@ -7,3 +7,5 @@ Other pages
 
 .. include:: train_general_model.rst
 
+.. include:: cryolo_nets.rst
+
