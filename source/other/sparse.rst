@@ -1,4 +1,3 @@
-.. _sparse-picking-label:
 crYOLO on sparsely labeled data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

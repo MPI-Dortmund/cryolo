@@ -1,4 +1,3 @@
-.. _config-file-label:
 crYOLO configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 The config file is organized in the sections model, training and validation. This is how a typical

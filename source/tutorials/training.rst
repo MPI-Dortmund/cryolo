@@ -29,7 +29,7 @@ crYOLO to converge.
 
 The final model will be written to disk as specified in saved_weights_name in your configuration file.
 
-Now press the :guillabel:`Start` button to start the training.
+Now press the :guilabel:`Start` button to start the training.
 
 .. hint::
 
