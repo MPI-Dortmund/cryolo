@@ -51,7 +51,7 @@ Model section
 *************
 * :samp:`architecture`: The network used in the backend of crYOLO. Right we support “crYOLO”, “YOLO”, “PhosaurusNet”. Default and recommended is PhosaurusNet.
 
-* :samp:`input_size`: This is the size to which  your input image is rescaled before passed through the network (it is NOT the size of your micrograph!).
+* :samp:`input_size`: This is the size to which your input image is rescaled before passed through the network (it is NOT the size of your micrograph!).
 
 * :samp:`anchors`: Anchors in YOLO are kind of a priori knowledge. You should specifiy your box size here.
 
