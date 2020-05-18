@@ -1,5 +1,5 @@
 .. _sparse-picking-label:
-CrYOLO on sparsely labeled data
+crYOLO on sparsely labeled data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the first preprint of crYOLO we wrote the following sentence without any comments:
