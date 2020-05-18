@@ -58,7 +58,7 @@ For projects with roughly 20 filaments per image we successfully trained on 40 i
 
 5. Picking
 ^^^^^^^^^^
-Select the action prediction and fill all arguments in the :guilabel:`Required arguments` tab:
+Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`Required arguments` tab:
 
 .. image:: ../img/cryolo_prediction_202003.png
     :width: 600
