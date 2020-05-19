@@ -2,6 +2,9 @@ Other pages
 ===========
 
 .. _config-file-label:
+.. include:: ref_example.rst
+
+.. _config-file-label:
 .. include:: cryolo_configuration_file.rst
 
 .. _sparse-picking-label:
