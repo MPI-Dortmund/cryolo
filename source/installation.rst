@@ -4,9 +4,22 @@ Installation and Download
 System requirements
 ^^^^^^^^^^^^^^^^^^^
 
-crYOLO was tested on Ubuntu 16.04.4 LTS and Ubuntu 18.04 with an NVIDIA Geforce 1080 / Geforce 1080Ti.
+On our institute in Dortmund, crYOLO is running on the following operation systems:
+
+* Ubuntu 16.04.4
+* Ubuntu 18.04 LTS
+* CentOS 7
 
 However, it should run on Windows as well.
+
+Moreover the following GPUs are used:
+
+* NVIDIA Titan V
+* NVIDIA GTX 1080
+* NVIDIA GTX 1080Ti
+* NVIDIA RTX 2080 TI
+* NVIDIA GV 100
+
 
 As the GPU accelerated version of tensorflow does not support MacOS, crYOLO does not support it either.
 
