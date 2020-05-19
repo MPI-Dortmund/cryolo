@@ -9,8 +9,11 @@ Welcome to crYOLO's documentation!
 .. image:: img/Logo01_transparent.png
    :align: right
    :width: 200
+
 Welcome, this is the user guide for crYOLO, an application for fast and accurate cryo-EM particle picking procedure.
 It's based on convolutional neural networks and utilizes the popular You Only Look Once (YOLO) object detection system.
+
+
 
 * crYOLO makes picking **fast** – On a modern GPU it will pick your particles at up to 6 micrographs per second.
 * crYOLO makes picking **smart** – The network learns the context of particles (e.g. not to pick particles on carbon or within ice contamination )
@@ -27,6 +30,8 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 User Guide: full table of contents
 ==================================
 
+
+
 .. toctree::
    :maxdepth: 2
 
@@ -42,6 +47,12 @@ Citation
 
    Wagner, T., Merino, F., Stabrin, M., Moriya, T., Antoni, C., Apelbaum, A., Hagel, P., Sitsel, O., Raisch, T., Prumbaum, D., Quentin, D., Roderer, D., Tacke, S., Siebolds, B., Schubert, E., Shaikh, T.R., Lill, P., Gatsogiannis, C., Raunser, S., 2019. SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM. Communications Biology 2. https://doi.org/10.1038/s42003-019-0437-z
 
+Part of
+=======
+
+.. figure:: img/logo_sphire7_title.png
+   :width: 400
+   :target: https://sphire.mpg.de/
 
 Indices and tables
 ==================
