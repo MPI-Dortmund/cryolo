@@ -1,6 +1,5 @@
 Changes
 =======
-bla
 
 crYOLO
 ^^^^^^
