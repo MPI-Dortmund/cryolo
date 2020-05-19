@@ -74,7 +74,8 @@ The directory :file:`output_boxes` will be created and all results are saved the
 the eman2 helix format with particle coordinates.
 
 .. admonition:: Import into Relion
-    You can find a detailed description how to import crYOLO filament coordinates into Relion here.
+
+    You can find a detailed description :ref:`how to import crYOLO filament coordinates into Relion <import-filaments-label>` here.
 
 Press the :guilabel:`Start` button to start the picking.
 

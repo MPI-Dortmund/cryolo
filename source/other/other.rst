@@ -11,3 +11,6 @@ Other pages
 
 .. include:: cryolo_nets.rst
 
+.. _import-filaments-label:
+.. include:: import_filaments_relion.rst
+
