@@ -31,7 +31,7 @@ Install crYOLO
 
 .. note::
 
-    Please read the :doc:`Complimentary Science Software License </license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
+    Please read the :doc:`Complimentary Science Software License <other/license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
 
 The following instructions assume that pip and anaconda or miniconda are available. In case you
 have a old cryolo environment installed, first remove the old one with:

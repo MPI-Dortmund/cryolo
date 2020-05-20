@@ -22,7 +22,7 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 
 .. note::
 
-   Please read the :doc:`Complimentary Science Software License </license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
+   Please read the :doc:`Complimentary Science Software License <other/license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
 
 .. figure:: https://s3.amazonaws.com/cdn.f1000.com/images/badges/badgef1000.gif
    :target: https://f1000.com/prime/733517098?bd=1
