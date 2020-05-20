@@ -1,7 +1,7 @@
 Complimentary Science Software License
-======================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 End User License Agreement
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+**************************
 **Scope of this Software License Agreement:**
 
 This is the SPHIRE-crYOLO Complimentary Science Software License Agreement, which applies to all software products available for download from the SPHIRE-crYOLO website(s), unless labeled as something other than complimentary.
