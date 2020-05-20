@@ -8,12 +8,10 @@ Welcome to crYOLO's documentation!
 
 .. image:: img/Logo01_transparent.png
    :align: right
-   :width: 200
+   :width: 30%
 
 Welcome, this is the user guide for crYOLO, an application for fast and accurate cryo-EM particle picking procedure.
 It's based on convolutional neural networks and utilizes the popular You Only Look Once (YOLO) object detection system.
-
-
 
 * crYOLO makes picking **fast** – On a modern GPU it will pick your particles at up to 6 micrographs per second.
 * crYOLO makes picking **smart** – The network learns the context of particles (e.g. not to pick particles on carbon or within ice contamination )
@@ -29,8 +27,6 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 
 User Guide: full table of contents
 ==================================
-
-
 
 .. toctree::
    :maxdepth: 2
