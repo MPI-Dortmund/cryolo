@@ -1,7 +1,8 @@
 Other pages
 ===========
 
-.. _config-file-label:
+.. include:: license.rst
+
 .. include:: ref_example.rst
 
 .. _config-file-label:
