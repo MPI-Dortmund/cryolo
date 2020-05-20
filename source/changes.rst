@@ -26,7 +26,7 @@ Version 1.7.0
 
 * Add option :option:`--cleanup` to prediction and training. When used, it will delete filtered images after training/prediction.
 
-* Add option :option:`--skip` to prediction. When used, it will skip images that were already picked.
+* Add option :option:`--skip` to prediction. When used, it will skip images that were already picked (Thanks at Pranav Shah).
 
 
 Version 1.6.1
