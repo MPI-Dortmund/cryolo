@@ -22,8 +22,16 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 
    Please read the :doc:`Complimentary Science Software License <other/license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
 
+.. figure:: img/badge_sphire.png
+   :target: https://sphire.mpg.de/
+   :height: 30
+   :align: left
+
 .. figure:: https://s3.amazonaws.com/cdn.f1000.com/images/badges/badgef1000.gif
    :target: https://f1000.com/prime/733517098?bd=1
+   :height: 30
+
+
 
 User Guide: full table of contents
 ==================================
@@ -41,7 +49,7 @@ User Guide: full table of contents
 Part of
 =======
 
-.. figure:: img/logo_sphire7_title.png
+.. figure:: img/logo_sphire7_title_2.png
    :width: 400
    :target: https://sphire.mpg.de/
 
