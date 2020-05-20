@@ -1,6 +1,6 @@
 crYOLO configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-The config file is organized in the sections model, training and validation. This is how a typical
+The config file is organized in the sections model, training, validation and other. This is how a typical
 configuration file looks like:
 
 .. code-block:: JSON
@@ -14,6 +14,7 @@ configuration file looks like:
                 220
             ],
             "max_box_per_image": 700,
+            "norm": "STANDARD",
             "filter": [
                 0.1,
                 "filtered_tmp/"
@@ -26,7 +27,7 @@ configuration file looks like:
             "pretrained_weights": "",
             "batch_size": 6,
             "learning_rate": 0.0001,
-            "nb_epoch": 2,
+            "nb_epoch": 200,
             "object_scale": 5.0,
             "no_object_scale": 1.0,
             "coord_scale": 1.0,
@@ -44,11 +45,12 @@ configuration file looks like:
         }
     }
 
+
 In the following you find a description of each entry.
 
 Model section
 *************
-* :samp:`architecture`: The network used in the backend of crYOLO. Right we support “crYOLO”, “YOLO”, “PhosaurusNet”. Default and recommended is PhosaurusNet.
+* :samp:`architecture`: The network used in the backend of crYOLO. Right we support :guilabel:`crYOLO`, :guilabel:`YOLO`, :guilabel:`PhosaurusNet`. Default and recommended is :guilabel:`PhosaurusNet`.
 
 * :samp:`input_size`: This is the size to which the short side of your input image is rescaled before passed through the network (it is NOT the size of your micrograph!). The long side will be scaled according the aspect ratio. In this example, a square image would be resized to 1024x1024.
 
@@ -56,9 +58,11 @@ Model section
 
 * :samp:`max_box_per_image`:  Maximum number of particles in the image. Only for handling the memory. Keep the default of 700.
 
+* :samp:`norm`: Normalization that is applied to the images. :guilabel:`STANDARD` will subtract the image mean and divide by the standard deviation. Experimental: Gaussian Mixture Models (:guilabel:`GMM`) fit a 2 component GMM to you image data and normalizes according the brighter component. This ensures that it always normalize with respect to ice but slows down the training.
+
 * :samp:`overlap_patches`: Optional and deprecated. Only needed when using patch mode. Specifies how much the patches overlap. In our lab, we always keep the default value.
 
-* :samp:`num_patches`: Optional and Deprecated. If specified the patch mode will be used. A value of “2” means, that 2×2 patches will be used. With PhosaurusNet you typically don't need it.
+* :samp:`num_patches`: Optional and deprecated. If specified the patch mode will be used. A value of “2” means, that 2×2 patches will be used. With PhosaurusNet you typically don't need it.
 
 * :samp:`filter`: Optional. Specifies the absolute cut-off frequency for the low-pass filter and the corresponding output folder. CrYOLO will automatically filter the data in :file:`train_image_folder` and :file:`valid_image_folder` and save it into the output folder. It will automatically check if a image provided in the train_image_folder is already filtered and use it in case. Otherwise it will filter it. :ref:`You can also use neural network based filtering<denoise-janni-label>`.
 
