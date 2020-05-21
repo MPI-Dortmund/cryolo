@@ -28,8 +28,8 @@ Start the box manager with the following command:
 
 >>> cryolo_boxmanager.py
 
-Now press :menuselection:`File --> Open image folder` and the select :file:`the full_data` directory. The first image should
-pop up. You can navigate in the directory :kbd:`a` + :kbd:`c` tree through the images. Here is how to pick particles:
+Now press :menuselection:`File --> Open image folder` and the select the :file:`full_data` directory. The first image should
+pop up. You can navigate in the directory tree through the images. Here is how to pick particles:
 
 * :kbd:`LMB`: Place a box
 * Hold :kbd:`LMB`: Move a box
