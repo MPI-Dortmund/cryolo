@@ -12,7 +12,7 @@ Other pages
 .. include:: sparse.rst
 
 .. include:: train_general_model.rst
-
+.. _cryolo-module-label:
 .. include:: cryolo_as_module.rst
 
 .. include:: cryolo_nets.rst
