@@ -40,7 +40,7 @@ have a old cryolo environment installed, first remove the old one with:
 
 After that, create a new virtual environment:
 
->>> conda create -n cryolo -c anaconda python=3.6 pyqt=5 cudnn=7.1.2 numpy==1.14.5 cython wxPython==4.0.4 intel-openmp==2019.4
+>>> conda create -n cryolo -c conda-forge -c anaconda python=3.6 pyqt=5 cudnn=7.1.2 numpy==1.14.5 cython wxPython==4.0.4 intel-openmp==2019.4
 
 Activate the environment:
 
