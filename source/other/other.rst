@@ -13,6 +13,8 @@ Other pages
 
 .. include:: train_general_model.rst
 
+.. include:: cryolo_as_module.rst
+
 .. include:: cryolo_nets.rst
 
 .. _import-filaments-label:
