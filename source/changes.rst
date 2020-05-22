@@ -57,6 +57,11 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.3.6
+*************
+
+* Can now show images with multiple aspect ratios.
+
 Version 1.3.5
 *************
 

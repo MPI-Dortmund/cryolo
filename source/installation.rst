@@ -54,6 +54,11 @@ But if you want to run crYOLO on a CPU run:
 
 >>> pip install 'cryolo[cpu]'
 
+.. note::
+    During the installation of crYOLO you will see the following error message:
+     ERROR: imagecodecs-lite 2019.2.22 has requirement numpy>=1.15.4, but you'll have numpy 1.14.5 which is incompatible.
+    However, you can ignore it. It is actually also working with numpy==1.14.5
+
 **That's it!**
 
 You might want to check if everything is running as expected. Here is a reference example:
