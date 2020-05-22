@@ -28,6 +28,7 @@ Version 1.7.0
 
 * Add option :option:`--skip` to prediction. When used, it will skip images that were already picked (Thanks at Pranav Shah).
 
+* Installation: Default installation channel is now conda-forge. This was necessary as numpy from anaconda freezed in some occasions.
 
 Version 1.6.1
 *************
