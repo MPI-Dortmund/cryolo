@@ -1,7 +1,7 @@
-crYOLO integration into the module system
+crYOLO integration as Environment Module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This page shortly descripes how to integrate crYOLO into you module system. I assume you followed the normal installation instructions. The first you have to do is to find out your environment path with:
+Here we describe how to integrate crYOLO as `Environment Module<http://modules.sourceforge.net/>`_. I assume you followed the normal installation instructions. The first you have to do is to find out your environment path with:
 
 >>> conda env list
 
