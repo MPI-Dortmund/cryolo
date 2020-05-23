@@ -22,7 +22,7 @@ Version 1.7.0
 
 * Now supports lists as input_size [height,width] (e.g. [1024,1400]). In this case each image will resized to this size independent of the true aspect ratio.
 
-* Supports Gaussian Mixture Models (GMM) as normalization option (experimental). It fits a 2 component GMM to you image data and normalizes according the brighter component. This ensures that it always normalize with respect to ice. This option has to be specified in your :ref:`configuration file <config-file-label>`
+* Supports Gaussian Mixture Models (GMM) as normalization option (experimental). It fits a 2 component GMM to the image data and normalizes according the brighter component. This ensures that it always normalize with respect to ice. This option has to be specified in your :ref:`configuration file <config-file-label>`
 
 * Add option :option:`--cleanup` to prediction and training. When used, it will delete filtered images after training/prediction.
 
