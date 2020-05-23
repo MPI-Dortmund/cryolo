@@ -11,6 +11,13 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
     in the :guilabel:`Optional arguments` tab. However, it is much easier to select the best threshold after
     picking using the CBOX files written by crYOLO as described in the next section.
 
+.. admonition:: crYOLO on cluster machines
+
+    Cluster machines typically use parallel filesystem, which allow the parallel reading of files.
+    In these cases you should use more processes as cpu cores available. You can do that by using
+    the option :option:`--num_cpu NUMBER_OF_PROCESSES`. In GUI the you can find :guilabel:`num_cpu` under :guilabel:`optional`.
+    On our cluster we oversubscripe a node (4 cores) by factor of 7 by setting :guilabel:`num_cpu` to 32.
+
 .. admonition:: Monitor mode
 
     When this option is activated, crYOLO will monitor your input folder. This especially useful
