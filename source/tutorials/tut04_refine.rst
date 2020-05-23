@@ -1,7 +1,7 @@
 Tutorial 4: Pick particles using the general model refined for your data
 ========================================================================
 
-Since crYOLO 1.3 you can train a model for your data by fine-tuning the general model.
+With crYOLO you can train a model for your data by fine-tuning the general model.
 
 What does fine-tuning mean?
 
