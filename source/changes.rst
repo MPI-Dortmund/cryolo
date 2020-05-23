@@ -30,6 +30,9 @@ Version 1.7.0
 
 * Installation: Default installation channel is now conda-forge. This was necessary as numpy from anaconda freezed in some occasions.
 
+* Filtering is now magnitudes faster on parallel filesystems. On our cluster with BeegFs we filter on one node (4 cores) 12000 K3 micrographs in 20 minutes! Please see note about  :ref:`using crYOLO on clusters <parallel-filesystem-label>`.
+
+
 Version 1.6.1
 *************
 

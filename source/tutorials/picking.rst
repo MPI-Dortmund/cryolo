@@ -11,6 +11,7 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
     in the :guilabel:`Optional arguments` tab. However, it is much easier to select the best threshold after
     picking using the CBOX files written by crYOLO as described in the next section.
 
+.. _parallel-filesystem-label:
 .. admonition:: crYOLO on cluster machines
 
     Cluster machines typically use parallel filesystem, which allow the parallel reading of files.
