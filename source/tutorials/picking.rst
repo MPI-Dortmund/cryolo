@@ -16,7 +16,7 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
 
     Cluster machines typically use parallel filesystem, which allow the parallel reading of files.
     In these cases you should use more processes as cpu cores available. You can do that by using
-    the option :option:`--num_cpu NUMBER_OF_PROCESSES`. In GUI the you can find :guilabel:`num_cpu` under :guilabel:`optional`.
+    the option :option:`--num_cpu NUMBER_OF_PROCESSES`. In GUI the you can find :guilabel:`num_cpu` under :guilabel:`Optional arguments`.
     On our cluster we oversubscripe a node (4 cores) by factor of 7 by setting :guilabel:`num_cpu` to 32.
 
 .. admonition:: Monitor mode
