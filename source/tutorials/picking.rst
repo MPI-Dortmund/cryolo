@@ -15,9 +15,9 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
 .. admonition:: crYOLO on cluster machines
 
     Cluster machines typically use parallel filesystem, which allow the parallel reading of files.
-    In these cases you should use more processes as cpu cores available. You can do that by using
-    the option :option:`--num_cpu NUMBER_OF_PROCESSES`. In GUI the you can find :guilabel:`num_cpu` under :guilabel:`Optional arguments`.
-    On our cluster we oversubscripe a node (4 cores) by factor of 7 by setting :guilabel:`num_cpu` to 32.
+    In these cases you should use more processes as cpu cores available.  In GUI the you can find :guilabel:`num_cpu` under :guilabel:`Optional arguments`.
+    On our cluster we oversubscripe a node (4 cores) by factor of 7 by setting :guilabel:`num_cpu` to 32. In the command line you can do that by using
+    the option :option:`--num_cpu NUMBER_OF_PROCESSES`.
 
 .. admonition:: Monitor mode
 
