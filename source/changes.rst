@@ -64,6 +64,7 @@ Version 1.3.6
 *************
 
 * Can now show images with multiple aspect ratios.
+* Support writing of STAR files.
 
 Version 1.3.5
 *************
