@@ -11,7 +11,7 @@ Version 1.7.0
 
 * New resizing strategy: Given a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>`, crYOLO will scale the shorter image size onto this :guilabel:`input_size` and the long size according the aspect ratio. This is the recommended setting.
 
-* New behavior when training on images with mixed aspect ratios when a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>` is given (as recommended): crYOLO will scale the shorter image size onto this :guilabel:`input_size` and the long size according the aspect ratio. Everytime the image is used within training, it will select a random square region (:guilabel:`input_size` x :guilabel:`input_size`) on this image. During prediction, it is applied onto the full image, without the need to select a square region.
+* New behavior when training on images with mixed aspect ratios when a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>` is given (as recommended): crYOLO will scale the shorter image size onto the :guilabel:`input_size` and the long size according the aspect ratio. Everytime the image is used within training, it will select a random square region (:guilabel:`input_size` x :guilabel:`input_size`) on this image. During prediction, it is applied onto the full image, without the need to select a square region.
 
 .. warning::
 
