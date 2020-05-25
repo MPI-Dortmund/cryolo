@@ -62,7 +62,8 @@ Version 1.3.6
 *************
 
 * Can now show images with multiple aspect ratios.
-* Support writing of STAR files.
+* Supports writing of STAR files.
+* Fixed issue that the size distribution was only based on a single micrograph.
 
 Version 1.3.5
 *************
