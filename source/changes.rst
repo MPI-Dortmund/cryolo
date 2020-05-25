@@ -9,28 +9,26 @@ Version 1.7.0
 
 * Now works on non-square data natively. Previous this release, it squeezed non-square images into square images.
 
-* New resizing strategy: Given a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>`, crYOLO will scale the shorter image size onto this :guilabel:`input_size` and the long size according the aspect ratio. This is the recommended setting.
+* New resizing strategy: Given a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>`, crYOLO will scale the shorter image dimension to this :guilabel:`input_size` and the long dimension according the original aspect ratio. This is the recommended setting.
 
-* New behavior when training on images with mixed aspect ratios when a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>` is given (as recommended): crYOLO will scale the shorter image size onto the :guilabel:`input_size` and the long size according the aspect ratio. Everytime the image is used within training, it will select a random square region (:guilabel:`input_size` x :guilabel:`input_size`) on this image. During prediction, it is applied onto the full image, without the need to select a square region.
+* New behavior when training on images with mixed aspect ratios when a single number as :guilabel:`input_size` in your :ref:`configuration file <config-file-label>` is given (as recommended): crYOLO will scale the shorter image dimension to the :guilabel:`input_size` and the long dimension according to the original aspect ratio. Every time the image is used during training, it will select a random square region (:guilabel:`input_size` x :guilabel:`input_size`) on this image. During prediction, it is applied onto the full image, without the need to select a square region.
 
-.. warning::
-
-    **Models need retraining**
+    **WARNING: Models need retraining**
 
     With the new resizing strategy it is necessary to retrain models that were trained on
     non-square data with previous crYOLO versions.
 
-* Now supports lists as input_size [height,width] (e.g. [1024,1400]). In this case each image will resized to this size independent of the true aspect ratio.
+* Now supports lists as input_size [height,width] (e.g. [1024,1400]). In this case each image will resized to this size independently of the true aspect ratio.
 
-* Supports Gaussian Mixture Models (GMM) as normalization option (experimental). It fits a 2 component GMM to the image data and normalizes according the brighter component. This ensures that it always normalize with respect to ice. This option has to be specified in your :ref:`configuration file <config-file-label>`
+* Supports Gaussian Mixture Models (GMM) as a normalization option (experimental). It fits a 2 component GMM to the image data and normalizes according to the brighter component. This ensures that it always normalize with respect to ice. This option has to be specified in your :ref:`configuration file <config-file-label>`
 
 * Add option :option:`--cleanup` to prediction and training. When used, it will delete filtered images after training/prediction.
 
 * Add option :option:`--skip` to prediction. When used, it will skip images that were already picked (Thanks at Pranav Shah).
 
-* Installation: Default installation channel is now conda-forge. This was necessary as numpy from anaconda freezed in some occasions.
+* Installation: Default installation channel is now conda-forge. This was necessary as numpy from anaconda froze in some occasions.
 
-* Filtering is now magnitudes faster on parallel filesystems. On our cluster with BeegFs we filter on one node (4 cores) 12000 K3 micrographs in 20 minutes! With 1.6.1 this needed more than 24 hours. Please see the note about  :ref:`using crYOLO on clusters <parallel-filesystem-label>`.
+* Filtering is now magnitudes faster on parallel filesystems. On our cluster with BeeGFS we filter on one node (4 cores) 12000 K3 micrographs in 20 minutes! With 1.6.1 this needed more than 24 hours. Please see the note about  :ref:`using crYOLO on clusters <parallel-filesystem-label>`.
 
 
 Version 1.6.1
