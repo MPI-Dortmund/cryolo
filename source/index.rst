@@ -58,6 +58,13 @@ Citation
 
    Wagner, T., Merino, F., Stabrin, M., Moriya, T., Antoni, C., Apelbaum, A., Hagel, P., Sitsel, O., Raisch, T., Prumbaum, D., Quentin, D., Roderer, D., Tacke, S., Siebolds, B., Schubert, E., Shaikh, T.R., Lill, P., Gatsogiannis, C., Raunser, S., 2019. SPHIRE-crYOLO is a fast and accurate fully automated particle picker for cryo-EM. Communications Biology 2. https://doi.org/10.1038/s42003-019-0437-z
 
+Help
+====
+
+Any questions? Problems? Suggestions?
+
+Find help at our `mailing list <https://listserv.gwdg.de/mailman/listinfo/sphire>`_!
+
 
 
 Indices and tables
