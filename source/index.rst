@@ -6,7 +6,7 @@
 Welcome to crYOLO's User Guide!
 ==================================
 
-.. image:: img/logo_with_examples.png
+.. image:: img/logo_with_examples_small.png
    :align: right
    :width: 350
 
