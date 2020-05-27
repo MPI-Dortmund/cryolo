@@ -10,7 +10,7 @@ At our institute in Dortmund, crYOLO is running on the following operation syste
 * Ubuntu 18.04 LTS
 * CentOS 7
 
-However, it should run on Windows as well.
+We don't test it but it should run on Windows as well.
 
 Moreover the following GPUs are used:
 
