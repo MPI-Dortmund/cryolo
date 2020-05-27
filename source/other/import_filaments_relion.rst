@@ -25,7 +25,7 @@ The following illustrates how you can import the micrographs and box files into 
 5. Now we will extract the particles. Select the :guilabel:`Particle extraction` action. For :guilabel:`micrograph STAR file`, select the :file:`micrographs.star` file, and for Input coordinates select :file:`coords_suffix.box`.
 
 .. warning::
-    Use the :file:`micrographs.star` file from your CTF estimation. It provides necessary information for further processing. Alternatively, you can set your pixelsize manually in the :guilabel:`I/O` tab of the :guilabel:`Particle extraction` job.
+    Use the :file:`micrographs.star` file from your CTF estimation. It provides necessary information for further processing. Alternatively, you can set your :guilabel:`Pixel size` manually in the :guilabel:`I/O` tab of the :guilabel:`Particle extraction` job.
 
 .. image:: ../img/relion/03.png
     :width: 600
