@@ -84,18 +84,18 @@ For cryo images (low-pass filtered)
 
 :Datasets: 43 real, 10 simulated, 10 particle free datasets on various grids with contamination
 
-:Uploaded: 16 March 2020
+:Uploaded: 27 May 2020
 
-:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202002_N63.h5>`_
+:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202005_N63_c17.h5>`_
 
 For cryo images (neural network denoised with JANNI)
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
 :Datasets: 43 real, 10 simulated, 10 particle free datasets on various grids with contamination
 
-:Uploaded: 17 March 2020
+:Uploaded: 27 May 2020
 
-:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202003_nn_N63.h5>`_
+:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202005_nn_N63_c17.h5>`_
 
 For negative stain images
 """""""""""""""""""""""""
