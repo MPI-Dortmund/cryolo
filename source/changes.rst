@@ -4,6 +4,21 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.7.2
+*************
+
+* Fix the following error at the end of a training session:
+
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tigress/MOLBIO/local/pythonenv/cryolo-1.7.0/lib/python3.6/multiprocessing/spawn.py", line 105, in spawn_main
+        exitcode = _main(fd)
+      File "/tigress/MOLBIO/local/pythonenv/cryolo-1.7.0/lib/python3.6/multiprocessing/spawn.py", line 115, in _main
+        self = reduction.pickle.load(from_parent)
+      File "/tigress/MOLBIO/local/pythonenv/cryolo-1.7.0/lib/python3.6/multiprocessing/synchronize.py", line 110, in __setstate__
+        self._semlock = _multiprocessing.SemLock._rebuild(*state)
+    FileNotFoundError: [Errno 2] No such file or directory
+
 Version 1.7.0
 *************
 
