@@ -4,6 +4,20 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.7.3 (pre-release)
+*************
+
+* Add two environment variables to work around a problem when crYOLO freezes during training.
+
+* Fix the following error when training with STAR files from relion 3.1:
+
+    ::
+        Line #31 (got 6 columns instead of 1)
+        Line #32 (got 6 columns instead of 1)
+        Line #33 (got 6 columns instead of 1)
+        Line #34 (got 6 columns instead of 1)
+
+
 Version 1.7.2
 *************
 

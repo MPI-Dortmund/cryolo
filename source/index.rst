@@ -43,6 +43,7 @@ User Guide: full table of contents
    tutorials/tutorial_overview
    other/other.rst
    changes.rst
+   troubleshooting.rst
 
 .. tools_detailed/tools_in_detail.rst
 
