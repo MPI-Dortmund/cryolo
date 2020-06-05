@@ -28,7 +28,7 @@ Version 1.7.3 (`pre-release <https://pypi.org/project/cryolo/#history>`_)
 Version 1.7.2
 *************
 
-* Fix the following error at the end of a training session:
+* Fix the following error at the end of a training session (Thanks to Matthew H. Cahn):
 
     ::
 
