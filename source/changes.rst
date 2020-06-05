@@ -7,7 +7,7 @@ crYOLO
 Version 1.7.3 (`pre-release <https://pypi.org/project/cryolo/#history>`_)
 *************
 
-* Add two environment variables to work around a problem when crYOLO freezes during training (Thanks to Jafar Lie).
+* Add two environment variables to work around a problem when crYOLO freezes during training. See :ref:`Troubleshooting <cryolo-freeze-label>` for more details. (Thanks to Jafar Lie).
 
 * Fix the following error when training with STAR files from relion 3.1 (Thanks to Sarah Piper):
 

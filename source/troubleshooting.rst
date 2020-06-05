@@ -1,12 +1,14 @@
 Troubleshooting
 ===============
 
+.. _cryolo-freeze-label:
+
 crYOLO freezes
 ^^^^^^^^^^^^^^
 
 On some machines crYOLO freezes during or at the end of training. The problem comes together with
 multiprocessing and is deeply in one of the libraries we use. You can solve it by using
-multithreading instead of multiprocessing. There for you can either use the option --use_multithreading
+multithreading instead of multiprocessing. There for you can either use the option :option:`--use_multithreading`
 or make it a permanent change by changing the environment variables in your crYOLO enviroment:
 
 >>> conda activate cryolo
