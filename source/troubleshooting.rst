@@ -26,8 +26,8 @@ crYOLO has memory problems
 crYOLO can crash during training because of memory problems.
 In those cases crYOLO you can try the following:
 
-* Reduce the batchsize. I recommend to reduce it by 1 stepwise. I would not choose a value below 3.
-* Reduce the input image size. Try 768 instead of 1024. It should work, as along your particles are not really small.
+* Reduce the :guilabel:`batch_size`. I recommend to reduce it by 1 stepwise. I would not choose a value below 3. You find the :guilabel:`batch_size` in your configuration file or in the :guilabel:`Training options` tab of the :guilabel:`config` Action
+* Reduce the :guilabel:`input_size`. Try 768 instead of 1024. It should work, as along your particles are not really small. You find the  :guilabel:`input_size` in your configuration file or in the :guilabel:`Model options` tab of the :guilabel:`config` Action.
 
 I need more help
 ^^^^^^^^^^^^^^^^
