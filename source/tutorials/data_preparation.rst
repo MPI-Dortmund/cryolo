@@ -9,7 +9,7 @@ necessary to pick all particles. crYOLO will still converge if you miss some (or
     It depends! Typically 10 micrographs are a good start. However, that number may increase / decrease
     due to several factors:
 
-        * A very heterogenous background could make it necessary to pick more micrographs.
+        * A very heterogeneous background could make it necessary to pick more micrographs.
         * When you refine a general model, you might need to pick fewer micrographs.
         * If your micrograph is only sparsely decorated, you may need to pick more micrographs.
 

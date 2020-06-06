@@ -68,31 +68,31 @@ Model section
 
 Training section
 ****************
-* :samp:`train_image_folder`: Path to the image folder containing the images to train on. This could either be a seperated folder containing ONLY your training data, but it could also be just the directory containing all of your images. CrYOLO will try to find the image based on annotation data you provided in train_annot_folder.
+* :samp:`train_image_folder`: Path to the image folder containing the images to train on. This could either be a separated folder containing ONLY your training data, but it could also be just the directory containing all of your images. CrYOLO will try to find the image based on annotation data you provided in :file:`train_annot_folder`.
 
-* :samp:`train_annot_folder`: Path to folder containing the your annotation files like box or star files. Based on the filename crYOLO will try to find the corresponding images in train_image_folder. It will search for image files, which containing the box filename.
+* :samp:`train_annot_folder`: Path to folder containing the your annotation files like box or star files. Based on the filename crYOLO will try to find the corresponding images in :file:`train_image_folder`. It will search for image files, which containing the box filename.
 
 * :samp:`train_times`: How often each image is presented to the network during one epoch. Default is 10 and should be kept until you have many training images.
 
 * :samp:`pretrained_weights`: Path to h5 file that is used for initialization. Until you want to use weights from a previous dataset as initialization, the filename specified here should be same as saved_weights_name.
 
-* :samp:`batch_size`: Specified the number of images crYOLO process in parallel during training. Strongly depending on the memory of your graphic card. 6 should be fine for GPUs with 8GB memory. You can increase in case you have more memory or decrease if you have memory problems. Bigger batches tend to improve convergence and even the final error.
+* :samp:`batch_size`: Specified the number of images crYOLO process in parallel during training. Strongly depending on the memory of your graphic card. 4 should be fine for GPUs with 8GB memory. You can increase in case you have more memory or decrease if you have memory problems. Bigger batches tend to improve convergence and even the final error.
 
 * :samp:`learning_rate`: Defines the step size during training. Default should be kept.
 
 * :samp:`nb_epoch`: Maximum number of epochs the network will train. I basically never reach this number, as crYOLO stops training if it recognize that the validation loss is not improving anymore.
 
-* :samp:`object_scale`: Penality scaling factor for missing picking particles.
+* :samp:`object_scale`: Penalty scaling factor for missing picking particles.
 
-* :samp:`no_object_scale`: Penality scaling factor for picking background.
+* :samp:`no_object_scale`: Penalty scaling factor for picking background.
 
-* :samp:`coord_scale`: Penality scaling factor for errors in estimating the correct position.
+* :samp:`coord_scale`: Penalty scaling factor for errors in estimating the correct position.
 
 * :samp:`class_scale`: Irrelevant, as crYOLO only has the “class” “particle”.
 
 * :samp:`log_path`: Path to folder. During training, crYOLO saves there some logs for visualization in tensorboard. Tensorboard is used to visualize curves for training and validation loss.
 
-* :samp:`saved_weights_name`: Everytime the network improves in terms of validation loss, it will save the model into the file specified here.
+* :samp:`saved_weights_name`: Every time the network improves in terms of validation loss, it will save the model into the file specified here.
 
 * :samp:`debug`: If true, the network will provide several statistics during training.
 

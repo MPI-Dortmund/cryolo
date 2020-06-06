@@ -9,17 +9,17 @@ crYOLO freezes
 On some machines crYOLO freezes during or at the end of training. The problem comes together with
 multiprocessing and is deeply in one of the libraries we use. You can solve it by using
 multithreading instead of multiprocessing. There for you can either use the option :option:`--use_multithreading`
-or make it a permanent change by changing the environment variables in your crYOLO enviroment:
+or make it a permanent change by changing the environment variables in your crYOLO environment:
 
 >>> conda activate cryolo
 >>> conda env config vars set CRYOLO_MP_START="fork"
 >>> conda env config vars set CRYOLO_USE_MULTITHREADING="True"
 
-You need to reactivate your enviroment to make the changes wokring by
+You need to reactivate your environment to make the changes working by
 
 >>> conda activate cryolo
 
-Now you use multithreading insteast of multiprocessing.
+Now you use multithreading instead of multiprocessing.
 
 
 crYOLO has memory problems

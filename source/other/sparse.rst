@@ -62,7 +62,7 @@ particles while at the same time excluding contamination:
 ATP Synthase
 ************
 
-I did the same with ATP synthase. The orginal training set had 1723 particle from 91 micrographs.
+I did the same with ATP synthase. The original training set had 1723 particle from 91 micrographs.
 The sparsely labeled training dataset used the same training images but only with 334 particles
 labeled from 91 micrographs. Here are examples:
 
@@ -107,7 +107,7 @@ Again, it still picks basically everything while avoiding contamination.
 TRPC4
 *****
 
-The last example that I've choosen is TRPC4, as it contains much more contamination. The original
+The last example that I've chosen is TRPC4, as it contains much more contamination. The original
 training set comprises 32 images with 3038 particles (~94 particles / image):
 
 .. figure:: ../img/sparse/trpc_full.png

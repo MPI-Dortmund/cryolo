@@ -81,7 +81,7 @@ Press the :guilabel:`Start` button to start the picking.
 
 .. hint::
 
-    **Alternative: Run prediction in commmand line**
+    **Alternative: Run prediction in command line**
 
     Let's assume you want to pick a filament with a width of 100 pixels (-fw 100). The box size
     is 200×200 and you want a 90% overlap (-bd 20). Moreover, you wish that each filament has at

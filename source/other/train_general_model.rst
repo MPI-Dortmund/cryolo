@@ -4,7 +4,7 @@ Train your own general model
 
 Training a model for a specific dataset is very easy with crYOLO. However, you might have multiple data collections of the same particle with different settings, a different camera or another microscope. A model trained on the data of one data collection, might not perform very good on a dataset from another data collection.
 
-However, you can easily train a crYOLO model that generalize well on data recorded under multiple conditions. To achieve this, all you have to do is to merge training data of multiple datasets. The result will be a model that can be applied to a new dataset from a new data collection without additional training.
+However, you can easily train a crYOLO model that generalize well on data recorded under multiple conditions. To achieve this, all you have to do is to merge training data of multiple data sets. The result will be a model that can be applied to a new dataset from a new data collection without additional training.
 
 Here is our recommendation how to organize the training data. Instead of copying your images and box files directly into :file:`train_images` / :file:`train_annot`, you can copy them into subfolders. One for each data collection:
 

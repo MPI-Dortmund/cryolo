@@ -72,7 +72,7 @@ In the :guilabel:`Optional arguments` tab please check the :guilabel:`fine_tune`
 .. admonition:: Training on CPU
 
     The fine tune mode is especially useful if you want to train crYOLO on the CPU. On my local
-    machine it reduced the time for training cryolo on 14 micrographs from 12-15 hours to 4-5 hours.
+    machine it reduced the time for training crYOLO on 14 micrographs from 12-15 hours to 4-5 hours.
 
 You can now press the :guilabel:`Start` button to start training.
 

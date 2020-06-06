@@ -13,7 +13,7 @@ On left side, you find all possible “Actions”:
 * :guilabel:`train`: This action lets you train crYOLO from scratch or refine an existing model.
 * :guilabel:`predict`: If you have a (pre)trained model you can pick particles in your data set using this command.
 * :guilabel:`evaluation`: This action helps you to quantify the quality of your model.
-* :guilabel:`boxmanager`: This action starts the cryolo boxmanager. You can visulize the picked particles with it or create training data.
+* :guilabel:`boxmanager`: This action starts the cryolo boxmanager. You can visualize the picked particles with it or create training data.
 
 Each action has several parameters which are organized in tabs. Once you have chosen your settings
 you can press :guilabel:`Start` (just as example, don't press it now ;-)), the command will be applied and

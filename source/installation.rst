@@ -91,7 +91,7 @@ For cryo images (low-pass filtered)
 For cryo images (neural network denoised with JANNI)
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
-:Datasets: 43 real, 10 simulated, 10 particle free datasets on various grids with contamination
+:Datasets: 43 real, 10 simulated, 10 particle free data sets on various grids with contamination
 
 :Uploaded: 27 May 2020
 
@@ -100,7 +100,7 @@ For cryo images (neural network denoised with JANNI)
 For negative stain images
 """""""""""""""""""""""""
 
-:Datasets: 10 real datasets
+:Datasets: 10 real data sets
 
 :Uploaded: 26 February 2019
 

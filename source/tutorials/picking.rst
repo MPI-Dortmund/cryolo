@@ -16,7 +16,7 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
 
     Cluster machines typically use parallel filesystem, which allow the parallel reading of files.
     In these cases you should use more processes as cpu cores available.  In GUI the you can find :guilabel:`num_cpu` under :guilabel:`Optional arguments`.
-    On our cluster we oversubscripe a node (4 cores) by factor of 7 by setting :guilabel:`num_cpu` to 32. In the command line you can do that by using
+    On our cluster we oversubscribe a node (4 cores) by factor of 7 by setting :guilabel:`num_cpu` to 32. In the command line you can do that by using
     the option :option:`--num_cpu NUMBER_OF_PROCESSES`.
 
 .. admonition:: Monitor mode
@@ -36,7 +36,7 @@ After picking is done, you can find four folders in your specified output folder
 
 * :file:`STAR`: Contains a coordinate file in .star format each input micrograph. Only particles with the an confidence higher then the selected (default: 0.3) are contained in those files.
 
-* :file:`DISTR`: Contains the plots of confidence- and size-distribution. Moroever, it contains a machine readable text-file the summary statistics about these distributions and their raw data in separate text-files.
+* :file:`DISTR`: Contains the plots of confidence- and size-distribution. Moreover, it contains a machine readable text-file the summary statistics about these distributions and their raw data in separate text-files.
 
 .. hint::
 
