@@ -4,7 +4,7 @@ Changes
 crYOLO
 ^^^^^^
 
-Version 1.7.3 (`pre-release <https://pypi.org/project/cryolo/#history>`_)
+Version 1.7.3
 *************
 
 * Add two environment variables to work around a problem when crYOLO freezes during training. See :ref:`Troubleshooting <cryolo-freeze-label>` for more details. (Thanks to Jafar Lie).
