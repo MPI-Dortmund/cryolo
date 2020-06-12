@@ -32,7 +32,7 @@ general models:
 
 * General model trained for low-pass filtered images : As :guilabel:`filter` select :guilabel:`LOWPASS` and :guilabel:`low_pass_cutoff` of 0.1
 
-* General model trained for JANNI-denoised images: As :guilabel:`filter` select :guilabel:`JANNI` and the janni general model for :guilabel:`janni_model`. Keep the defaults for janni_overlap and janni_batches
+* General model trained for JANNI-denoised images: As :guilabel:`filter` select :guilabel:`JANNI` and the `janni general model <https://sphire.mpg.de/wiki/doku.php?id=janni#janni_general_model>`_ for :guilabel:`janni_model`. Keep the defaults for janni_overlap and janni_batches
 
 * General model for negative stain images: As :guilabel:`filter` select :guilabel:`NONE`
 
