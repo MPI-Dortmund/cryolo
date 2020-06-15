@@ -24,6 +24,7 @@ Version 1.7.3
 
         AttributeError: 'MultiGPUModelCheckpoint' object has no attribute 'anchors'
 
+* Multi-GPU training now as good as single GPU training. :guilabel:`batch_size` now understood as number of batches per GPU.
 
 Version 1.7.2
 *************
