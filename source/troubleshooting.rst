@@ -6,6 +6,10 @@ Troubleshooting
 crYOLO freezes
 ^^^^^^^^^^^^^^
 
+.. note::
+
+    Since crYOLO 1.7.4 this problem is solved. Multithreading replaced multiprocessing.
+
 On some machines crYOLO freezes during or at the end of training. The problem comes together with
 multiprocessing and is deeply in one of the libraries we use. You can solve it by using
 multithreading instead of multiprocessing. There for you can either use the option :option:`--use_multithreading`
