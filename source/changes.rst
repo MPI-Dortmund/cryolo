@@ -6,7 +6,7 @@ crYOLO
 
 Version 1.7.4
 *************
-* As the problem with freezing crYOLO at the end of the training occured on to many machines, we decided to switch from multiprocessing to multithreading permanently.
+* As the problem with freezing crYOLO at the end of the training occured on to many machines, we decided to switch from multiprocessing to multithreading permanently. We removed the option :option:`--use_multithreading`.
 
 Version 1.7.3
 *************
