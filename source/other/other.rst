@@ -35,3 +35,7 @@ Other pages
 .. _import-filaments-label:
 .. include:: import_filaments_relion.rst
 
+----
+
+.. include:: general_model_trainingsets.rst
+
