@@ -1,4 +1,4 @@
-General model datasets
+General model data sets
 ^^^^^^^^^^^^^^^^^^^^^^
 
 For training the general model we used
