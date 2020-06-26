@@ -63,7 +63,7 @@ Citation
 
 **Filament picking:**
 
-   Wagner, T., Lusnig, L., Pospich, S., Stabrin, M., Schönfeld, F., & Raunser, S. (2020). Two particle picking procedures for filamentous proteins: SPHIRE-crYOLO filament mode and SPHIRE-STRIPER. bioRxiv 2020.02.28.969196. https://doi.org/10.1101/2020.02.28.969196
+   Wagner, T., Lusnig, L., Pospich, S., Stabrin, M., Schönfeld, F., & Raunser, S. (2020). Two particle-picking procedures for filamentous proteins: SPHIRE-crYOLO filament mode and SPHIRE-STRIPER. Acta Crystallographica Section D Structural Biology, 76(7). https://doi.org/10.1107/s2059798320007342
 
 **Comment:**
 
