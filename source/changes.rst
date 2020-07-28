@@ -7,12 +7,12 @@ crYOLO
 Version 1.7.5
 *************
 
-* Fix a problem that the training was not working when no filter (like Low pass or JANNI ) was used. Thanks to Andrea Nans.
+* Fix a problem that the training was not working when no filter (like Low pass or JANNI ) was used (Thanks to Andrea Nans).
 
 * Change the default value of "max_box_per_image" in the config.json from 700 to 3000. If this value is lower than the number of particles per micrograph, not all particle are taken into account
 during training. 3000 should be a safe for most cases.
 
-* Fix a crash of crYOLO when no particles were picked (Thanks to Grigory Sharov)
+* Fix a crash of crYOLO when no particles were picked (Thanks to Grigory Sharov).
 
 * Fix network architectures "crYOLO" and "YOLO".
 
