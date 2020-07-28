@@ -15,7 +15,7 @@ If you followed the installation instructions, you now have to activate the cryo
 ^^^^^^^^^^^^^^^
 .. include:: start_cryolo.rst
 
-
+.. _config-general-model:
 2. Configuration
 ^^^^^^^^^^^^^^^^
 In the GUI choose the config action. Fill in your target box size and leave the :guilabel:`train_image_folder`
