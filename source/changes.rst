@@ -9,7 +9,7 @@ Version 1.7.5
 
 * Fix a problem that the training was not working when no filter (like Low pass or JANNI ) was used (Thanks to Andrea Nans).
 
-* Change the default value of :guilabel:`max_box_per_image` in the configuration file from 700 to 3000. If this value is lower than the number of particles per micrograph, not all particle are taken into account during training. 3000 should be a safe for most cases.
+* The config file value :guilabel:`max_box_per_image` is now adapted automatically to the given training data. If this value is lower than the number of labeled particles per micrograph, not all particle are taken into account during training. The automatic adaption ensures that it is high enough.
 
 * Fix a crash of crYOLO when no particles were picked (Thanks to Grigory Sharov).
 
