@@ -4,6 +4,10 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.7.6
+*************
+* Fixed library issue. (Thanks to Grigory Sharov)
+
 Version 1.7.5
 *************
 
