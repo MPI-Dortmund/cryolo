@@ -15,14 +15,15 @@ a couple of slices manually and train cryolo as you always did.
 You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 1.8:
 
 * crYOLO 1.8 adds a picking mode for tomography
-* crYOLO 1.8 comes with several library updates:
+* crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
     * Cuda 9 -> Cuda 10
     * Tensorflow 1.10.1 -> Tensorflow 1.15.4
     * NumPy 1.14.5 -> NumPy 1.18.5
+    * Keras 2.2.5 -> Keras 2.3.1
 * CBOX files are now written in the STAR format.
 
 As it is still a beta, I recommend to keep your old crYOLO installation and
-install it in a fresh environment. Here are the steps:
+install crYOLO 1.8 in a fresh environment. Here are the steps:
 
 >>> conda create -n cryolo_3d -c anaconda pyqt=5 python=3.6 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
 
@@ -47,9 +48,11 @@ Open your reconstructed tomogram (.rec/.mrc) with:
 
 File -> Open -> Tomogram -> File
 
-Now place your boxes on a couple of slices (e.g. 10).
-
 Choose the boxsize according the largest dimension of your target structure.
+
+Now place your boxes on a couple of slices (e.g. 10). Do not label only the central slices of your
+target structure but also the other parts.
+
 
 After you did that press
 
