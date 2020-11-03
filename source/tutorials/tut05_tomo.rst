@@ -46,17 +46,16 @@ Start it with:
 
 Open your reconstructed tomogram (.rec/.mrc) with:
 
-File -> Open -> Tomogram -> File
+:guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`File`
 
 Choose the boxsize according the largest dimension of your target structure.
 
 Now place your boxes on a couple of slices (e.g. 10). Do not label only the central slices of your
 target structure but also the other parts.
 
-
 After you did that press
 
-File -> Save
+:guilabel:`File` -> :guilabel:`Save`
 
 It will save it in three formats (EMAN, CBOX, STAR). We will need the CBOX
 files for training.
