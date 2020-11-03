@@ -33,7 +33,7 @@ Activate the environment:
 
 Install the crYOLO 1.8 beta:
 
->>> pip install 'cryolo[gpu]'==1.8.0b3
+>>> pip install 'cryolo[gpu]'==1.8.0b4
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
@@ -50,8 +50,8 @@ Open your reconstructed tomogram (.rec/.mrc) with:
 
 Choose the boxsize according the largest dimension of your target structure.
 
-Now place your boxes on a couple of slices (e.g. 10). Do not label only the central slices of your
-target structure but also the other parts.
+Label your target structure in the some slices (e.g. 10). Label it even if the slices does not show
+the centre of the structure but only parts of it.
 
 After you did that press
 
