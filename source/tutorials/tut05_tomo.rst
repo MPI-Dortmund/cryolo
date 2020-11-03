@@ -30,7 +30,7 @@ Activate the environment:
 
 >>> source activate cryolo_3d
 
-Install crYOLO 1.8 Beta 1
+Install the crYOLO 1.8 beta:
 
 >>> pip install 'cryolo[gpu]'==1.8.0b2
 
