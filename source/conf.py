@@ -30,6 +30,10 @@ author = 'Thorsten Wagner'
 extensions = [
     'versionwarning.extension',
 ]
+versionwarning_messages = {
+    'latest': 'This is the documentation for an unreleased development version. Documentation is '
+              'available for the current stable release, or for older versions, through the "v:" menu at the bottom left.',
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
