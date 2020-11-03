@@ -48,7 +48,7 @@ Open your reconstructed tomogram (.rec/.mrc) with:
 
 :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`File`
 
-Choose the boxsize according the largest dimension of your target structure.
+Choose the box size according the largest dimension of your target structure.
 
 Label your target structure in the some slices (e.g. 10). Label it even if the slices does not show
 the centre of the structure but only parts of it.
