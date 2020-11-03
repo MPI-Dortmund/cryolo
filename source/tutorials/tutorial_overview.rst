@@ -11,6 +11,8 @@ Tutorials
 
 .. include:: tut04_refine.rst
 
+.. include:: tut05_tomo.rst
+
 
 
 
