@@ -1,4 +1,4 @@
-Tutorial 4: Pick particles in tomograms (BETA)
+Tutorial 5: Pick particles in tomograms (BETA)
 =======================================
 
 This tutorial explains how to pick particles in a tomogram. Therefore you need to label
@@ -21,7 +21,8 @@ You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 
     * NumPy 1.14.5 -> NumPy 1.18.5
 * CBOX files are now written in the STAR format.
 
-As it is still a beta, I recommend to keep your old crYOLO installation. Here are the steps:
+As it is still a beta, I recommend to keep your old crYOLO installation and
+install it in a fresh environment. Here are the steps:
 
 >>> conda create -n cryolo_3d -c anaconda pyqt=5 python=3.6 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
 
@@ -64,11 +65,17 @@ files for training.
 
 4. Configuration
 ^^^^^^^^^^^^^^^^
-The configuration is basically the same as for picking particles from scratch.
-If you binned (4x/8x) the micrographs, please choose a lower absolute threshold for
+Choose the action :guilabel:`config`. The configuration is basically the same as for picking particles from scratch.
+Set the :guilabel:`boxsize` to the value you've choosen when creating the training data. Set folder
+where your tomogram is as :guilabel:`train_image_folder` and the CBOX folder that you was created in step
+2 as :guilabel:`train_annot_folder`.
+
+If you binned (4x/8x) the tomograms, please choose a lower absolute threshold for
 the low pass filter. In the tab :guilabel:`Denoising options` you need to set :guilabel:`low_pass_cutoff`
 to e.g 0.2 or 0.3.
 
+Press :guilabel:`Start` to create the configuration file.
+
 5. Training
 ^^^^^^^^^^^
-
+A
