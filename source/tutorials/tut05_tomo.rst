@@ -25,7 +25,7 @@ You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 
 As it is still a beta, I recommend to keep your old crYOLO installation and
 install crYOLO 1.8 in a fresh environment. Here are the steps:
 
->>> conda create -n cryolo_3d -c anaconda pyqt=5 python=3.6 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
+>>> conda create -n cryolo_3d -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
 
 Activate the environment:
 
@@ -33,7 +33,7 @@ Activate the environment:
 
 Install the crYOLO 1.8 beta:
 
->>> pip install 'cryolo[gpu]'==1.8.0b5
+>>> pip install 'cryolo[gpu]'==1.8.0b6
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
