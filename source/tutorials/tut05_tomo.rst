@@ -21,6 +21,7 @@ You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 
     * NumPy 1.14.5 -> NumPy 1.18.5
     * Keras 2.2.5 -> Keras 2.3.1
 * CBOX files are now written in the STAR format.
+* Now crYOLO allows to use .star files as input. crYOLO will pick all micrographs in the column '_rlnMicrographName'
 
 As it is still a beta, I recommend to keep your old crYOLO installation and
 install crYOLO 1.8 in a fresh environment. Here are the steps:
@@ -33,7 +34,7 @@ Activate the environment:
 
 Install the crYOLO 1.8 beta:
 
->>> pip install 'cryolo[gpu]'==1.8.0b6
+>>> pip install 'cryolo[gpu]'==1.8.0b8
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
