@@ -34,7 +34,7 @@ Activate the environment:
 
 Install the crYOLO 1.8 beta:
 
->>> pip install 'cryolo[gpu]'==1.8.0b8
+>>> pip install 'cryolo[gpu]'==1.8.0b9
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
