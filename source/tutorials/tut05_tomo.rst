@@ -51,14 +51,15 @@ Open your reconstructed tomogram (.rec/.mrc) with:
 
 Choose the box size according the largest dimension of your target structure.
 
-Label your target structure in the some slices (e.g. 10). Label it even if the slices does not show
-the centre of the structure but only parts of it.
+Label your target structure in some slices (e.g. 10). Label it even if the slices does not show
+the centre of the structure but only parts of it. Moreover, crYOLO often picks in empty parts of tomogram (buffer).
+You can easily add a couple of those empty slices to your training set by activating the checkbox in front of it.
 
 After you did that press
 
 :guilabel:`File` -> :guilabel:`Save`
 
-It will save it in three formats (EMAN, CBOX, STAR). We will need the CBOX
+It will save it in three formats (EMAN, CBOX, STAR). We will need the **CBOX**
 files for training.
 
 3. Start crYOLO
@@ -74,7 +75,7 @@ where your tomogram is as :guilabel:`train_image_folder` and the CBOX folder tha
 
 If you binned (4x/8x) the tomograms, please choose a lower absolute threshold for
 the low pass filter. In the tab :guilabel:`Denoising options` you need to set :guilabel:`low_pass_cutoff`
-to e.g 0.2 or 0.3.
+to e.g 0.3 or 0.4.
 
 Press :guilabel:`Start` to create the configuration file.
 
