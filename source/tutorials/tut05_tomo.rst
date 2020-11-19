@@ -73,7 +73,7 @@ files for training.
 ^^^^^^^^^^^^^^^^
 Choose the action :guilabel:`config`. The configuration is basically the same as for picking particles from scratch.
 Set the :guilabel:`boxsize` to the value you've choosen when creating the training data. Set folder
-where your tomogram is as :guilabel:`train_image_folder` and the CBOX folder that you was created in step
+where your tomogram is as :guilabel:`train_image_folder` and the CBOX folder that you has created in step
 2 as :guilabel:`train_annot_folder`.
 
 If you binned (4x/8x) the tomograms, please choose a lower absolute threshold for
