@@ -21,7 +21,9 @@ You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 
     * NumPy 1.14.5 -> NumPy 1.18.5
     * Keras 2.2.5 -> Keras 2.3.1
 * CBOX files are now written in the STAR format.
-* Now crYOLO allows to use .star files as input. crYOLO will pick all micrographs in the column '_rlnMicrographName'
+* Now crYOLO allows to use .star files as input. crYOLO will pick all micrographs in the column '_rlnMicrographName'.
+As the path in this column is relative to your project directory, you need to star crYOLO from your project directory.
+* The boxmanager can now supports tomograms.
 
 As it is still a beta, I recommend to keep your old crYOLO installation and
 install crYOLO 1.8 in a fresh environment. Here are the steps:
@@ -39,7 +41,8 @@ Install the crYOLO 1.8 beta:
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
 
-The boxmanager now has basic support for tomograms but it's still under heavy development.
+The boxmanager now has basic support for tomograms, but it's still under heavy development.
+We will improve the user experience as quick as possible.
 
 Start it with:
 
