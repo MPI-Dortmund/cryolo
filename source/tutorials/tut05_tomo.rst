@@ -100,18 +100,19 @@ Keep the other values default. See the info box about information about the tomo
     When using the tomography picking mode, crYOLO will first pick your target structure on each slice
     separately and then trace it through the volume. There are three options to adjust this tracing:
 
-    Two picked boxes in separate slices are considered to belong to the same structure when they are
+    Two picked boxes in separate slices are considered to belong to the same particle when they are
     within the :guilabel:`tracing_search_range` and the slices are not further apart than value configured
     in :guilabel:`tracing_memory`. Traces that contain less boxes then the the value configured in
     :guilabel:`tracing_min_length` are considered as false positive and are removed.
 
 Now you can press :guilabel:`Start`.
 
-crYOLO will write three folders into the :file:`output` directory. :file:`CBOX_3D`, :file:`CBOX_UNTRACED`, :file:`EMAN_3D`.
+crYOLO will write four folders into the :file:`output` directory. :file:`CBOX_3D`, :file:`CBOX_UNTRACED`, :file:`EMAN_3D` and :file:`coords`.
 
 The folder :file:`CBOX_3D` contains 3D boxes in the CBOX format. The folder :file:`CBOX_UNTRACED`
 contains the picks for each slices that were used for tracing. Ignore it for now, it will be relevant
 in a later boxmanager version. The folder :file:`EMAN_3D` contains the coordinates of 3d boxes in EMAN2 format.
+The files in :file:`coords` contain files that can directly used in IMOD.
 
 
 7. Visualization
