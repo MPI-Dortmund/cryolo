@@ -28,7 +28,7 @@ As the path in this column is relative to your project directory, you need to st
 As version 1.8 is still a beta, I recommend to keep your old crYOLO installation and
 install crYOLO 1.8 in a fresh environment. Here are the steps:
 
->>> conda create -n cryolo_3d -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
+>>> conda create -n cryolo_3d -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
 
 Activate the environment:
 
