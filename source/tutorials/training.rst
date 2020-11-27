@@ -24,7 +24,7 @@ crYOLO to converge.
 
     When you start the training, it will stop when the “loss” metric on the validation data does not
     improve 10 times in a row. This is typically enough. In case you want to give the training more
-    time to find the best model can increase the “not changed in a row” parameter to a higher value by
+    time to find the best model you can increase the “not changed in a row” parameter to a higher value by
     setting the early argument in the :guilabel:`Optional arguments` to, for example, 15.
 
 The final model will be written to disk as specified in saved_weights_name in your configuration file.
