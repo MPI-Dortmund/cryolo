@@ -25,7 +25,7 @@ You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 
 As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
 * The boxmanager can now supports tomograms.
 
-As it is still a beta, I recommend to keep your old crYOLO installation and
+As version 1.8 is still a beta, I recommend to keep your old crYOLO installation and
 install crYOLO 1.8 in a fresh environment. Here are the steps:
 
 >>> conda create -n cryolo_3d -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
