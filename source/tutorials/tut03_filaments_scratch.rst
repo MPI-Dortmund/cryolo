@@ -70,8 +70,8 @@ using a box size if 200):
 .. image:: ../img/cryolo_filament_202003.png
     :width: 600
 
-The directory :file:`output_boxes` will be created and all results are saved there. The format is
-the eman2 helix format with particle coordinates.
+The directory :file:`output_boxes` will be created and all results are saved there. The traced
+filaments will be saved in the eman2 helix format with particle coordinates. But also EMAN2 and STAR start/end coordinates.
 
 .. admonition:: Import into Relion
 
