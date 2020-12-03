@@ -23,7 +23,7 @@ You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 
 * CBOX files are now written in the STAR format.
 * Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'.
 As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
-* The boxmanager can now supports tomograms.
+* The boxmanager now supports tomograms.
 
 As version 1.8 is still a beta, I recommend to keep your old crYOLO installation and
 install crYOLO 1.8 in a fresh environment. Here are the steps:
