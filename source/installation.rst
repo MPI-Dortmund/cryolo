@@ -40,7 +40,7 @@ have a old cryolo environment installed, first remove the old one with:
 
 After that, create a new virtual environment:
 
->>> conda create -n cryolo -c conda-forge -c anaconda python=3.6 pyqt=5 cudnn=7.1.2 numpy==1.14.5 cython wxPython==4.0.4 intel-openmp==2019.4
+>>> conda create -n cryolo -c conda-forge -c anaconda python=3.6 pyqt=5 cudnn=7.1.2 numpy==1.14.5 cython wxPython==4.0.4 intel-openmp==2019.4 pip=20.2.3
 
 Activate the environment:
 
@@ -61,6 +61,8 @@ But if you want to run crYOLO on a CPU run:
      ERROR: imagecodecs-lite 2019.2.22 has requirement numpy>=1.15.4, but you'll have numpy 1.14.5 which is incompatible.
 
     However, you can ignore it. It is actually also working with numpy==1.14.5
+
+    However, from a pip version > 20.2.3 the installation will fail. Therefore the conda enviroments will be installed with an outdated pip version. With crYOLO 1.8 this problem will be solved.
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
