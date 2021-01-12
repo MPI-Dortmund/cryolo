@@ -62,7 +62,7 @@ But if you want to run crYOLO on a CPU run:
 
     However, you can ignore it. It is actually also working with numpy==1.14.5
 
-    However, from a pip version > 20.2.3 the installation will fail. Therefore the conda enviroments will be installed with an outdated pip version. With crYOLO 1.8 this problem will be solved.
+    However, with a pip version > 20.2.3 the installation will fail. Therefore the conda environments will be installed with an outdated pip version. With crYOLO 1.8 this problem will be solved.
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
