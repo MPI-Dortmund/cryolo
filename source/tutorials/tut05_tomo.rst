@@ -36,13 +36,12 @@ Activate the environment:
 
 Install the crYOLO 1.8 beta:
 
->>> pip install 'cryolo[gpu]'==1.8.0b22
+>>> pip install 'cryolo[gpu]'==1.8.0b23
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
 
 The boxmanager now has basic support for tomograms, but it's still under heavy development.
-We will improve the user experience as quick as possible.
 
 Start it with:
 
@@ -98,10 +97,12 @@ Keep the other values default. See the info box about information about the tomo
     **Tomography picking**
 
     When using the tomography picking mode, crYOLO will first pick your target structure on each slice
-    separately and then trace it through the volume. There are three options to adjust this tracing:
+    separately and then trace it through the volume. There are three parameters that be used to adjust
+    this tracing: :guilabel:`tracing_search_range`, :guilabel:`tracing_memory` and :guilabel:`tracing_min_length`.
+    However, you can safely use the default values. Only change the parameters if you encounter problems.
 
     Two picked boxes in separate slices are considered to belong to the same particle when they are
-    within the :guilabel:`tracing_search_range` and the slices are not further apart than value configured
+    within the :guilabel:`tracing_search_range` and the gab between the two slices is not bigger than the value configured
     in :guilabel:`tracing_memory`. Traces that contain less boxes then the the value configured in
     :guilabel:`tracing_min_length` are considered as false positive and are removed.
 
