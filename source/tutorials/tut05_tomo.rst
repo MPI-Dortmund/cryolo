@@ -32,11 +32,11 @@ install crYOLO 1.8 in a fresh environment. Here are the steps:
 
 Activate the environment:
 
->>> source activate cryolo_3d
+>>> conda activate cryolo_3d
 
 Install the crYOLO 1.8 beta:
 
->>> pip install 'cryolo[gpu]'==1.8.0b23
+>>> pip install 'cryolo[gpu]'==1.8.0b24
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
