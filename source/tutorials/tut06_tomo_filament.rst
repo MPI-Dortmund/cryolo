@@ -89,7 +89,7 @@ parameters for the other options should be ok for most cases.
     and convolved with the input image. The direction with the highst response gives the local direction of the
     filament. This method is mainly for backwards compatibility with earliert crYOLO version (< 1.8).
 
-In the :guilabel:`Tomography options` tab also simply need to activate the checkbox :guilabel:`tomogram`. The default
+In the :guilabel:`Tomography options` tab also simply activate the checkbox :guilabel:`tomogram`. The default
 parameters for the other options should be ok for most cases.
 
 .. admonition:: 3D Filament tracing
@@ -98,7 +98,4 @@ parameters for the other options should be ok for most cases.
     across slices using graphs. The connected components in that graph are groups of 2D filaments that
     represent a single 3D filament. Those 2D filaments are then averages to create a 3D filament.
 
-'''
-I should methond traceing_min_edge_weight and tracing_merge_trhesh
-'''
 Now press the :guilabel:`Start` button to start the pick your tomogram.
