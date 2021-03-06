@@ -69,15 +69,36 @@ Press :guilabel:`Start` to create the configuration file.
 
 6. Prediction
 ^^^^^^^^^^^^^
-Choose the action :guilabel:`predict`. You now need to make changes in three tapbs.
+Choose the action :guilabel:`predict`. You now need to make changes in three tabs.
 
 In the :guilabel:`Required arguments` tabs you need to choose
 your configuration file from step 2 in field :guilabel:`conf`. For the field :guilabel:`weights` you choose the .h5
 that you got after step 5. In :guilabel:`input` you choose the folder which contain the tomograms you want to pick.
 
-In the :guilabel:`Filament options` you simply need to activate the checkbox :guilabel:`filament`. Als
+In the :guilabel:`Filament options` you simply need to activate the checkbox :guilabel:`filament`.  The default
+parameters for the other options should be ok for most cases.
 
 .. admonition:: directional_method
 
     To trace the filaments in each slice of the tomogram, the local direction of the filament has to be estimated.
-    There are two methods available: :guilabel:`PREDICTED` and :guilabel:`CONVOLUTION`
+    There are two methods available: :guilabel:`PREDICTED` and :guilabel:`CONVOLUTION`.
+
+    With :guilabel:`PREDICTED` you use the predicted direction learned by crYOLO. This is the recommended method.
+
+    With :guilabel:`CONVOLUTION` an elliposid mask with the width given by :guilabel:`filament_width` is rotated
+    and convolved with the input image. The direction with the highst response gives the local direction of the
+    filament. This method is mainly for backwards compatibility with earliert crYOLO version (< 1.8).
+
+In the :guilabel:`Tomography options` tab also simply need to activate the checkbox :guilabel:`tomogram`. The default
+parameters for the other options should be ok for most cases.
+
+.. admonition:: 3D Filament tracing
+
+    To trace your filaments in 3D, the filaments are first traced slicewise and then grouped together
+    across slices using graphs. The connected components in that graph are groups of 2D filaments that
+    represent a single 3D filament. Those 2D filaments are then averages to create a 3D filament.
+
+'''
+I should methond traceing_min_edge_weight and tracing_merge_trhesh
+'''
+Now press the :guilabel:`Start` button to start the pick your tomogram.
