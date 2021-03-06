@@ -53,7 +53,7 @@ crYOLO will ask you for your desired inter-box distance than it will save the tr
 ^^^^^^^^^^^^^^^^
 
 Choose the action :guilabel:`config`. The configuration is basically the same as for picking particles from scratch.
-Set the :guilabel:`boxsize` to the value you've choosen when creating the training data. Set folder
+Set the :guilabel:`boxsize` to the value you've choosen when creating the training data. Choose the folder
 where your tomogram is as :guilabel:`train_image_folder` and the CBOX folder that you created in step
 2 as :guilabel:`train_annot_folder`.
 
