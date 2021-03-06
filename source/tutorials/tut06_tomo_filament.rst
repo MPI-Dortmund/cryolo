@@ -71,6 +71,21 @@ Press :guilabel:`Start` to create the configuration file.
 ^^^^^^^^^^^^^
 Choose the action :guilabel:`predict`. You now need to make changes in three tabs.
 
+7. Troupleshooting
+^^^^^^^^^^^^^^^^^^
+Under consturction....
+
+1. Check the particles picked by crYOLO by loaded the files in XXX in the box manager
+    - Add more training data
+
+2. Check the filament tracing
+    - Adapt search range
+    - Adapt directional method
+
+3. Check settings of 3D tracing
+    - Adapt A
+    - Adapt B
+
 In the :guilabel:`Required arguments` tabs you need to choose
 your configuration file from step 2 in field :guilabel:`conf`. For the field :guilabel:`weights` you choose the .h5
 that you got after step 5. In :guilabel:`input` you choose the folder which contain the tomograms you want to pick.
