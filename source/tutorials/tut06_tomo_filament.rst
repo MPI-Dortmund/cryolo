@@ -100,7 +100,7 @@ parameters for the other options should be ok for most cases.
 
 Now press the :guilabel:`Start` button to start the pick your tomogram.
 
-7. Troupleshooting
+7. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
 Under consturction....
 
