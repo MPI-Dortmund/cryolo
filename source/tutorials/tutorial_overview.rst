@@ -13,6 +13,8 @@ Tutorials
 
 .. include:: tut05_tomo.rst
 
+.. include:: tut06_tomo_filament.rst
+
 
 
 
