@@ -15,10 +15,6 @@ The next step is to create training data. To do so, we have to pick single filam
     finally decide whether to add more micrographs to your training set. If you refine a general
     model, even 5 micrographs might be enough.
 
-.. image:: ../img/cryolo_boxmanager_filament_202103.png
-    :width: 300
-    :align: left
-
 To create your training data, crYOLO is shipped with a tool called “boxmanager”.
 
 Start the box manager with the following command:
