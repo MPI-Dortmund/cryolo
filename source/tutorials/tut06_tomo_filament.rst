@@ -116,12 +116,17 @@ Use the boxmanager ...
 
 8. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
-Under consturction....
 
-1. Check the particles picked by crYOLO by loaded the files in XXX in the box manager
-    - Add more training data
+What to do when the 3D tracing didnt produced good results? Many filaments were not traced at all?
+Here we give some recommendations what to do.
 
-2. Check the filament tracing
+1. Check the particles picked by crYOLO by loading the folder `CBOX` in the boxmanager.
+    - You should see multiple particles picked on every filament. If not, do they appear when you lower the confidence threshold?
+    - In case this doesnt help you should add more training data. Especially those slices where crYOLO missed a lot of particles of picked in the background. Then you retrain and start the prediction again.
+
+
+2. Check the filament tracing: Open the :file:`CBOX_FILAMENTS_UNTRACED` folder in the boxmanager.
+
     - Adapt search range
     - Adapt directional method
 
