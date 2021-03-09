@@ -102,11 +102,11 @@ Here we give some recommendations what to do.
 
 
 2. Check the filament tracing: Open the :file:`CBOX_FILAMENTS_UNTRACED` folder in the boxmanager. You should see you filaments traced.
-    - If not, have you checked if the directional estimations in step 1? In case case they were not accurate, you might want to try to retrain your model again, but this time, give the your training a little mit more time by setting the :guilabel:`early` argument within the :guilabel:`train` action in the :guilabel:`Optional arguments` to, for example, 20. It also helps if you add more training data.
-    - If you observed that boxes withhin one filament in step 1 were not overlapping, you can try to increase the search range. Open the action :guilabel:`predict`, open the :guilabel:`Filament options` tab and increase the :guilabel:`search_range_factor` from 1.41 to, for example, 2.
+    - If not, have you checked if the directional estimations in step 1? In case they were not accurate, you might want to try to retrain your model again, but this time, give the your training a little bit more time by setting the :guilabel:`early` argument within the :guilabel:`train` action in the :guilabel:`Optional arguments` to, for example, 20. It also helps if you add more training data.
+    - If you observed that boxes within one filament in step 1 were not overlapping, you can try to increase the search range. Open the action :guilabel:`predict`, open the :guilabel:`Filament options` tab and increase the :guilabel:`search_range_factor` from 1.41 to, for example, 2.
 
-3. Check the 3D tracing settings:
-    - Are you filaments very tilted in your dataset? It might help to decrease the :guilabel:`tracing_min_edge_weight` within the :guilabel:`Tomography options` of the action :guilabel:`Predict`
-    - If you filaments where nicely traced in 2D but many are missing in 3D it might be that multiple seperate filaments where merged into one filament. This leads to effect that the averages filament is somewhere in the tomogram, but is not following any filament. On option to resolve this issue is to increse the :guilabel:`tracing_min_edge_weight`.
+3. Everything from the above to steps looks fine? Maybe you need to adjust the 3D tracing settings:
+    - Are your filaments very tilted in your dataset? It might help to decrease the :guilabel:`tracing_min_edge_weight` within the :guilabel:`Tomography options` of the action :guilabel:`Predict`
+    - If your filaments where nicely traced in 2D but many are missing in 3D it might be that multiple separate filaments where merged into one filament. This leads to effect that the averages filament is somewhere in the tomogram, but is not following any filament. One option to resolve this issue is to increase the :guilabel:`tracing_min_edge_weight`.
 
 4. Nothing helped? Find help at our `mailing list <https://listserv.gwdg.de/mailman/listinfo/sphire>`_!
