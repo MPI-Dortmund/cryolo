@@ -33,7 +33,7 @@ Open your reconstructed tomogram (.rec/.mrc) or a folder with reconstructed tomo
 :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`Folder`
 
 Change the picking from :guilabel:`Particle` to :guilabel:`Filament`. Choose a :guilabel:`box size`
-which is roughly 2x-3x the width of your filament.
+which is roughly 2x the width of your filament.
 
 Label your filaments in some slices (e.g. 10), ideally on multiple tomograms. Label them even if the slices do not show
 the centre of the filaments but only parts of it. To do that click on the place where the filament starts
@@ -104,13 +104,11 @@ parameters for the other options should be ok for most cases.
 
 Now press the :guilabel:`Start` button to start the pick your tomogram. The output will be various folders:
 
-* :file:`CBOX_FILAMENTS_TRACED`:  Filaments traced in 3D
-* :file:`CBOX_FILAMENTS_UNTRACED`: Filaments traced in 2D but not in 3D. This is the internal input
-for 3D tracing and mainly for troubleshooting.
-* :file:`CBOX`: Particles picked by crYOLO. This is the input for the 2D filament tracing and manily for troubleshooting (see section 8).
-* :file:`COORDS_TRACED`: 3D filament coordinates as they are needed to for visualization in imod.
-* :file:`DISTR`: Contains size distribution information. Not informative in this case. Only helpful
-with a general model, which does not yet exist for filaments.
+* :file:`CBOX_FILAMENTS_TRACED`:  Filaments traced in 3D.
+* :file:`CBOX_FILAMENTS_UNTRACED`: Filaments traced in 2D but not in 3D. This is the internal input for 3D tracing and mainly for troubleshooting.
+* :file:`CBOX`: Particles picked by crYOLO. This is the input for the 2D filament tracing and mainly for troubleshooting (see section 8).
+* :file:`COORDS_TRACED`: 3D filament coordinates as they are needed for visualization in imod.
+* :file:`DISTR`: Contains size distribution information. Not informative in this case. Only helpful with a general model, which does not yet exist for filaments.
 
 7. Visualize the results
 ^^^^^^^^^^^^^^^^^^^^^^^^
