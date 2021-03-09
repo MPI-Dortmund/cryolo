@@ -4,6 +4,19 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.8.0 (not yet offically released)
+*************
+* Adds a picking mode for tomography that works with single particles and filaments
+* Increased filament support: crYOLO now learns end-to-end to estimate the filament direction. In previous versions this was done using a rotating convolutional mask which is rather slow. Moreover, the old method runs into problem if a filament only limited line features.
+* crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
+    * Cuda 9 -> Cuda 10
+    * Tensorflow 1.10.1 -> Tensorflow 1.15.4
+    * NumPy 1.14.5 -> NumPy 1.18.5
+    * Keras 2.2.5 -> Keras 2.3.1
+* CBOX files are now written in the STAR format.
+* Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'. As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
+* crYOLO boxmanager is updated to 1.4.0
+
 Version 1.7.6
 *************
 * Fixed library issue. (Thanks to Grigory Sharov)
@@ -116,6 +129,16 @@ Version 1.6.0
 
 Boxmanager
 ^^^^^^^^^^
+
+Version 1.4.0
+*************
+
+* The boxmanager now support tomograms.
+* Added the option to pick filaments in micrographs and slices of tomograms.
+* Minor redesign of the GUI
+* Many internal changes
+
+All these changes were mainly implemented by Luca Lusnig. Thanks Luca :-)
 
 Version 1.3.6
 *************

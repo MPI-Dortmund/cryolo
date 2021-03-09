@@ -1,4 +1,4 @@
-In the following I will assume that your image data is in the folder full_data.
+In the following I will assume that your image data is in the folder :file:`full_data`.
 
 The next step is to create training data. To do so, we have to pick single particles manually
 in several micrographs. Ideally, the micrographs are picked to completion. :ref:`However, it is not
@@ -17,7 +17,7 @@ necessary to pick all particles. crYOLO will still converge if you miss some (or
     finally decide whether to add more micrographs to your training set. If you refine a general
     model, even 5 micrographs might be enough.
 
-.. image:: ../img/cryolo_boxmanager_202003.png
+.. image:: ../img/cryolo_boxmanager_202103.png
     :width: 300
     :align: left
 
@@ -28,26 +28,30 @@ Start the box manager with the following command:
 
 >>> cryolo_boxmanager.py
 
-Now press :menuselection:`File --> Open image folder` and the select the :file:`full_data` directory. The first image should
-pop up. You can navigate in the directory tree through the images. Here is how to pick particles:
+Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`full_data` directory. The first image should
+pop up. You can navigate in the directory tree through the images.
+
+You might want to run a low pass filter before you start picking. Switch to tab :guilabel:`Filtering` and press :guilabel:`Apply`
+to get a low pass filtered version of your currently selected micrograph. An absolute
+frequency cut-off of 0.1. The allowed values are 0 - 0.5. Lower values means stronger filtering.
+
+Here is how to pick particles:
 
 * :kbd:`LMB`: Place a box
 * Hold :kbd:`LMB`: Move a box
 * :kbd:`Control` + :kbd:`LMB`: Remove a box
 * :kbd:`h` KEY: Toggle to make boxes invisible / visible
 
-You might want to run a low pass filter before you start picking the particles. Just press :guilabel:`Apply`
-to get a low pass filtered version of your currently selected micrograph. An absolute
-frequency cut-off of 0.1. The allowed values are 0 - 0.5. Lower values means stronger filtering.
-
 You can change the box size in the main window, by changing the number in the text field :guilabel:`Box size`:
 Press :guilabel:`Set` to apply it to all picked particles. For picking, you should the use minimum
 sized square which encloses your particle.
 
-If you finished picking from your micrographs, you can export your box files with :menuselection:`Files --> Write box
+If you have micrographs that do not contain particles but only contamination / ice you can add them to your training set by activate the checkbox infront of the micrograph.
+
+If you finished picking from your micrographs, you can export your box files with :guilabel:`File` -> :guilabel:`Save`
 files`. Create a new directory called train_annotation and save it there. Close boxmanager.
 
-Now create a third folder with the name :file:`train_image`. Now for each box file, copy the corresponding
+Optionally, you create a third folder with the name :file:`train_image`. Now for each box file, copy the corresponding
 image from :file:`full_data` into :file:`train_image`.
 
 .. note::
