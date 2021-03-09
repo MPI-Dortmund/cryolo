@@ -44,6 +44,11 @@ In the following example, it is expected that you exported into a folder called 
 
 For projects with roughly 20 filaments per image we successfully trained on 40 images (⇒ 800 filaments).
 
+1. Data preparation (new)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+.. include:: data_preparation_filament.rst
+
+
 2. Start crYOLO
 ^^^^^^^^^^^^^^^
 .. include:: start_cryolo.rst

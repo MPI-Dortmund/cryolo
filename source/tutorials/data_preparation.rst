@@ -21,8 +21,7 @@ necessary to pick all particles. crYOLO will still converge if you miss some (or
     :width: 300
     :align: left
 
-To create your training data, crYOLO is shipped with a tool called “boxmanager”. However, you can
-also use tools like e2boxer to create your training data.
+To create your training data, crYOLO is shipped with a tool called “boxmanager”.
 
 Start the box manager with the following command:
 
