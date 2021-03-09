@@ -20,34 +20,7 @@ Please see tutorial 5 for installation instructions.
 
 2. Data preparation
 ^^^^^^^^^^^^^^^^^^^
-The boxmanager now has basic support for tomograms, but it's still under heavy development.
-
->>> cryolo_boxmanager.py
-
-Open your reconstructed tomogram (.rec/.mrc) or a folder with reconstructed tomogramgs with:
-
-**File:**
-:guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`File`
-
-**Folder:**
-:guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`Folder`
-
-Change the picking from :guilabel:`Particle` to :guilabel:`Filament`. Choose a :guilabel:`box size`
-which is roughly 2x the width of your filament.
-
-Label your filaments in some slices (e.g. 10), ideally on multiple tomograms. Label them even if the slices do not show
-the centre of the filaments but only parts of it. To do that click on the place where the filament starts
-and hold the left mouse button and move to the position of the box. Curvy filaments should to be splitted
-into multiple straight filaments.
-
-Moreover, crYOLO often picks in empty parts of tomogram (buffer). You can easily add a couple of
-those empty slices to your training set by activating the checkbox in front of those slices.
-
-After you did that press
-
-:guilabel:`File` -> :guilabel:`Save`
-
-crYOLO will ask you for your desired inter-box distance than it will save the training data as CBOX to disk.
+.. include:: data_preparation_filament_tomo.rst
 
 3. Start crYOLO
 ^^^^^^^^^^^^^^^
