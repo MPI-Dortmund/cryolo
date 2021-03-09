@@ -19,10 +19,6 @@ The next step is to create training data. To do so, we have to pick single filam
     :width: 300
     :align: left
 
-.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
-    :width: 300
-    :align: left
-
 To create your training data, crYOLO is shipped with a tool called “boxmanager”.
 
 Start the box manager with the following command:
@@ -31,6 +27,10 @@ Start the box manager with the following command:
 
 Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`images` directory. The first image should
 pop up. You can navigate in the directory tree through the images.
+
+.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
+    :width: 300
+    :align: left
 
 You might want to run a low pass filter before you start picking. Switch to tab :guilabel:`Filtering` and press :guilabel:`Apply`
 to get a low pass filtered version of your currently selected micrograph. An absolute
