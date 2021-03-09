@@ -1,12 +1,12 @@
 .. include:: text_modules/data_prep_filament_startbm.rst
 
-.. image:: ../img/cryolo_boxmanager_filament_202103.png
-    :width: 300
-    :align: left
-
 Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`images` directory. The first image should pop up. You can navigate in the directory tree through the images.
 
 .. include:: text_modules/data_prep_filter_pick.rst
+
+.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
+    :width: 300
+    :align: left
 
 If you finished picking, you can export your box files with :guilabel:`File` -> :guilabel:`Save`. Training data is created for all micrographs that have an activated checkbox. Create a new directory called :file:`boxes` and save it there. The boxmanager will now ask you for a :guilabel:`box distance`. It set to 10 percent of your box size and you can keep the default. Then close boxmanager.
 
