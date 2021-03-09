@@ -48,7 +48,7 @@ For projects with roughly 20 filaments per image we successfully trained on 40 i
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 .. include:: data_preparation_filament.rst
 
-
+<br></br>
 2. Start crYOLO
 ^^^^^^^^^^^^^^^
 .. include:: start_cryolo.rst
