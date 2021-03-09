@@ -40,3 +40,21 @@ Here is how to pick filaments:
 
 * Place a filament box: Click with :kbd:`LMB` + Hold at the start of the filament. Then drag the mouse to the position where the filament box should end and release the :kbd:`LMB`.
 * Remove filament box: Hold :kbd:`Control` pressed and click with the :kbd:`LMB` inside the box you want to remove.
+
+You can change the box width in the main window, by changing the number in the text field :guilabel:`Box size`:
+Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~ 2x bigger than
+your filament width.
+
+If you have micrographs that do not contain particles but only contamination / ice you can add them to your training set by activate the checkbox in front of the micrograph.
+
+If you finished picking, you can export your box files with :guilabel:`File` -> :guilabel:`Save`. Training data is created for all micrographs that have an activated checkbox. Create a new directory called :file:`boxes` and save it there. The boxmanager will now ask you for a :guilabel:`box distance`. It set to 10 percent of your box size and you can keep the default. Then close boxmanager.
+
+In the folder :file:`boxes` you just created, you will find three subdirectories:
+
+* :file:`CBOX_FILAMENT`: Contains filament coordinates segmented (according :guilabel:`box distance`) into several boxes in the cbox format
+* :file:`EMAN_HELICON`: Contains filament coordinates segmented into several boxes in eman helicon format.
+* :file:`EMAN_START_END`: Contains filament coordinates specified by start and end coordinates in EMAN format.
+* :file:`STAR_START_END`: Contains filament coordinates specified by start and end coordinates in STAR (Relion) format.
+
+In principle you can use any format for training, in this tutorial we will use :file:`CBOX_FILAMENT`. Create a new folder called :file:`train_annotation` and copy the files from :file:`CBOX_FILAMENT` into this folder. Alternatively you can also directly
+specify the :file:`CBOX_FILAMENT` folder during the configuration step.

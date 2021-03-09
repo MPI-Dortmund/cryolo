@@ -45,10 +45,9 @@ You can change the box size in the main window, by changing the number in the te
 Press :guilabel:`Set` to apply it to all picked particles. For picking, you should the use minimum
 sized square which encloses your particle.
 
-If you have micrographs that do not contain particles but only contamination / ice you can add them to your training set by activate the checkbox infront of the micrograph.
+If you have micrographs that do not contain particles but only contamination / ice you can add them to your training set by activate the checkbox in front of the micrograph.
 
-If you finished picking from your micrographs, you can export your box files with :guilabel:`File` -> :guilabel:`Save`
-files`. Training data is created for all micrographs that have an activated checkbox. Create a new directory called train_annotation and save it there. Close boxmanager.
+If you finished picking from your micrographs, you can export your box files with :guilabel:`File` -> :guilabel:`Save`. Training data is created for all micrographs that have an activated checkbox.  Create a new directory called train_annotation and save it there. Close boxmanager.
 
 Optionally, you now create a third folder with the name :file:`train_image`. Now for each box file, copy the corresponding
 image from :file:`full_data` into :file:`train_image`.
