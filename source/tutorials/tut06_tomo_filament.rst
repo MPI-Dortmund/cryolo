@@ -112,7 +112,11 @@ Now press the :guilabel:`Start` button to start the pick your tomogram. The outp
 
 7. Visualize the results
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Use the boxmanager ...
+You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within the cryolo boxmanager. Just type
+
+>>> cryolo_boxmanager.py
+
+to start the boxamanger.
 
 8. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
@@ -120,7 +124,7 @@ Use the boxmanager ...
 What to do when the 3D tracing didnt produced good results? Many filaments were not traced at all?
 Here we give some recommendations what to do.
 
-1. Check the particles picked by crYOLO by loading the folder `CBOX` in the boxmanager. You should see multiple particles picked on every filament.
+1. Check the particles picked by crYOLO by loading the folder :file:`CBOX` in the boxmanager. You should see multiple particles picked on every filament.
     - If not, do they appear when you lower the confidence threshold?
     - In case this doesnt help you should add more training data. Especially those slices where crYOLO missed a lot of particles of picked in the background. Then you retrain and start the prediction again.
     - (Coming soon with a boxmanager update) Check if the directional estimations are pointing in along the filament.
