@@ -8,7 +8,7 @@ Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`
     :width: 300
     :align: left
 
-If you finished picking, you can export your box files with :guilabel:`File` -> :guilabel:`Save`. Training data is created for all micrographs that have an activated checkbox. Create a new directory called :file:`boxes` and save it there. The boxmanager will now ask you for a :guilabel:`box distance`. It set to 10 percent of your box size and you can keep the default. Then close boxmanager.
+.. include:: text_modules/data_prep_filamant_save.rst
 
 In the folder :file:`boxes` you just created, you will find three subdirectories:
 
