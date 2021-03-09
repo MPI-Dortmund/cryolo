@@ -65,3 +65,6 @@ html_theme_options = {
     'logo_only' : 'True',
     'style_nav_header_background' : '#5a8089',
 }
+
+def setup(app):
+    app.add_javascript("version-alert.js")
