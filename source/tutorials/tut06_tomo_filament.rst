@@ -24,16 +24,20 @@ The boxmanager now has basic support for tomograms, but it's still under heavy d
 
 >>> cryolo_boxmanager.py
 
-Open your reconstructed tomogram (.rec/.mrc) with:
+Open your reconstructed tomogram (.rec/.mrc) or a folder with reconstructed tomogramgs with:
 
+**File:**
 :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`File`
+
+**Folder:**
+:guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`Folder`
 
 Change the picking from :guilabel:`Particle` to :guilabel:`Filament`. Choose a :guilabel:`box size`
 which is roughly 2x-3x the width of your filament.
 
-Label your filaments in some slices (e.g. 10). Label it even if the slices does not show
-the centre of the filaments but only parts of it. Do do that click on the place where the filament starts
-and hold the mouse button and move to the position of the box. Curvy filaments should to be splitted
+Label your filaments in some slices (e.g. 10), ideally on multiple tomograms. Label them even if the slices do not show
+the centre of the filaments but only parts of it. To do that click on the place where the filament starts
+and hold the left mouse button and move to the position of the box. Curvy filaments should to be splitted
 into multiple straight filaments.
 
 Moreover, crYOLO often picks in empty parts of tomogram (buffer). You can easily add a couple of
@@ -69,7 +73,7 @@ Press :guilabel:`Start` to create the configuration file.
 
 6. Prediction
 ^^^^^^^^^^^^^
-Choose the action :guilabel:`predict`. You now need to make changes in three tabs.
+Choose the action :guilabel:`predict`. You now need to make changes in three tabs:
 
 In the :guilabel:`Required arguments` tabs you need to choose
 your configuration file from step 2 in field :guilabel:`conf`. For the field :guilabel:`weights` you choose the .h5
@@ -86,8 +90,8 @@ parameters for the other options should be ok for most cases.
     With :guilabel:`PREDICTED` you use the predicted direction learned by crYOLO. This is the recommended method.
 
     With :guilabel:`CONVOLUTION` an elliposid mask with the width given by :guilabel:`filament_width` is rotated
-    and convolved with the input image. The direction with the highst response gives the local direction of the
-    filament. This method is mainly for backwards compatibility with earliert crYOLO version (< 1.8).
+    and convolved with the input image. The direction with the highest response gives the local direction of the
+    filament. This method is mainly for backwards compatibility with earlier crYOLO versions (< 1.8).
 
 In the :guilabel:`Tomography options` tab also simply activate the checkbox :guilabel:`tomogram`. The default
 parameters for the other options should be ok for most cases.
@@ -98,7 +102,15 @@ parameters for the other options should be ok for most cases.
     across slices using graphs. The connected components in that graph are groups of 2D filaments that
     represent a single 3D filament. Those 2D filaments are then averages to create a 3D filament.
 
-Now press the :guilabel:`Start` button to start the pick your tomogram.
+Now press the :guilabel:`Start` button to start the pick your tomogram. The output will be various folders:
+
+* :file:`CBOX_FILAMENTS_TRACED`:  Filaments traced in 3D
+* :file:`CBOX_FILAMENTS_UNTRACED`: Filaments traced in 2D but not in 3D. This is the internal input
+for 3D tracing and mainly for troubleshooting.
+* :file:`CBOX`: Particles picked by crYOLO. This is the input for the 2D filament tracing and manily for troubleshooting (see section 8).
+* :file:`COORDS_TRACED`: 3D filament coordinates as they are needed to for visualization in imod.
+* :file:`DISTR`: Contains size distribution information. Not informative in this case. Only helpful
+with a general model, which does not yet exist for filaments.
 
 7. Visualize the results
 ^^^^^^^^^^^^^^^^^^^^^^^^
