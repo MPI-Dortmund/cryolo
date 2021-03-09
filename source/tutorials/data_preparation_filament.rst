@@ -41,8 +41,7 @@ Here is how to pick filaments:
 * Place a filament box: Click with :kbd:`LMB` + Hold at the start of the filament. Then drag the mouse to the position where the filament box should end and release the :kbd:`LMB`.
 * Remove filament box: Hold :kbd:`Control` pressed and click with the :kbd:`LMB` inside the box you want to remove.
 
-You can change the box width in the main window, by changing the number in the text field :guilabel:`Box size`:
-Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~ 2x bigger than
+You can change the box width in the main window, by changing the number in the text field :guilabel:`Box size`. Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~2x bigger than
 your filament width.
 
 If you have micrographs that do not contain particles but only contamination / ice you can add them to your training set by activate the checkbox in front of the micrograph.
@@ -56,5 +55,7 @@ In the folder :file:`boxes` you just created, you will find three subdirectories
 * :file:`EMAN_START_END`: Contains filament coordinates specified by start and end coordinates in EMAN format.
 * :file:`STAR_START_END`: Contains filament coordinates specified by start and end coordinates in STAR (Relion) format.
 
-In principle you can use any format for training, in this tutorial we will use :file:`CBOX_FILAMENT`. Create a new folder called :file:`train_annotation` and copy the files from :file:`CBOX_FILAMENT` into this folder. Alternatively you can also directly
+In principle you can use any format for training, in this tutorial we will use :file:`CBOX_FILAMENT`. Create a new folder called :file:`train_annot` and copy the files from :file:`CBOX_FILAMENT` into this folder. Alternatively you can also directly
 specify the :file:`CBOX_FILAMENT` folder during the configuration step.
+
+
