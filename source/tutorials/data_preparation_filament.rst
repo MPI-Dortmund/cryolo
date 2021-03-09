@@ -28,13 +28,13 @@ Start the box manager with the following command:
 Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`images` directory. The first image should
 pop up. You can navigate in the directory tree through the images.
 
-.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
-    :width: 300
-    :align: left
-
 You might want to run a low pass filter before you start picking. Switch to tab :guilabel:`Filtering` and press :guilabel:`Apply`
 to get a low pass filtered version of your currently selected micrograph. An absolute
 frequency cut-off of 0.1. The allowed values are 0 - 0.5. Lower values means stronger filtering.
+
+.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
+    :width: 300
+    :align: left
 
 Here is how to pick filaments:
 
