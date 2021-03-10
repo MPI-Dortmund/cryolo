@@ -35,7 +35,9 @@ Press :guilabel:`Start` to calculate the evaluation results.
 
     **Alternative: Run evaluation from the command line**
 
-    >>> cryolo_evaluation.py -c config.json -w model.h5 -r runfiles/run_YearMonthDay-HourMinuteSecond.json -g 0
+    .. prompt:: bash $
+
+        cryolo_evaluation.py -c config.json -w model.h5 -r runfiles/run_YearMonthDay-HourMinuteSecond.json -g 0
 
 The html file you specified as output looks like this:
 
