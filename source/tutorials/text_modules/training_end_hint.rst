@@ -10,6 +10,6 @@ Now press the :guilabel:`Start` button to start the training.
 
     .. prompt:: bash $
 
-    cryolo_train.py -c config_cryolo.json -w 5 -g 0 -e 15
+        cryolo_train.py -c config_cryolo.json -w 5 -g 0 -e 15
 
     The final model file will be written to disk.

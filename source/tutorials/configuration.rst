@@ -44,11 +44,15 @@ At this point you could already press :guilabel:`Start` to generate the config f
     :file:`train_image`. I furthermore assume that your box size in your box files is 160. To create the config
     :file:`config_cryolo.json` simply run:
 
-    >>> cryolo_gui.py config config_cryolo.json 160 --train_image_folder train_image --train_annot_folder train_annot
+    .. prompt:: bash $
+
+        cryolo_gui.py config config_cryolo.json 160 --train_image_folder train_image --train_annot_folder train_annot
 
     To get a full description of all available options type:
 
-    >>> cryolo_gui.py config -h
+    .. prompt:: bash $
+
+        cryolo_gui.py config -h
 
     If you want to specify separate validation folders you can use the :option:`--valid_image_folder` and :option:`--valid_annot_folder` options:
 
