@@ -22,7 +22,3 @@ Start the box manager with the following command:
 .. prompt:: bash $
 
     cryolo_boxmanager.py
-
-.. image:: ../img/cryolo_boxmanager_filament_202103.png
-    :width: 300
-    :align: left
