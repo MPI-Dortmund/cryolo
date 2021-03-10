@@ -13,7 +13,7 @@ The next step is to create training data. To do so, we have to pick single filam
 
     We recommend that you start with 10 images, then autopick your data, check the results and
     finally decide whether to add more micrographs to your training set. If you refine a general
-    model, even 5 micrographs might be enough.
+    model, even 5 images might be enough.
 
 .. image:: ../img/cryolo_boxmanager_filament_202103.png
     :width: 300
