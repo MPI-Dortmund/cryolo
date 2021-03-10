@@ -35,7 +35,7 @@ Filament mode on MAVS (EMPIAR-10031) :
 
 4. Training
 ^^^^^^^^^^^
-.. include:: training.rst
+.. include:: training_filament.rst
 
 5. Picking
 ^^^^^^^^^^

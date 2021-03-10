@@ -21,7 +21,7 @@ At this point you could already press :guilabel:`Start` to generate the config f
 .. _denoise-janni-label:
 .. admonition:: Alternative: Using neural-network denoising with JANNI
 
-    Since crYOLO 1.4 you can also use neural network denoising with `JANNI <https://sphire.mpg.de/wiki/doku.php?id=janni>`_.
+    You can also use neural network denoising with `JANNI <https://sphire.mpg.de/wiki/doku.php?id=janni>`_.
     The easiest way is to use the JANNI's general model (`Download here <https://sphire.mpg.de/wiki/doku.php?id=janni#janni_general_model>`_)
     but you can also `train JANNI for your data <https://sphire.mpg.de/wiki/doku.php?id=janni_tutorial#training_a_model_for_your_data>`_. crYOLO directly uses an interface to JANNI to filter
     your data, you just have to change the filter argument in the :guilabel:`Denoising` tab from :guilabel:`LOWPASS` to :guilabel:`JANNI` and specify the path to your JANNI model:
