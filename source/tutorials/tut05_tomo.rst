@@ -1,14 +1,8 @@
-Tutorial 5: Pick particles in tomograms (BETA)
+Tutorial 5: Pick particles in tomograms
 =======================================
 
 This tutorial explains how to pick particles in a tomogram. Therefore you need to label
-a couple of slices manually and train cryolo as you always did.
-
-.. warning::
-
-    Please be aware that picking tomograms with crYOLO is still in beta state.
-    Therefore this tutorial is targeted at rather advanced users and does not contain
-    excessive details.
+a couple of slices manually and train cryolo.
 
 If you followed the installation instructions, you now have to activate the cryolo virtual environment with
 
