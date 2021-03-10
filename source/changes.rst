@@ -12,7 +12,7 @@ Version 1.8.0 (not yet offically released)
     **WARNING: Models need retraining**
 
     If you want to use the feature with your old filament models, you need to retrain them.
-
+* For filaments, crYOLO writes creates two addition folders: :file:`CBOX` and :file:`CBOX_FILAMENT_SEGMENTED`. While the first folder  contains the picked particles from crYOLO which are input for filament tracing, the second new folder (:file:`CBOX_FILAMENT_SEGMENTED`) contains segmented filaments in CBOX format which also allow live filtering via the confidence threshold in the BoxManager
 * crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
     * Cuda 9 -> Cuda 10
     * Tensorflow 1.10.1 -> Tensorflow 1.15.4
@@ -20,7 +20,7 @@ Version 1.8.0 (not yet offically released)
     * Keras 2.2.5 -> Keras 2.3.1
 * CBOX files are now written in the STAR format.
 * Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'. As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
-* crYOLO boxmanager is updated to 1.4.0
+* crYOLO BoxManager is updated to 1.4.0
 
 Version 1.7.6
 *************
