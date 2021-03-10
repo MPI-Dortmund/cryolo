@@ -44,8 +44,7 @@ Choose the action :guilabel:`predict`. You now need to make changes in three tab
 
 .. include:: text_modules/prediction_filament_directional_method.rst
 
-* In the :guilabel:`Tomography options` tab also simply activate the checkbox :guilabel:`tomogram`. The default
-parameters for the other options should be ok for most cases.
+* In the :guilabel:`Tomography options` tab also simply activate the checkbox :guilabel:`tomogram`. The default parameters for the other options should be ok for most cases.
 
 .. admonition:: 3D Filament tracing
 
