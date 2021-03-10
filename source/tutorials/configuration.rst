@@ -56,5 +56,7 @@ At this point you could already press :guilabel:`Start` to generate the config f
 
     If you want to specify separate validation folders you can use the :option:`--valid_image_folder` and :option:`--valid_annot_folder` options:
 
-    >>> cryolo_gui.py config config_cryolo.json 160 --train_image_folder train_image --train_annot_folder train_annot --valid_image_folder valid_img --valid_annot_folder valid_annot
+    .. prompt:: bash $
+
+        cryolo_gui.py config config_cryolo.json 160 --train_image_folder train_image --train_annot_folder train_annot --valid_image_folder valid_img --valid_annot_folder valid_annot
 

@@ -36,23 +36,33 @@ Install crYOLO
 The following instructions assume that pip and anaconda or miniconda are available. In case you
 have a old cryolo environment installed, first remove the old one with:
 
->>> conda env remove --name cryolo
+.. prompt:: bash $
+
+    conda env remove --name cryolo
 
 After that, create a new virtual environment:
 
->>> conda create -n cryolo_3d -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
+.. prompt:: bash $
+
+    conda create -n cryolo_3d -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
 
 Activate the environment:
 
->>> conda activate cryolo
+.. prompt:: bash $
+
+    conda activate cryolo
 
 In case you run **crYOLO on a GPU** run:
 
->>> pip install 'cryolo[gpu]==1.8.0b24'
+.. prompt:: bash $
+
+    pip install 'cryolo[gpu]==1.8.0b24'
 
 But if you want to run crYOLO on a CPU run:
 
->>> pip install 'cryolo[cpu]==1.8.0b24'
+.. prompt:: bash $
+
+    pip install 'cryolo[cpu]==1.8.0b24'
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
