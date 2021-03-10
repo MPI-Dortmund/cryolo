@@ -44,17 +44,15 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
 .. image:: ../img/cryolo_prediction_202003.png
     :width: 600
 
-Now select the :guilabel:`Filament options` tab and check :guilabel:`Activate filament mode`,
-specifiy the :guilabel:`filament_width` (e.g. 100) and define the :guilabel:`box_distance` (e.g. 20 for 90% overlap when
-using a box size if 200):
+Now select the :guilabel:`Filament options` tab and check :guilabel:`Activate filament mode` and define the :guilabel:`box_distance` (e.g. 20 for 90% overlap when using a box size if 200).
 
-.. image:: ../img/cryolo_filament_202003.png
+.. include:: text_modules/prediction_filament_directional_method.rst
+
+.. image:: ../img/cryolo_filament_202103.png
     :width: 600
 
 The directory :file:`output_boxes` will be created and all results are saved there. The traced
 filaments will be saved in the eman2 helix format with particle coordinates. But also EMAN2 and STAR start/end coordinates.
-
-.. include:: text_modules/prediction_filament_directional_method.rst
 
 .. admonition:: Import into Relion
 
@@ -66,14 +64,14 @@ Press the :guilabel:`Start` button to start the picking.
 
     **Alternative: Run prediction in command line**
 
-    Let's assume you want to pick a filament with a width of 100 pixels (-fw 100). The box size
+    Let's assume you want to pick a filament, the box size
     is 200×200 and you want a 90% overlap (-bd 20). Moreover, you wish that each filament has at
     least 6 boxes (-mn 6). The micrographs are in the :file:`full_data` directory. Than the picking
     command would be:
 
     .. prompt:: bash $
 
-        cryolo_predict.py -c config_cryolo.json -w cryolo_model.h5 -i full_data --filament -fw 100 -bd 20 -o boxes/ -g 0 -mn 6
+        cryolo_predict.py -c config_cryolo.json -w cryolo_model.h5 -i full_data --filament -bd 20 -o boxes/ -g 0 -mn 6
 
 
 
