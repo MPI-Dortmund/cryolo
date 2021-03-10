@@ -38,6 +38,11 @@ After you did that press
 It will create three subdirectories, each for one formats (:file:`EMAN`, :file:`CBOX`, :file:`STAR`). We will need the :file:`CBOX`
 files for training.
 
+1. Data preparation (NEW)
+^^^^^^^^^^^^^^^^^^^
+
+.. include:: data_preparation_tomo.rst
+
 2. Start crYOLO
 ^^^^^^^^^^^^^^^
 .. include:: start_cryolo.rst
