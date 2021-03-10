@@ -66,5 +66,7 @@ html_theme_options = {
     'style_nav_header_background' : '#5a8089',
 }
 
+extensions += ['sphinx-prompt']
+
 def setup(app):
     app.add_javascript("version-alert.js")
