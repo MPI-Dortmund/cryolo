@@ -1,10 +1,6 @@
 Tutorial 6: Pick filaments in tomograms (BETA)
 ==============================================
 
-.. warning::
-
-    UNDER CONSTRUCTION!!!!
-
 This tutorial explains how to pick filaments in a tomogram. Therefore you need to label
 a couple of slices manually and train cryolo as you always did.
 
@@ -14,19 +10,19 @@ a couple of slices manually and train cryolo as you always did.
     Therefore this tutorial is targeted at rather advanced users and does not contain
     excessive details.
 
-1. Installation
-^^^^^^^^^^^^^^^
-Please see tutorial 5 for installation instructions.
+If you followed the installation instructions, you now have to activate the cryolo virtual environment with
 
-2. Data preparation
+>>> source activate cryolo
+
+1. Data preparation
 ^^^^^^^^^^^^^^^^^^^
 .. include:: data_preparation_filament_tomo.rst
 
-3. Start crYOLO
+2. Start crYOLO
 ^^^^^^^^^^^^^^^
 .. include:: start_cryolo.rst
 
-4. Configuration
+3. Configuration
 ^^^^^^^^^^^^^^^^
 
 Choose the action :guilabel:`config`. The configuration is basically the same as for picking particles from scratch.
@@ -40,11 +36,11 @@ to e.g 0.3 or 0.4.
 
 Press :guilabel:`Start` to create the configuration file.
 
-5. Training
+4. Training
 ^^^^^^^^^^^
 .. include:: training.rst
 
-6. Prediction
+5. Prediction
 ^^^^^^^^^^^^^
 Choose the action :guilabel:`predict`. You now need to make changes in three tabs:
 
@@ -78,7 +74,7 @@ Now press the :guilabel:`Start` button to start the pick your tomogram. The outp
 * :file:`COORDS_TRACED`: 3D filament coordinates as they are needed for visualization in imod.
 * :file:`DISTR`: Contains size distribution information. Not informative in this case. Only helpful with a general model, which does not yet exist for filaments.
 
-7. Visualize the results
+6. Visualize the results
 ^^^^^^^^^^^^^^^^^^^^^^^^
 You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within the cryolo boxmanager. Just type
 
@@ -86,7 +82,7 @@ You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within t
 
 to start the boxamanger.
 
-8. Troubleshooting
+7. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
 
 What to do when the 3D tracing didnt produced good results? Many filaments were not traced at all?
