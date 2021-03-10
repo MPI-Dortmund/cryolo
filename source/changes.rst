@@ -8,6 +8,11 @@ Version 1.8.0 (not yet offically released)
 *************
 * Adds a picking mode for tomography that works with single particles and filaments
 * Increased filament support: crYOLO now learns end-to-end to estimate the filament direction. In previous versions this was done using a rotating convolutional mask which is rather slow. Moreover, the old method runs into problem if a filament only limited line features.
+
+    **WARNING: Models need retraining**
+
+    If you want to use the feature with your old filament models, you need to retrain them.
+
 * crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
     * Cuda 9 -> Cuda 10
     * Tensorflow 1.10.1 -> Tensorflow 1.15.4

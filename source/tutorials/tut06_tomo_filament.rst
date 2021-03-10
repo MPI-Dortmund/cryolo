@@ -44,9 +44,9 @@ Press :guilabel:`Start` to create the configuration file.
 ^^^^^^^^^^^^^
 Choose the action :guilabel:`predict`. You now need to make changes in three tabs:
 
-    * In the :guilabel:`Required arguments` tabs you need to choose your configuration file from step 2 in field :guilabel:`conf`. For the field :guilabel:`weights` you choose the .h5 that you got after step 5. In :guilabel:`input` you choose the folder which contain the tomograms you want to pick.
+* In the :guilabel:`Required arguments` tabs you need to choose your configuration file from step 2 in field :guilabel:`conf`. For the field :guilabel:`weights` you choose the .h5 that you got after step 5. In :guilabel:`input` you choose the folder which contain the tomograms you want to pick.
 
-    * In the :guilabel:`Filament options` you simply need to activate the checkbox :guilabel:`filament`.  The default parameters for the other options should be ok for most cases.
+* In the :guilabel:`Filament options` you simply need to activate the checkbox :guilabel:`filament`.  The default parameters for the other options should be ok for most cases.
 
 .. admonition:: directional_method
 
@@ -57,7 +57,7 @@ Choose the action :guilabel:`predict`. You now need to make changes in three tab
 
         * With :guilabel:`CONVOLUTION` an elliposid mask with the width given by :guilabel:`filament_width` is rotated and convolved with the input image. The direction with the highest response gives the local direction of the filament. This method is mainly for backwards compatibility with earlier crYOLO versions (< 1.8).
 
-    * In the :guilabel:`Tomography options` tab also simply activate the checkbox :guilabel:`tomogram`. The default
+* In the :guilabel:`Tomography options` tab also simply activate the checkbox :guilabel:`tomogram`. The default
 parameters for the other options should be ok for most cases.
 
 .. admonition:: 3D Filament tracing
