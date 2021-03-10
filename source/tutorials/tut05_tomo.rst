@@ -41,7 +41,7 @@ After you did that press
 
 :guilabel:`File` -> :guilabel:`Save`
 
-It will save it in three formats (EMAN, CBOX, STAR). We will need the **CBOX**
+It will create three subdirectories, each for one formats (:file:`EMAN`, :file:`CBOX`, :file:`STAR`). We will need the :file:`CBOX`
 files for training.
 
 2. Start crYOLO
