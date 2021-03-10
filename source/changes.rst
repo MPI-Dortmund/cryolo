@@ -12,6 +12,7 @@ Version 1.8.0 (not yet offically released)
     **WARNING: Models need retraining**
 
     If you want to use the feature with your old filament models, you need to retrain them.
+
 * For filaments, crYOLO writes creates two addition folders: :file:`CBOX` and :file:`CBOX_FILAMENT_SEGMENTED`. While the first folder  contains the picked particles from crYOLO which are input for filament tracing, the second new folder (:file:`CBOX_FILAMENT_SEGMENTED`) contains segmented filaments in CBOX format which also allow live filtering via the confidence threshold in the BoxManager
 * crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
     * Cuda 9 -> Cuda 10
