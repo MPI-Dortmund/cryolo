@@ -1,7 +1,9 @@
 Now you are ready to train the model. In case you have multiple GPUs, you should first select a free
 GPU. The following command will show the status of all GPUs:
 
->>> nvidia-smi
+.. prompt:: bash $
+
+nvidia-smi
 
 For this tutorial, we assume that you have either a single GPU or want to use GPU 0.
 

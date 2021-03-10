@@ -8,6 +8,8 @@ Now press the :guilabel:`Start` button to start the training.
 
     To run the training on GPU 0 with 5 warmup-epochs and an early stop of 15 navigate to the folder with :file:`config_cryolo.json` file, :file:`train_image` folder etc.
 
-    >>> cryolo_train.py -c config_cryolo.json -w 5 -g 0 -e 15
+    .. prompt:: bash $
+
+    cryolo_train.py -c config_cryolo.json -w 5 -g 0 -e 15
 
     The final model file will be written to disk.
