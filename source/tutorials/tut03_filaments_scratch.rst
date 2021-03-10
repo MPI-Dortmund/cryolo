@@ -54,6 +54,8 @@ using a box size if 200):
 The directory :file:`output_boxes` will be created and all results are saved there. The traced
 filaments will be saved in the eman2 helix format with particle coordinates. But also EMAN2 and STAR start/end coordinates.
 
+.. include:: text_modules/prediction_filament_directional_method.rst
+
 .. admonition:: Import into Relion
 
     You can find a detailed description :ref:`how to import crYOLO filament coordinates into Relion <import-filaments-label>` here.
