@@ -22,8 +22,10 @@ You can download the reference data (TcdA1) here:
 
 Then unzip the data:
 
->>> unzip toxin_reference.zip -d toxin_reference/
->>> cd toxin_reference
+.. prompt:: bash $
+
+    unzip toxin_reference.zip -d toxin_reference/
+    cd toxin_reference
 
 The :file:`toxin_reference` directory contains multiple folders / files:
 
@@ -42,14 +44,18 @@ Training
 
 The training is done with this command:
 
->>> cryolo_train.py -c config_phosnet.json -w 5 -e 5 -g 0
+.. prompt:: bash $
+
+    ryolo_train.py -c config_phosnet.json -w 5 -e 5 -g 0
 
 crYOLO needs 5 minutes 50 seconds to converge (5 warmup + 10 “normal” epochs). The best validation loss was 0.03042. These numbers might be a little bit different on your case.
 
 Prediction
 **********
 
->>> cryolo_predict.py -c config_phosnet.json -w model.h5 -i unseen_examples/ -o my_results
+.. prompt:: bash $
+
+    cryolo_predict.py -c config_phosnet.json -w model.h5 -i unseen_examples/ -o my_results
 
 It picked 1617 particles on 12 micrographs in 3 seconds. Including filtering the image and loading the model the command needed 38 seconds.
 
@@ -57,5 +63,7 @@ It picked 1617 particles on 12 micrographs in 3 seconds. Including filtering the
 Visualize results
 *****************
 
->>> cryolo_boxmanager.py -i unseen_examples/ -b my_results/CBOX/
+.. prompt:: bash $
+
+    cryolo_boxmanager.py -i unseen_examples/ -b my_results/CBOX/
 

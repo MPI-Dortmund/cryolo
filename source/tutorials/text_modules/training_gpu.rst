@@ -3,7 +3,7 @@ GPU. The following command will show the status of all GPUs:
 
 .. prompt:: bash $
 
-nvidia-smi
+    nvidia-smi
 
 For this tutorial, we assume that you have either a single GPU or want to use GPU 0.
 
