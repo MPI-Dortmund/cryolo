@@ -9,7 +9,9 @@ Our general models can be found and downloaded here: :ref:`Download and Installa
 
 If you followed the installation instructions, you now have to activate the cryolo virtual environment with
 
->>> source activate cryolo
+.. prompt:: bash $
+
+    source activate cryolo
 
 1. Start crYOLO
 ^^^^^^^^^^^^^^^
@@ -54,15 +56,21 @@ Press :guilabel:`Start` to write the configuration file to disk.
     In the following I assume that you target box size is 220. Please adapt if necessary.
     For the general Phosaurus network trained for low-pass filtered cryo images run:
 
-    >>> cryolo_gui.py config config_cryolo.json 220 --filter LOWPASS --low_pass_cutoff 0.1
+    .. prompt:: bash $
+
+        cryolo_gui.py config config_cryolo.json 220 --filter LOWPASS --low_pass_cutoff 0.1
 
     For the general model trained with neural-network denoised cryo images (with JANNI's general model) run:
 
-    >>> cryolo_gui.py config config_cryolo.json 220 --filter JANNI --janni_model /path/to/janni_general_model.h5
+    .. prompt:: bash $
+
+        cryolo_gui.py config config_cryolo.json 220 --filter JANNI --janni_model /path/to/janni_general_model.h5
 
     For the general model for negative stain data please run:
 
-    >>> cryolo_gui.py config config_cryolo.json 220 --filter NONE
+    .. prompt:: bash $
+
+        cryolo_gui.py config config_cryolo.json 220 --filter NONE
 
 
 3. Picking

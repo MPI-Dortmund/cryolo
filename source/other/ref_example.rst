@@ -46,7 +46,7 @@ The training is done with this command:
 
 .. prompt:: bash $
 
-    ryolo_train.py -c config_phosnet.json -w 5 -e 5 -g 0
+    cryolo_train.py -c config_phosnet.json -w 5 -e 5 -g 0
 
 crYOLO needs 5 minutes 50 seconds to converge (5 warmup + 10 “normal” epochs). The best validation loss was 0.03042. These numbers might be a little bit different on your case.
 
