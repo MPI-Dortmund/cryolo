@@ -3,22 +3,9 @@
 Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`full_data` directory. The first image should
 pop up. You can navigate in the directory tree through the images.
 
-You might want to run a low pass filter before you start picking. Switch to tab :guilabel:`Filtering` and press :guilabel:`Apply`
-to get a low pass filtered version of your currently selected micrograph. An absolute
-frequency cut-off of 0.1. The allowed values are 0 - 0.5. Lower values means stronger filtering.
+.. include:: text_modules/data_prep_filter.rst
 
-Here is how to pick particles:
-
-* :kbd:`LMB`: Place a box
-* Hold :kbd:`LMB`: Move a box
-* :kbd:`Control` + :kbd:`LMB`: Remove a box
-* :kbd:`h` KEY: Toggle to make boxes invisible / visible
-
-You can change the box size in the main window, by changing the number in the text field :guilabel:`Box size`:
-Press :guilabel:`Set` to apply it to all picked particles. For picking, you should the use minimum
-sized square which encloses your particle.
-
-If you have image that do not contain particles but only contamination / ice you can add them to your training set by activate the checkbox in front of the image.
+.. include:: text_modules/data_prep_pick_particles.rst
 
 If you finished picking from your micrographs, you can export your box files with :guilabel:`File` -> :guilabel:`Save`. Training data is created for all micrographs that have an activated checkbox.  Create a new directory called train_annotation and save it there. Close boxmanager.
 
