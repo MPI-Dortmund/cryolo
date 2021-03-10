@@ -3,11 +3,7 @@ To visualize your results you can use the boxmanager:
 .. image:: ../img/cryolo_visualize_202003.png
     :width: 600
 
-As image_dir you select the full_data directory. As :guilabel:`box_dir` you select the :file:`CBOX` folder (or :file:`EMAN_HELIX_SEGMENTED` in case of filaments).
-
-.. warning::
-
-    The following does not yet work for filaments.
+As image_dir you select the full_data directory. As :guilabel:`box_dir` you select the :file:`CBOX` folder (or :file:`CBOX_FILAMENT_SEGMENTED` in case of filaments).
 
 CBOX files contain besides the particle coordinates more information like the confidence and the
 estimated size of each particle. When importing .cbox files into the box manager, it enables more
