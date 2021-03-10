@@ -10,35 +10,11 @@ a couple of slices manually and train cryolo as you always did.
     Therefore this tutorial is targeted at rather advanced users and does not contain
     excessive details.
 
-1. Installation
-^^^^^^^^^^^^^^^
-You need to install crYOLO 1.8 (BETA) for this. Some things changed with crYOLO 1.8:
+If you followed the installation instructions, you now have to activate the cryolo virtual environment with
 
-* crYOLO 1.8 adds a picking mode for tomography
-* crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
-    * Cuda 9 -> Cuda 10
-    * Tensorflow 1.10.1 -> Tensorflow 1.15.4
-    * NumPy 1.14.5 -> NumPy 1.18.5
-    * Keras 2.2.5 -> Keras 2.3.1
-* CBOX files are now written in the STAR format.
-* Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'.
-As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
-* The boxmanager now supports tomograms.
+>>> source activate cryolo
 
-As version 1.8 is still a beta, I recommend to keep your old crYOLO installation and
-install crYOLO 1.8 in a fresh environment. Here are the steps:
-
->>> conda create -n cryolo_3d -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
-
-Activate the environment:
-
->>> conda activate cryolo_3d
-
-Install the crYOLO 1.8 beta:
-
->>> pip install 'cryolo[gpu]'==1.8.0b24
-
-2. Data preparation
+1. Data preparation
 ^^^^^^^^^^^^^^^^^^^
 
 The boxmanager now has basic support for tomograms, but it's still under heavy development.
@@ -64,11 +40,11 @@ After you did that press
 It will save it in three formats (EMAN, CBOX, STAR). We will need the **CBOX**
 files for training.
 
-3. Start crYOLO
+2. Start crYOLO
 ^^^^^^^^^^^^^^^
 .. include:: start_cryolo.rst
 
-4. Configuration
+3. Configuration
 ^^^^^^^^^^^^^^^^
 Choose the action :guilabel:`config`. The configuration is basically the same as for picking particles from scratch.
 Set the :guilabel:`boxsize` to the value you've choosen when creating the training data. Set folder
@@ -81,12 +57,12 @@ to e.g 0.3 or 0.4.
 
 Press :guilabel:`Start` to create the configuration file.
 
-5. Training
+4. Training
 ^^^^^^^^^^^
 .. include:: training.rst
 
 
-6. Prediction
+5. Prediction
 ^^^^^^^^^^^^^
 Select the action :guilabel:`predict` and fill in the data for the :guilabel:`Required arguments` tab.
 Next select the :guilabel:`Tomography options` tab. Activate the checkbox :guilabel:`Activate tomograghy picking mode`.
@@ -116,7 +92,7 @@ in a later boxmanager version. The folder :file:`EMAN_3D` contains the coordinat
 The files in :file:`coords` contain files that can directly used in IMOD.
 
 
-7. Visualization
+6. Visualization
 ^^^^^^^^^^^^^^^^
 The current state of the boxmanager can't visualize the 3D boxes properly. We recommend to use
 e2spt_boxer.py from EMAN2 to visualize the file in :file:`EMAN_3D`.
