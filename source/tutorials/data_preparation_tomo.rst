@@ -9,10 +9,6 @@ For opening your tomograms you have to options:
 
 .. include:: text_modules/data_prep_filter_pick_particles.rst
 
-.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
-    :width: 300
-    :align: left
-
 Label your particles in some slices ideally on multiple tomograms. Label them even if the slices do not show
 the centre of the particle but only slice of it.
 
