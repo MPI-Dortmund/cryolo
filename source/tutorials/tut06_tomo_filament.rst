@@ -71,7 +71,9 @@ Now press the :guilabel:`Start` button to start the pick your tomogram. The outp
 ^^^^^^^^^^^^^^^^^^^^^^^^
 You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within the cryolo boxmanager. Just type
 
->>> cryolo_boxmanager.py
+.. prompt:: bash $
+
+    cryolo_boxmanager.py
 
 to start the boxamanger.
 

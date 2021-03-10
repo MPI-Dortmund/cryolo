@@ -1,7 +1,9 @@
 You can use crYOLO either by command line or by using the GUI. The GUI should be easier for
 most users. You can start it with:
 
->>> cryolo_gui.py
+.. prompt:: bash $
+
+    cryolo_gui.py
 
 .. image:: ../img/cryolo_start_202003.png
     :width: 600

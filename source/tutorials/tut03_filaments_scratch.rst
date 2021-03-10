@@ -71,7 +71,9 @@ Press the :guilabel:`Start` button to start the picking.
     least 6 boxes (-mn 6). The micrographs are in the :file:`full_data` directory. Than the picking
     command would be:
 
-    >>> cryolo_predict.py -c config_cryolo.json -w cryolo_model.h5 -i full_data --filament -fw 100 -bd 20 -o boxes/ -g 0 -mn 6
+    .. prompt:: bash $
+
+        cryolo_predict.py -c config_cryolo.json -w cryolo_model.h5 -i full_data --filament -fw 100 -bd 20 -o boxes/ -g 0 -mn 6
 
 
 

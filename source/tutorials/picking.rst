@@ -44,6 +44,8 @@ After picking is done, you can find four folders in your specified output folder
 
     To pick all your images in the directory :file:`full_data` with the model weight file :file:`cryolo_model.h5` (e.g. or :file:`gmodel_phosnet_X_Y.h5` when using the general model) and and a confidence threshold of 0.3 run:
 
-    >>> cryolo_predict.py -c config.json -w cryolo_model.h5 -i full_data/ -g 0 -o boxfiles/ -t 0.3
+    .. prompt:: bash $
+
+        cryolo_predict.py -c config.json -w cryolo_model.h5 -i full_data/ -g 0 -o boxfiles/ -t 0.3
 
     You will find the picked particles in the directory :file:`boxfiles`.

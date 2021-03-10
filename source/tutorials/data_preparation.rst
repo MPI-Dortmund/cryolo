@@ -25,7 +25,9 @@ To create your training data, crYOLO is shipped with a tool called “boxmanager
 
 Start the box manager with the following command:
 
->>> cryolo_boxmanager.py
+.. prompt:: bash $
+
+    cryolo_boxmanager.py
 
 Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`full_data` directory. The first image should
 pop up. You can navigate in the directory tree through the images.

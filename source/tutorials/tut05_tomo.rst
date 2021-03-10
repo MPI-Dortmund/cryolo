@@ -12,7 +12,9 @@ a couple of slices manually and train cryolo as you always did.
 
 If you followed the installation instructions, you now have to activate the cryolo virtual environment with
 
->>> source activate cryolo
+.. prompt:: bash $
+
+    source activate cryolo
 
 1. Data preparation
 ^^^^^^^^^^^^^^^^^^^
@@ -21,7 +23,9 @@ The boxmanager now has basic support for tomograms, but it's still under heavy d
 
 Start it with:
 
->>> cryolo_boxmanager.py
+.. prompt:: bash $
+
+    cryolo_boxmanager.py
 
 Open your reconstructed tomogram (.rec/.mrc) with:
 
@@ -97,7 +101,9 @@ The files in :file:`coords` contain files that can directly used in IMOD.
 The current state of the boxmanager can't visualize the 3D boxes properly. We recommend to use
 e2spt_boxer.py from EMAN2 to visualize the file in :file:`EMAN_3D`.
 
->>> e2spt_boxer.py /path/to/your/tomogram.mrc
+.. prompt:: bash $
+
+    e2spt_boxer.py /path/to/your/tomogram.mrc
 
 Then click File -> Read Box Coord
 
