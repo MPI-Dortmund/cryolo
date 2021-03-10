@@ -1,9 +1,5 @@
 .. include:: text_modules/data_prep_filament_startbm.rst
 
-.. image:: ../img/cryolo_boxmanager_filament_202103.png
-    :width: 300
-    :align: left
-
 Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`images` directory. The first image should pop up. You can navigate in the directory tree through the images.
 
 .. include:: text_modules/data_prep_filter.rst
