@@ -34,7 +34,7 @@ Press :guilabel:`Start` to create the configuration file.
 
 4. Training
 ^^^^^^^^^^^
-.. include:: training.rst
+.. include:: training_filament.rst
 
 5. Prediction
 ^^^^^^^^^^^^^
