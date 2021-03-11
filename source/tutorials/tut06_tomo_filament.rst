@@ -6,7 +6,9 @@ a couple of slices manually and train cryolo.
 
 If you followed the installation instructions, you now have to activate the cryolo virtual environment with
 
->>> source activate cryolo
+.. prompt:: bash $
+
+    source activate cryolo
 
 1. Data preparation
 ^^^^^^^^^^^^^^^^^^^
