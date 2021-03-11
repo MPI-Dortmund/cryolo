@@ -2,7 +2,7 @@
 
 .. include:: text_modules/training_gui_warumup_convergence.rst
 
-For the learning the directions of the filaments and in general the filament mode needs more time compared to single particles.
+For learning the directions of the filaments and in general the filament mode needs more time compared to single particles.
 Therefore we recommend to set the :guilabel:`early` argument in the :guilabel:`Optional arguments` to 15.
 
 .. include:: text_modules/training_end_hint.rst
