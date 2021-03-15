@@ -72,6 +72,21 @@ You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within t
 
 to start the boxamanger.
 
+7. Extraction
+^^^^^^^^^^^^^
+Once you are happy with the results, you need to prepare everything for further processing
+
+Option 1: Use the files from .:file:`COORDS_TRACED` as inputs for relion particle extraction
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+RELION sub-volume averaging requres a certain file structure in the project direction:
+
+ ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.mrc
+ ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.mrcs (aligned stack)
+ ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.order
+ ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.tlt
+ ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.coords
+
 7. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
 
