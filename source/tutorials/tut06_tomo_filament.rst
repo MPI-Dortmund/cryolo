@@ -95,7 +95,7 @@ In order to incorporate priors from the filament data into the star file using t
 
 .. prompt:: bash $
 
-    cryolo_boxmanager_tools.py prior2star bal basd asdlas
+    cryolo_boxmanager_tools.py prior2star NOT WORKING YET
 
 Option 2: Convert the files from COORDS_TRACED into star for input into Warp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
