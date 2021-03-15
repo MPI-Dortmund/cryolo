@@ -106,7 +106,7 @@ If using tomograms produced by Warp to pick particles using cryolo, one can use 
 
     cryolo_boxmanager_tools.py coords2warp -i /path/to/COORDS_TRACED/ -o WarpStarFiles --scale 1.0 --apix PIXEL_SIZE --mag 10000
 
-Dependend of your binning and microscope settings, you need to adapt the scale ( :option:`--scale` ), pixelsize (:apix:`--apix`) and magnification (:option:`--mag`).
+Dependend of your binning and microscope settings, you need to adapt the scale (:option:`--scale`), pixelsize (:option:`--apix`) and magnification (:option:`--mag`).
 
 7. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
