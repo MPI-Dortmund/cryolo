@@ -77,9 +77,9 @@ to start the boxamanger.
 Once you are happy with the results, you need to prepare everything for further processing
 
 Option 1: Use the files from COORDS_TRACED as inputs for relion particle extraction
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-RELION sub-volume averaging requres a certain file structure in the project direction:
+RELION sub-volume averaging requires a certain file structure in the project directiory:
 
 ::
 
@@ -88,6 +88,20 @@ RELION sub-volume averaging requres a certain file structure in the project dire
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.order
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.tlt
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.coords
+
+The tomogram1.coords file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` (those without the _fid postfix) can be used directly at this point.
+
+In order to incorporate priors into the star file using this strategy, the filament ID needs to be extracted from the *_fid.coords file and added to the :file:`particles.star` output from the extraction job in RELION. The following command adds this information to your RELION-generated:file:`particle.star` file:
+
+.. prompt:: bash $
+
+    cryolo_boxmanager_tools.py prior2star bal basd asdlas
+
+Option 2: Convert the files from COORDS_TRACED into star for input into Warp
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+If using tomograms produced by Warp to pick particles using cryolo, one can use the particle coordinates generated to produce a star file that is compatible with the particle extraction functionality within Warp.
+
 
 7. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
