@@ -79,7 +79,7 @@ Once you are happy with the results, you need to prepare everything for further 
 Option 1: Use the files from COORDS_TRACED as inputs for relion particle extraction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-RELION sub-volume averaging requires a certain file structure in the project directiory:
+RELION sub-volume averaging requires a certain file structure in the project directiory, for example:
 
 ::
 
@@ -89,9 +89,9 @@ RELION sub-volume averaging requires a certain file structure in the project dir
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.tlt
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.coords
 
-The tomogram1.coords file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` (those without the _fid postfix) can be used directly at this point.
+The :file:`tomogram1.coords` file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` (those without the _fid postfix) can be used directly at this point.
 
-In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the *_fid.coords file and added to the :file:`particles.star` output from the extraction job in RELION. The following command adds this information to your RELION-generated :file:`particle.star` file:
+In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the :file:`*_fid.coords` file and added to the :file:`particles.star` output from the extraction job in RELION. The following command adds this information to your RELION-generated :file:`particle.star` file:
 
 .. prompt:: bash $
 
