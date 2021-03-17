@@ -91,11 +91,23 @@ RELION sub-volume averaging requires a certain file structure in the project dir
 
 The :file:`tomogram1.coords` file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` (those without the _fid postfix) can be used directly at this point.
 
+However, you need to rescale them in case you picked on binned tomograms. Lets assume you picked on 4x binned tomograms. Then you can rescale the .coords files with:
+
+.. prompt:: bash $
+
+    cryolo_boxmanager_tools.py prior2star -i /path/to/COORDS_TRACED -o /path/to/COORDS_TRACED_RESCALED -s 4.0
+
+The rescaled coordes can then be used for sub-volume averaging.
+
 In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the :file:`*_fid.coords` file and added to the :file:`particles.star` output from the extraction job in RELION. The following command adds this information to your RELION-generated :file:`particle.star` file:
 
 .. prompt:: bash $
 
-    cryolo_boxmanager_tools.py prior2star NOT WORKING YET
+    cryolo_boxmanager_tools.py priors2star -i particles.star -fi /path/to/COORDS_TRACED_RESCALED -o .
+
+This command will add extract the filament information from the files in :file:`COORDS_TRACED_RESCALED` and add them to the information from the :file:`particles.star` file and write the augmented file :file:`particles_with_priors.star` to disk. This can then be used for subsequent subtomogram averaging.
+
+
 
 Option 2: Convert the files from COORDS_TRACED into star for input into Warp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
