@@ -79,7 +79,7 @@ Once you are happy with the results, you need to prepare everything for further 
 Option 1: Use the files from COORDS_TRACED as inputs for relion particle extraction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-RELION sub-volume averaging requires a certain file structure in the project directiory, for example:
+RELION sub-volume averaging requires a certain file structure in the project directory, for example:
 
 ::
 
@@ -91,15 +91,15 @@ RELION sub-volume averaging requires a certain file structure in the project dir
 
 The :file:`tomogram1.coords` file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` (those without the _fid postfix) can be used directly at this point.
 
-However, you need to rescale them in case you picked on binned tomograms. Lets assume you picked on 4x binned tomograms. Then you can rescale the .coords files with:
+However, the files need to get rescaled in case binned tomograms were used for picking. Lets assume you picked on 4x binned tomograms. Then you can rescale the .coords files with:
 
 .. prompt:: bash $
 
     cryolo_boxmanager_tools.py prior2star -i /path/to/COORDS_TRACED -o /path/to/COORDS_TRACED_RESCALED -s 4.0
 
-The rescaled coordes can then be used for sub-volume averaging.
+The rescaled .coords files can then be used for sub-volume averaging.
 
-In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the :file:`*_fid.coords` file and added to the :file:`particles.star` output from the extraction job in RELION. The following command adds this information to your RELION-generated :file:`particle.star` file:
+In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the :file:`*_fid.coords` files and added to the :file:`particles.star` output from the extraction job in RELION. The following command generates an augmented .star file based on the RELION-generated :file:`particle.star` file:
 
 .. prompt:: bash $
 
