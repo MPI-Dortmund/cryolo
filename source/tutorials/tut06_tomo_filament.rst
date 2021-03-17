@@ -120,7 +120,7 @@ If using tomograms produced by Warp to pick particles using cryolo, one can use 
 
 Dependend of your binning and microscope settings, you need to adapt the scale (:option:`--scale`), pixelsize (:option:`--apix`) and magnification (:option:`--mag`). You will find the Warp compatible star file in :file:`out_warp`.
 
-7. Troubleshooting
+8. Troubleshooting
 ^^^^^^^^^^^^^^^^^^
 
 What to do when the 3D tracing didnt produced good results? Many filaments were not traced at all?
