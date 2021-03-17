@@ -105,7 +105,7 @@ In order to incorporate priors from the filament data into the star file using t
 
     cryolo_boxmanager_tools.py priors2star -i particles.star -fi /path/to/COORDS_TRACED_RESCALED -o .
 
-This command will add extract the filament information from the files in :file:`COORDS_TRACED_RESCALED` and add them to the information from the :file:`particles.star` file and write the augmented file :file:`particles_with_priors.star` to disk. This can then be used for subsequent subtomogram averaging.
+This command will add extract the filament information from the files in :file:`COORDS_TRACED_RESCALED` and add them to the information from the :file:`particles.star` file and write the augmented file :file:`particles_with_priors.star` (with the additional columns _rlnHelicalTubeID, _rlnAngleTiltPrior _rlnAnglePsiPrior) to disk. This can then be used for subsequent subtomogram averaging with helical options.
 
 
 
