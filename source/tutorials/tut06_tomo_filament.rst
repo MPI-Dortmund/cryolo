@@ -60,6 +60,7 @@ Now press the :guilabel:`Start` button to start the pick your tomogram. The outp
 * :file:`CBOX_FILAMENTS_UNTRACED`: Filaments traced in 2D but not in 3D. This is the internal input for 3D tracing and mainly for troubleshooting.
 * :file:`CBOX`: Particles picked by crYOLO. This is the input for the 2D filament tracing and mainly for troubleshooting (see section 8).
 * :file:`COORDS_TRACED`: 3D filament coordinates as they are needed for visualization in imod.
+* :file:`COORDS_TRACED_FID`: Same as :file:`COORDS_TRACED` but with a additional column for filament width. Those files are only an intermediate solution and will be replaced in a future version.
 * :file:`DISTR`: Contains size distribution information. Not informative in this case. Only helpful with a general model, which does not yet exist for filaments.
 
 6. Visualize the results
@@ -89,7 +90,7 @@ RELION sub-volume averaging requires a certain file structure in the project dir
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.tlt
     ~/RelionProjectDir/Tomograms/tomogram1/tomogram1.coords
 
-The :file:`tomogram1.coords` file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` (those without the _fid postfix) can be used directly at this point.
+The :file:`tomogram1.coords` file requires the 3D coordinates per tomogram of your particle positions. The files from :file:`COORDS_TRACED` can be used directly at this point.
 
 However, the files need to get rescaled in case binned tomograms were used for picking. Lets assume you picked on 4x binned tomograms. Then you can rescale the .coords files with:
 
@@ -99,13 +100,19 @@ However, the files need to get rescaled in case binned tomograms were used for p
 
 The rescaled .coords files can then be used for sub-volume averaging.
 
-In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the :file:`*_fid.coords` files and added to the :file:`particles.star` output from the extraction job in RELION. The following command generates an augmented .star file based on the RELION-generated :file:`particle.star` file:
+In order to incorporate priors from the filament data into the star file using this strategy, this information needs to be extracted from the :file:`COORDS_TRACED_FID` files and added to the :file:`particles.star` output from the extraction job in RELION. The following command generates an augmented .star file based on the RELION-generated :file:`particle.star` file:
 
 .. prompt:: bash $
 
-    cryolo_boxmanager_tools.py priors2star -i particles.star -fi /path/to/COORDS_TRACED_RESCALED -o .
+    cryolo_boxmanager_tools.py priors2star -i particles.star -fi /path/to/COORDS_TRACED_FID -o .
 
-This command will add extract the filament information from the files in :file:`COORDS_TRACED_RESCALED` and add them to the information from the :file:`particles.star` file and write the augmented file :file:`particles_with_priors.star` (with the additional columns _rlnHelicalTubeID, _rlnAngleTiltPrior _rlnAnglePsiPrior) to disk. This can then be used for subsequent subtomogram averaging with helical options.
+This command will add extract the filament information from the files in :file:`COORDS_TRACED_FID` and add them to the information from the :file:`particles.star` file and write the augmented file :file:`particles_with_priors.star` (with the additional columns _rlnHelicalTubeID, _rlnAngleTiltPrior _rlnAnglePsiPrior) to disk. This can then be used for subsequent subtomogram averaging with helical options.
+
+.. warning::
+
+    **File name convention**
+
+    In order to match the right files in :file:`COORDS_TRACED_FID` to the tomograms specified in you particles.star it is necssary that the tomogram filename (without extension) in contained in the filename of :file:`COORDS_TRACED_FID`
 
 
 
