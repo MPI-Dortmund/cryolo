@@ -142,6 +142,10 @@ Version 1.4.0
 * The boxmanager now support tomograms.
 * Added the option to pick filaments in micrographs and slices of tomograms.
 * Minor redesign of the GUI
+* cryolo_boxmanager_tools.py provide commands the prepare your tomo picking for further processing.
+    * :option:`scale`: Allows to you scale any coordiante file that crYOLO produces
+    * :option:`coords2warp`: Prepares a star file that can be directly used in warp (M)
+    * :option:`priors2star`: Add filament prior information to particle.star from relion.
 * Many internal changes
 
 All these changes were mainly implemented by Luca Lusnig. Thanks Luca :-)
