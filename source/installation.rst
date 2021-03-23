@@ -44,7 +44,7 @@ After that, create a new virtual environment:
 
 .. prompt:: bash $
 
-    conda create -n cryolo_3d -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
+    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
 
 Activate the environment:
 
