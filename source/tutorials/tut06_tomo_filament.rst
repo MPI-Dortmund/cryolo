@@ -96,7 +96,7 @@ However, the files need to get rescaled in case binned tomograms were used for p
 
 .. prompt:: bash $
 
-    cryolo_boxmanager_tools.py prior2star -i /path/to/COORDS_TRACED -o /path/to/COORDS_TRACED_RESCALED -s 4.0
+    cryolo_boxmanager_tools.py scale -i /path/to/COORDS_TRACED -o /path/to/COORDS_TRACED_RESCALED -s 4.0
 
 The rescaled .coords files can then be used for sub-volume averaging.
 
