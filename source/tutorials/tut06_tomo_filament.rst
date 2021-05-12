@@ -112,7 +112,7 @@ This command will add extract the filament information from the files in :file:`
 
     **File name convention**
 
-    In order to match the right files in :file:`COORDS_TRACED_FID` to the tomograms specified in you particles.star it is necssary that the tomogram filename (without extension) is contained in the filename of :file:`COORDS_TRACED_FID`
+    In order to match the right files in :file:`COORDS_TRACED_FID` to the tomograms specified in you particles.star it is necessary that the tomogram filename (without extension) is contained in the filename of :file:`COORDS_TRACED_FID`
 
 
 
