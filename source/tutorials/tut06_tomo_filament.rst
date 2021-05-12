@@ -116,14 +116,14 @@ This command will add extract the filament information from the files in :file:`
 
 
 
-Option 2: Convert the files from COORDS_TRACED into star for input into Warp
+Option 2: Convert the files from COORDS_TRACED_FID into star for input into Warp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 If using tomograms produced by Warp to pick particles using cryolo, one can use the particle coordinates to produce a star file that is compatible with the particle extraction functionality within Warp.
 
 .. prompt:: bash $
 
-    cryolo_boxmanager_tools.py coords2warp -i /path/to/COORDS_TRACED/ -o out_warp/ --scale 1.0 --apix PIXEL_SIZE --mag 10000
+    cryolo_boxmanager_tools.py coords2warp -i /path/to/COORDS_TRACED_FID/ -o out_warp/ --scale 1.0 --apix PIXEL_SIZE --mag 10000
 
 Dependent of your binning and microscope settings, you need to adapt the scale (:option:`--scale`), pixelsize (:option:`--apix`) and magnification (:option:`--mag`). You will find the Warp compatible star file in :file:`out_warp`.
 
