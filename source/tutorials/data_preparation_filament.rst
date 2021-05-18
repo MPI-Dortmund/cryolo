@@ -14,7 +14,7 @@ Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`
     :width: 300
     :align: left
 
-.. include:: text_modules/data_prep_filamant_save.rst
+.. include:: text_modules/data_prep_filament_save.rst
 
 In the folder :file:`boxes` you just created, you will find three subdirectories:
 
