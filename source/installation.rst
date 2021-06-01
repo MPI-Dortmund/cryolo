@@ -88,7 +88,7 @@ For cryo images (low-pass filtered)
 
 :Uploaded: 27 May 2020
 
-:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202005_N63_c17.h5>`_
+:Download: `Link (FTP) <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202005_N63_c17.h5>`_ `Link (https) <https://owncloud.gwdg.de/index.php/s/AdVdYdcCg4XaNRw>`_
 
 :Config: :ref:`Commands to create the config file can be found here <config-general-model>`.
 
@@ -99,7 +99,7 @@ For cryo images (neural network denoised with JANNI)
 
 :Uploaded: 27 May 2020
 
-:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202005_nn_N63_c17.h5>`_
+:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_202005_nn_N63_c17.h5>`_ `Link (https) <https://owncloud.gwdg.de/index.php/s/RVEnx1t0t7DTbgA>`_
 
 :Config: :ref:`Commands to create the config file can be found here <config-general-model>`.
 
@@ -110,6 +110,7 @@ For negative stain images
 
 :Uploaded: 26 February 2019
 
-:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_negstain_20190226.h5>`_
+:Download: `Link <ftp://ftp.gwdg.de/pub/misc/sphire/crYOLO-GENERAL-MODELS/gmodel_phosnet_negstain_20190226.h5>`_ `Link (https) <https://owncloud.gwdg.de/index.php/s/KpSw1gGIM3Q3KGa
+>`_
 
 :Config: :ref:`Commands to create the config file can be found here <config-general-model>`.
