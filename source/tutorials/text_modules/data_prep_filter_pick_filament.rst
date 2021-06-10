@@ -1,6 +1,6 @@
 Here is how to pick filaments:
 
-* Place a filament box: Click with :kbd:`LMB` + Hold at the start of the filament. Then drag the mouse to the position where the filament box should end and release the :kbd:`LMB`.
+* Place a filament box: Click with :kbd:`LMB` at the start of the filament and then drag the mouse to the position where the filament box should end and release the :kbd:`LMB`
 * Remove filament box: Hold :kbd:`Control` pressed and click with the :kbd:`LMB` inside the box you want to remove.
 
 You can change the box width in the main window, by changing the number in the text field :guilabel:`Box size`. Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~2x bigger than
