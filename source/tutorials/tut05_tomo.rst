@@ -13,34 +13,6 @@ If you followed the installation instructions, you now have to activate the cryo
 1. Data preparation
 ^^^^^^^^^^^^^^^^^^^
 
-The boxmanager now has basic support for tomograms, but it's still under heavy development.
-
-Start it with:
-
-.. prompt:: bash $
-
-    cryolo_boxmanager.py
-
-Open your reconstructed tomogram (.rec/.mrc) with:
-
-:guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`File`
-
-Choose the box size according the largest dimension of your target structure.
-
-Label your target structure in some slices (e.g. 10). Label it even if the slices does not show
-the centre of the structure but only parts of it. Moreover, crYOLO often picks in empty parts of tomogram (buffer).
-You can easily add a couple of those empty slices to your training set by activating the checkbox in front of it.
-
-After you did that press
-
-:guilabel:`File` -> :guilabel:`Save`
-
-It will create three subdirectories, each for one formats (:file:`EMAN`, :file:`CBOX`, :file:`STAR`). We will need the :file:`CBOX`
-files for training.
-
-1. Data preparation (NEW)
-^^^^^^^^^^^^^^^^^^^
-
 .. include:: data_preparation_tomo.rst
 
 2. Start crYOLO
