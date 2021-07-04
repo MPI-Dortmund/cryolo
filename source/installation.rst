@@ -44,7 +44,7 @@ After that, create a new virtual environment:
 
 Activate the environment:
 
->>> source activate cryolo
+>>> conda activate cryolo
 
 In case you run **crYOLO on a GPU** run:
 
