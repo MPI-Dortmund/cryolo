@@ -19,6 +19,7 @@ Version 1.8.0 (not yet offically released)
     * Tensorflow 1.10.1 -> Tensorflow 1.15.4
     * NumPy 1.14.5 -> NumPy 1.18.5
     * Keras 2.2.5 -> Keras 2.3.1
+    * wxpython 4.0.1 -> 4.1
 * CBOX files are now written in the STAR format.
 * Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'. As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
 * crYOLO BoxManager is updated to 1.4.0
