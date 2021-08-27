@@ -62,7 +62,7 @@ But if you want to run crYOLO on a CPU run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[cpu]==1.8.0b33'
+    pip install 'cryolo[cpu]==1.8.0b35'
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
