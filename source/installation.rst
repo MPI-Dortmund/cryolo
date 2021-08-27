@@ -56,7 +56,7 @@ In case you run **crYOLO on a GPU** run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[gpu]==1.8.0b33'
+    pip install 'cryolo[gpu]==1.8.0b35'
 
 But if you want to run crYOLO on a CPU run:
 
