@@ -22,7 +22,7 @@ Moreover the following GPUs are used:
 
 As the GPU accelerated version of tensorflow does not support MacOS, crYOLO does not support it either.
 
-crYOLO depends on CUDA Toolkit 10.0.130 and the cuDNN 7.6.5 library. These will be automatically installed
+crYOLO depends on CUDA Toolkit and the cuDNN library. These will be automatically installed
 during crYOLO installation.
 
 
@@ -40,7 +40,10 @@ have a old cryolo environment installed, first remove the old one with:
 
     conda env remove --name cryolo
 
-After that, create a new virtual environment:
+With CUDA 10
+""""""""""""
+
+The first step is to create a new virtual environment:
 
 .. prompt:: bash $
 
@@ -56,13 +59,45 @@ In case you run **crYOLO on a GPU** run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[gpu]==1.8.0b35'
+    pip install 'cryolo[gpu]==1.8.0b36'
 
 But if you want to run crYOLO on a CPU run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[cpu]==1.8.0b35'
+    pip install 'cryolo[cpu]==1.8.0b36'
+
+
+With CUDA 11
+""""""""""""
+Some graphic cards (e.g. RTX3090, A5000) need CUDA 11. Unfortunately, the official tensorflow 1.15x does
+not support CUDA 11. To get support for it, we need use a custom tensorflow version from nvidia. The following
+steps do explain how setup crYOLO with this custom nvidia.
+
+The first step is to create a new virtual environment:
+
+.. prompt:: bash $
+
+    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1
+
+Activate the environment:
+
+.. prompt:: bash $
+
+    conda activate cryolo
+
+Next you need to installed the custom tensorflow version from nvidia:
+
+.. prompt:: bash $
+
+    pip install nvidia-pyindex
+    pip install nvidia-tensorflow[horovod]
+
+To install crYOLO with CUDA 11 support you need to run:
+
+.. prompt:: bash $
+
+    pip install 'cryolo[c11]==1.8.0b36'
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
