@@ -25,9 +25,9 @@ The placeholders (XXX_PLACEHOLDER_XXX) in the submission template will replaced 
 * :samp:`XXX_SXMPI_JOB_NAME_XXX`: The will be replaced with "crYOLO"
 
 
-When you press the :guilabel:`Submit` button you are asked for the path of the :guilabel:`Submission template` and the :guilabel:`submission command` of your queueing system. You can add additional arguments to the :guilabel:`submission command` if necessary.
+When you press the :guilabel:`Submit` button you are asked for the path of the :guilabel:`Submission template` and the :guilabel:`Submission command` of your queueing system. You can also add additional arguments to the :guilabel:`Submission command` if necessary.
 
-It is possible to set default values for the :guilabel:`Submission template` and the :guilabel:`submission command`. To do that you can set the following enviroment variables:
+It is possible to set default values for the :guilabel:`Submission template` and the :guilabel:`Submission command`. To do that you can set the following environment variables:
 
 * :samp:`CRYOLO_SUBMIT_CMD`: Default value for the submission command
 * :samp:`CRYOLO_SUBMIT_SCRIPT`: Default value for the path to the submission script
