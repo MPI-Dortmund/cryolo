@@ -10,7 +10,7 @@ Therefore you need to prepare a submission template, that crYOLO can use to fill
 
 * :samp:`XXX_SXCMD_LINE_XXX`: This placeholder will be replaced with the respective crYOLO command.
 * :samp:`XXX_SXMPI_NPROC_XXX`: Right now, crYOLO does not support running on multiple nodes. Therefore placeholder will be replaced by 1.
-* :samp:`XXX_SXMPI_JOB_NAME_XXX`: The will be replaced with "CRYOLO"
+* :samp:`XXX_SXMPI_JOB_NAME_XXX`: The will be replaced with "crYOLO"
 
 A vanilla submission template can be look like this (your probably need to adapt the partition):
 
