@@ -8,8 +8,8 @@ If you use crYOLO on a cluster, you might want to submit to the queue. While for
 Therefore you need to prepare a submission template, that crYOLO can use to fill in the specific command. The following placeholders will replaced by crYOLO:
 
 
-* **XXX_SXCMD_LINE_XXX**:
-* **XXX_SXMPI_NPROC_XXX**:
-* **XXX_SXMPI_JOB_NAME_XXX**:
+* :samp:`XXX_SXCMD_LINE_XXX`: This placeholder will be replaced with the respective crYOLO command.
+* :samp:`XXX_SXMPI_NPROC_XXX`: Right now, crYOLO does not support running on multiple nodes. Therefore placeholder will be replaced by 1.
+* :samp:`XXX_SXMPI_JOB_NAME_XXX`: The will be replaced with "CRYOLO"
 
 A vanilla submission template can be look like this:
