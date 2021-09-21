@@ -12,4 +12,15 @@ Therefore you need to prepare a submission template, that crYOLO can use to fill
 * :samp:`XXX_SXMPI_NPROC_XXX`: Right now, crYOLO does not support running on multiple nodes. Therefore placeholder will be replaced by 1.
 * :samp:`XXX_SXMPI_JOB_NAME_XXX`: The will be replaced with "CRYOLO"
 
-A vanilla submission template can be look like this:
+A vanilla submission template can be look like this (your probably need to adapt the partition):
+
+.. code-block:: bash
+
+        #!/bin/bash
+        #SBATCH --partition gpunodes1
+        #SBATCH --ntasks XXX_SXMPI_NPROC_XXX
+        #SBATCH --ntasks-per-node 20
+        #SBATCH --cpus-per-task 1
+        #SBATCH --job-name XXX_SXMPI_JOB_NAME_XXX
+
+        XXX_SXCMD_LINE_XXX
