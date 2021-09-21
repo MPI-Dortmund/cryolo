@@ -26,7 +26,7 @@ Select the action :guilabel:`predict` and fill all arguments in the :guilabel:`R
     name :file:`stop.cryolo` in the input directory. Just add :option:`--monitor` in the command line or check
     the monitor box in in the :guilabel:`Optional arguments` tab
 
-Press the the :guilabel:`Start` button to run the prediction.
+Press the the :guilabel:`Start` button to run the prediction. You can also press the :guilabel:`Submit` button to :ref:`submit the job to a queueing system <queueing-label>`
 
 After picking is done, you can find four folders in your specified output folder:
 
