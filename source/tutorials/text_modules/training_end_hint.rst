@@ -1,6 +1,6 @@
 The final model will be written to disk as specified in saved_weights_name in your configuration file.
 
-Now press the :guilabel:`Start` button to start the training.
+Now press the :guilabel:`Start` button to start the training on the local machine or the :guilabel:`Submit` button to :ref:`submit the job to a queueing system <queueing-label>`
 
 .. hint::
 
