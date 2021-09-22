@@ -22,7 +22,7 @@ The placeholders (XXX_PLACEHOLDER_XXX) in the submission template will replaced 
 
 * :samp:`XXX_SXCMD_LINE_XXX`: This placeholder will be replaced with the respective crYOLO command.
 * :samp:`XXX_SXMPI_NPROC_XXX`: Right now, crYOLO does not support running on multiple nodes. Therefore placeholder will be replaced by 1.
-* :samp:`XXX_SXMPI_JOB_NAME_XXX`: The will be replaced with "crYOLO"
+* :samp:`XXX_SXMPI_JOB_NAME_XXX`: This will be replaced with "crYOLO"
 
 
 When you press the :guilabel:`Submit` button you are asked for the path of the :guilabel:`Submission template` and the :guilabel:`Submission command` of your queueing system. You can also add additional arguments to the :guilabel:`Submission command` if necessary.
