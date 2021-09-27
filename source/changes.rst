@@ -6,8 +6,8 @@ crYOLO
 
 Version 1.8.0 (not yet offically released)
 *************
-* Adds a picking mode for tomography that works with single particles and filaments
-* Increased filament support: crYOLO now learns end-to-end to estimate the filament direction. In previous versions this was done using a rotating convolutional mask which is rather slow. Moreover, the old method runs into problem if a filament only limited line features.
+* Adds a picking mode for tomography that works with single particles and filaments.
+* Increased filament support: crYOLO now learns end-to-end to estimate the filament direction that is used during tracing. In previous versions this was done using a rotating convolutional mask which is rather slow. Moreover, the old method runs into problem if a filament only limited line features.
 
     **WARNING: Models need retraining**
 
@@ -20,6 +20,7 @@ Version 1.8.0 (not yet offically released)
     * NumPy 1.14.5 -> NumPy 1.18.5
     * Keras 2.2.5 -> Keras 2.3.1
     * wxpython 4.0.1 -> 4.1
+    * mrcfile 1.1.2 -> 1.3.0 (Thanks to Miguel Esteva)
 * CBOX files are now written in the STAR format.
 * Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'. As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
 * crYOLO BoxManager is updated to 1.4.0
