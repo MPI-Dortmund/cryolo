@@ -26,6 +26,10 @@ Version 1.8.0 (not yet offically released)
 * crYOLO BoxManager is updated to 1.4.0
 * Submit to queuing system directly from the crYOLO GUI (Thanks to Nicolas Ballet)
 
+Version 1.7.7
+*************
+* Fixed issue with end of line character in s (Thanks to Grigory Sharov)
+
 Version 1.7.6
 *************
 * Fixed library issue. (Thanks to Grigory Sharov)
