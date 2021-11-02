@@ -29,7 +29,7 @@ Version 1.8.0 (not yet offically released)
 Version 1.7.7
 *************
 * Fixed issue with end of line character in filament STAR (START-END) files (Thanks to Grigory Sharov)
-* Fixed and recursion depth error for filament tracing (Thanks for Grigory Sharov)
+* Fixed a recursion depth error for filament tracing (Thanks for Grigory Sharov)
 
 Version 1.7.6
 *************
