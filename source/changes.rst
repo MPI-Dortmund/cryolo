@@ -27,6 +27,11 @@ Version 1.8.0 (not yet offically released)
 * Submit to queuing system directly from the crYOLO GUI (Thanks to Nicolas Ballet)
 * Better support for new Relion (>=3.1) STAR files (Thanks for Grigory Sharov)
 
+Version 1.7.7
+*************
+* Fixed issue with end of line character in filament STAR (START-END) files (Thanks to Grigory Sharov)
+* Fixed a recursion depth error for filament tracing (Thanks for Grigory Sharov)
+
 Version 1.7.6
 *************
 * Fixed library issue. (Thanks to Grigory Sharov)
