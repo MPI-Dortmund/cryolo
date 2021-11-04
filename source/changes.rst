@@ -5,7 +5,7 @@ crYOLO
 ^^^^^^
 
 Version 1.8.0 (not yet offically released)
-*************
+******************************************
 * Adds a picking mode for tomography that works with single particles and filaments.
 * Increased filament support: crYOLO now learns end-to-end to estimate the filament direction that is used during tracing. In previous versions this was done using a rotating convolutional mask which is rather slow. Moreover, the old method runs into problem if a filament only limited line features.
 
