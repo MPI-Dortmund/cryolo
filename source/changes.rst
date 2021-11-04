@@ -15,7 +15,7 @@ Version 1.8.0 (not yet offically released)
 * For filaments, crYOLO creates two additional folders: :file:`CBOX` and :file:`CBOX_FILAMENT_SEGMENTED`. While the first folder  contains the picked particles from crYOLO which are input for filament tracing, the second new folder (:file:`CBOX_FILAMENT_SEGMENTED`) contains segmented filaments in CBOX format which also allow live filtering via the confidence threshold in the BoxManager
 * Add new data augmentation (Full random rotation besides flipping).
 * crYOLO 1.8 comes with several library updates. This is part of the ongoing transition to tensorflow 2:
-    * Cuda 9 -> Cuda 10
+    * Cuda 9 -> Cuda 10 / Cuda 11
     * Tensorflow 1.10.1 -> Tensorflow 1.15.4
     * NumPy 1.14.5 -> NumPy 1.18.5
     * Keras 2.2.5 -> Keras 2.3.1
@@ -25,6 +25,7 @@ Version 1.8.0 (not yet offically released)
 * Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'. As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
 * crYOLO BoxManager is updated to 1.4.0
 * Submit to queuing system directly from the crYOLO GUI (Thanks to Nicolas Ballet)
+* Better support for new Relion (>=3.1) STAR files (Thanks for Grigory Sharov)
 
 Version 1.7.7
 *************
