@@ -59,13 +59,13 @@ In case you run **crYOLO on a GPU** run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[gpu]==1.8.0b41'
+    pip install 'cryolo[gpu]==1.8.0b47'
 
 But if you want to run crYOLO on a CPU run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[cpu]==1.8.0b41'
+    pip install 'cryolo[cpu]==1.8.0b47'
 
 
 With CUDA 11
@@ -97,7 +97,7 @@ To install crYOLO with CUDA 11 support you need to run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[c11]==1.8.0b41'
+    pip install 'cryolo[c11]==1.8.0b47'
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
