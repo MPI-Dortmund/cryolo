@@ -47,7 +47,7 @@ The first step is to create a new virtual environment:
 
 .. prompt:: bash $
 
-    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.1.1
+    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3.7 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.1.1  adwaita-icon-theme
 
 Activate the environment:
 
@@ -59,13 +59,13 @@ In case you run **crYOLO on a GPU** run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[gpu]==1.8.0b47'
+    pip install 'cryolo[gpu]==1.8.0b49'
 
 But if you want to run crYOLO on a CPU run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[cpu]==1.8.0b47'
+    pip install 'cryolo[cpu]==1.8.0b49'
 
 
 With CUDA 11
@@ -78,7 +78,7 @@ The first step is to create a new virtual environment:
 
 .. prompt:: bash $
 
-    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1
+    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1  adwaita-icon-theme
 
 Activate the environment:
 
@@ -97,7 +97,7 @@ To install crYOLO with CUDA 11 support you need to run:
 
 .. prompt:: bash $
 
-    pip install 'cryolo[c11]==1.8.0b47'
+    pip install 'cryolo[c11]==1.8.0b49'
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
