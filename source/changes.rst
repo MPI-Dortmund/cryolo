@@ -4,8 +4,8 @@ Changes
 crYOLO
 ^^^^^^
 
-Version 1.8.0 (not yet offically released)
-******************************************
+Version 1.8.0
+*************
 * Adds a picking mode for tomography that works with single particles and filaments.
 * Increased filament support: crYOLO now learns end-to-end to estimate the filament direction that is used during tracing. In previous versions this was done using a rotating convolutional mask which is rather slow. Moreover, the old method runs into problem if a filament only limited line features.
 
@@ -152,7 +152,7 @@ Version 1.4.0
 * Added the option to pick filaments in micrographs and slices of tomograms.
 * Minor redesign of the GUI
 * cryolo_boxmanager_tools.py provide commands the prepare your tomo picking for further processing.
-    * :option:`scale`: Allows to you scale any coordiante file that crYOLO produces
+    * :option:`scale`: Allows to you scale any coordiantes file that crYOLO produces
     * :option:`coords2warp`: Prepares a star file that can be directly used in warp (M)
     * :option:`priors2star`: Add filament prior information to particle.star from relion.
 * Many internal changes
