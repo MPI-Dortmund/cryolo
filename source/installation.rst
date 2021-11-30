@@ -99,6 +99,9 @@ To install crYOLO with CUDA 11 support you need to run:
 
     pip install 'cryolo[c11]'
 
+.. warning::
+    In case you run into glibc errors, you can find a solution in our :ref:`<troubleshooting section cryolo-glibc-label>`
+
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
 

@@ -1,6 +1,7 @@
 Troubleshooting
 ===============
 
+.. _cryolo-glibc-label:
 crYOLO crashed with glibc errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
