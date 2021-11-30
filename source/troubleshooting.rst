@@ -1,8 +1,44 @@
 Troubleshooting
 ===============
 
-.. _cryolo-freeze-label:
+crYOLO crashed with glibc errors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The current CUDA 11 instructions need a quite recent glibc version (>=2.29). Not all systems provide such a
+recent version. However, with help of Wolfgang Lugmayer we found a way you to solve the problem.
+
+1. Download and compile a recent glibc (>= 2.29)
+
+.. prompt:: bash $
+
+    wget http://ftp.gnu.org/gnu/libc/glibc-2.34.tar.xz
+    tar xvf glibc-2.34.tar.xz
+    mkdir glibc-2.34/build
+    cd glibc-2.34/build
+    sudo mkdir /opt/glibc-2.34
+    sudo chown $USER /opt/glibc-2.34
+    ../configure --prefix=/opt/glibc-2.34
+    make -j 8
+    make install
+
+2. Add environment variable for the cryolo environment ( I assume the environment name is "cryolo"):
+
+.. prompt:: bash $
+
+    conda activate cryolo
+    conda env config vars set LD_PRELOAD=/opt/glibc-2.34/lib/libm.so.6
+
+3. Reload your environment
+
+.. prompt:: bash $
+
+    conda deactivate
+    conda activate cryolo
+
+Now you should be able to run cryolo with CUDA 11.
+
+
+.. _cryolo-freeze-label:
 crYOLO freezes
 ^^^^^^^^^^^^^^
 
@@ -15,13 +51,17 @@ multiprocessing and is deeply in one of the libraries we use. You can solve it b
 multithreading instead of multiprocessing. There for you can either use the option :option:`--use_multithreading`
 or make it a permanent change by changing the environment variables in your crYOLO environment:
 
->>> conda activate cryolo
->>> conda env config vars set CRYOLO_MP_START="fork"
->>> conda env config vars set CRYOLO_USE_MULTITHREADING="True"
+.. prompt:: bash $
+
+    conda activate cryolo
+    conda env config vars set CRYOLO_MP_START="fork"
+    conda env config vars set CRYOLO_USE_MULTITHREADING="True"
 
 You need to reactivate your environment to make the changes working by
 
->>> conda activate cryolo
+.. prompt:: bash $
+
+    conda activate cryolo
 
 Now you use multithreading instead of multiprocessing.
 
