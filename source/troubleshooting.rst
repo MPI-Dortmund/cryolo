@@ -37,6 +37,8 @@ recent version. However, with help of Wolfgang Lugmayer we found a way you to so
 
 Now you should be able to run cryolo with CUDA 11.
 
+Thanks to Wolfgang Lugmayr for the instructions!
+
 
 .. _cryolo-freeze-label:
 crYOLO freezes

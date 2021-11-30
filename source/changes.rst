@@ -25,7 +25,7 @@ Version 1.8.0
 * Now crYOLO allows to use .star files as input during prediction. crYOLO will pick all micrographs in the column '_rlnMicrographName'. As the path in this column is relative to your project directory, you need to start crYOLO from your project directory.
 * crYOLO BoxManager is updated to 1.4.0
 * Submit to queuing system directly from the crYOLO GUI (Thanks to Nicolas Ballet)
-* Better support for new Relion (>=3.1) STAR files (Thanks for Grigory Sharov)
+* Better support for new Relion (>=3.1) STAR files (Thanks to Grigory Sharov)
 
 Version 1.7.7
 *************
