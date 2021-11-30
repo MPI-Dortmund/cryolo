@@ -5,7 +5,7 @@ crYOLO crashed with glibc errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The current CUDA 11 instructions need a quite recent glibc version (>=2.29). Not all systems provide such a
-recent version. However, with help of Wolfgang Lugmayer we found a way you to solve the problem.
+recent version. However, you can manually compile it force crYOLO to use it:
 
 1. Download and compile a recent glibc (>= 2.29)
 
