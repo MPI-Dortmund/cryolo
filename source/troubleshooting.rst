@@ -17,10 +17,9 @@ recent version. However, you can manually compile it and force crYOLO to use it:
     mkdir glibc-2.34/build
     cd glibc-2.34/build
     sudo mkdir /opt/glibc-2.34
-    sudo chown $USER /opt/glibc-2.34
     ../configure --prefix=/opt/glibc-2.34
     make -j 8
-    make install
+    sudo make install
 
 2. Add environment variable for the cryolo environment ( I assume the environment name is "cryolo"):
 
