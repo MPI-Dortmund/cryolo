@@ -81,7 +81,7 @@ Press :guilabel:`Start` to write the configuration file to disk.
 
     **Alternative: Run prediction as external job from Relion**
 
-    External job support for Relion was implamented by Wolfgang Lugmayr and can be found here:
+    External job support for Relion was implemented by Wolfgang Lugmayr and can be found here:
 
     https://github.com/wlugmayr/relion-ext-cryolo
 
