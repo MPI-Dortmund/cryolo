@@ -145,6 +145,11 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.4.1
+*************
+
+* Fixes a bug, that after filaments are resized (or box distance changed) and then safed to disk, the new size/box size is not applied.
+
 Version 1.4.0
 *************
 
