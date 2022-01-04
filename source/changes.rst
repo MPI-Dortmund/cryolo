@@ -145,6 +145,11 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.4.2
+*************
+
+* Fixes several bugs, including that low pass filtering disappeared in certain cases.
+
 Version 1.4.1
 *************
 
