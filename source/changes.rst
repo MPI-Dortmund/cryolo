@@ -4,6 +4,11 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.8.1
+*************
+
+* Fix crash when cryolo_evaluation is used with CBOX files as ground truth.
+
 Version 1.8.0
 *************
 * Adds a picking mode for tomography that works with single particles and filaments.
@@ -144,6 +149,12 @@ Version 1.6.0
 
 Boxmanager
 ^^^^^^^^^^
+
+Version 1.4.3
+*************
+
+* Fix problem that multiple box sets were not shown in different colors
+* Fix problem when displaying boxes on tomograms with different sizes.
 
 Version 1.4.2
 *************
