@@ -150,6 +150,12 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.4.4 (not yet release):
+*************
+
+* Fix random crashes when saving tomo training data to disk (Thanks to Tom Dendooven)
+* Fix problem that BM creates empty files for tomograms that where not selected.
+
 Version 1.4.3
 *************
 
