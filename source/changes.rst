@@ -4,6 +4,12 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.8.2
+*************
+
+* Fix problem that cryolo uses more CPUs then specified by --nc (Thanks to Jose Miguel de la Rosa Trevin)
+* Fix GLIBC installation problem with CUDA 11
+
 Version 1.8.1
 *************
 
