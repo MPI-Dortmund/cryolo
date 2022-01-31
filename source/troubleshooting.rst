@@ -18,6 +18,7 @@ Within your crYOLO environment run:
     pip install nvidia-tensorflow==1.5.5+nv22.1
 
 **Alternative B:**
+
 The current CUDA 11 instructions need a quite recent glibc version (>=2.29). Not all systems provide such a
 recent version. However, you can manually compile it and force crYOLO to use it:
 
