@@ -86,7 +86,7 @@ Activate the environment:
 
     conda activate cryolo
 
-Next you need to installed the custom tensorflow version from nvidia:
+Next you need to install a package that allows the installation of a custom tensorflow version from nvidia:
 
 .. prompt:: bash $
 
