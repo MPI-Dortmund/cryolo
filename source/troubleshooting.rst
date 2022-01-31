@@ -8,7 +8,6 @@ crYOLO crashed with glibc errors
 .. note::
     This problem should be solved with crYOLO 1.8.2
 
-
 **Alternative A:**
 
 Within your crYOLO environment run:
