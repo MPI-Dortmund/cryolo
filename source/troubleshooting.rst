@@ -5,6 +5,19 @@ Troubleshooting
 crYOLO crashed with glibc errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. hint::
+    This problem should be solved with crYOLO 1.8.2
+
+
+**Alternative A:**
+
+Within your crYOLO environment run:
+
+.. prompt:: bash $
+
+    pip install nvidia-tensorflow==1.5.5+nv22.1
+
+**Alternative B:**
 The current CUDA 11 instructions need a quite recent glibc version (>=2.29). Not all systems provide such a
 recent version. However, you can manually compile it and force crYOLO to use it:
 

@@ -91,7 +91,6 @@ Next you need to installed the custom tensorflow version from nvidia:
 .. prompt:: bash $
 
     pip install nvidia-pyindex
-    pip install nvidia-tensorflow[horovod]
 
 To install crYOLO with CUDA 11 support you need to run:
 
