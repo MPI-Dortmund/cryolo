@@ -5,7 +5,7 @@ Troubleshooting
 crYOLO crashed with glibc errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. hint::
+.. note::
     This problem should be solved with crYOLO 1.8.2
 
 
