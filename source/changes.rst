@@ -156,6 +156,11 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.4.5
+*************
+
+* Fix priors2star script when input star file does not contain required prior columns (Thanks to Liang Chen).
+
 Version 1.4.4
 *************
 
