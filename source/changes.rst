@@ -156,6 +156,12 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.4.6
+*************
+
+* Add script `sphericalprior` to `cryolo_boxmanager_tools.py`. Calculate priors of particles around a spherical model. It estimates 2 out of the 3 Euler angles a priori by calculating a vector from the centre of the sphere to each picked particle on the surface of the sphere. (Thanks to Andrea Nans)
+* Fix problem that particles disappear when you change the micrograph
+
 Version 1.4.5
 *************
 
