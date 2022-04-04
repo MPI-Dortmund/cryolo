@@ -4,6 +4,11 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.8.3
+*************
+
+* Fix dependency problem of pystardb. Now 0.3.1 instead of 0.4 is installed.
+
 Version 1.8.2
 *************
 
