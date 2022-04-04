@@ -4,7 +4,7 @@
     :width: 300
     :align: left
 
-Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`images` directory. The first image should pop up. You can navigate in the directory tree through the images.
+Now press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`SPA` -> :guilabel:`Micrograph folder` and the select the :file:`images` directory. The first image should pop up. You can navigate in the directory tree through the images. Before you can start picking filaments, you need to change :guilabel:`Picking` from :guilabel:`Particle` to :guilabel:`Filament`.
 
 .. include:: text_modules/data_prep_filter.rst
 
