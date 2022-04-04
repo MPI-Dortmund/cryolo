@@ -156,6 +156,13 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.4.10
+***************
+    * Add `coords2cbox` to `cryolo_boxmanager_tools.py`. Converts coords to CBOX.
+    * Add `cbox2coords` to `cryolo_boxmanager_tools.py`. Converts CBOX to coords.
+    * Fix bug that checkboxes are restored loaded correctly after loading them for folder of tomograms.
+    * Fix bug box sizes are not changed proberly if multiple tomograms are loaded.
+
 Version 1.4.6
 *************
 
