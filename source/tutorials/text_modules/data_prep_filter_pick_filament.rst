@@ -1,4 +1,4 @@
-Here is how to pick filaments:
+Before you can start picking filaments, you need to change :guilabel:`Picking` from :guilabel:`Particle` to :guilabel:`Filament`. Then you can pick filaments as follows:
 
 * Place a filament box: Click with :kbd:`LMB` at the start of the filament and then drag the mouse to the position where the filament box should end and release the :kbd:`LMB`
 * Remove filament box: Hold :kbd:`Control` pressed and click with the :kbd:`LMB` inside the box you want to remove.
