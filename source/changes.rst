@@ -7,7 +7,7 @@ crYOLO
 Version 1.8.4
 *************
 
-* Fix dependency problem of protobuf. This error leads to follow exception when running cryolo:
+* Fix dependency problem of protobuf (Thanks to Pranav Shah). This error leads to follow exception when running cryolo:
 
 ::
 
