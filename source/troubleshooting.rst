@@ -12,13 +12,13 @@ It was always related to a problematic setup of the LD_LIBRARY_PATH. Please chec
 
     echo $LD_LIBRARY_PATH
 
-If its not empty, try if the following prefix fixes your problems. In front from the train/predict command your write
+If its not empty, try if the following prefix fixes your problems. In front from the train/predict command you write
 
 .. prompt:: bash $
 
     LD_LIBRARY_PATH='' cryolo_train.py -c your_config -w 5
 
-If that is working you can make it permanent with the following instruction. The next commands will set your LD_LIBRARY_PATH to an empty value when activating the cryolo environment. It will restore the old value, once the environment gets deactivated. I assume that your cryolo environment is called cryolo. Do the following:
+If that is working you can make the fix permanent with the following instructions. The next commands will set your LD_LIBRARY_PATH to an empty value when activating the cryolo environment. It will restore the old value, once the environment gets deactivated. I assume that your cryolo environment is called cryolo. Do the following:
 
 .. prompt:: bash $
 
@@ -47,7 +47,7 @@ and run
 
 you should see all your libraries again.
 
-Now, the fix should be permanent.
+Now, the fix should be permanent and you don't need to add LD_LIBRARY_PATH='' in front of the crYOLO commands.
 
 .. _cryolo-glibc-label:
 crYOLO crashed with glibc errors
