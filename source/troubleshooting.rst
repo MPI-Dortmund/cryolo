@@ -16,7 +16,7 @@ Especially CUDA entries from other software packages are a problem. If the ``LD_
 
 .. prompt:: bash $
 
-    LD_LIBRARY_PATH='' cryolo_train.py -c your_config -w 5
+    LD_LIBRARY_PATH='' cryolo_train.py -c your_config.json -w 5
 
 If that is working you can make the fix permanent. The following instructions will set your ``LD_LIBRARY_PATH`` to an empty value when activating the cryolo environment. It will restore the old ``LD_LIBRARY_PATH``, once the environment gets deactivated. I assume that your cryolo environment is called ``cryolo``. Do the following:
 
