@@ -12,7 +12,7 @@ It was always related to a problematic setup of the ``LD_LIBRARY_PATH``. Please 
 
     echo $LD_LIBRARY_PATH
 
-Especially CUDA entries from other software packages are a problem. If the ``LD_LIBRARY_PATH`` is not empty, try if the following prefix fixes your problem. In front of the ``cryolo_train.py`` / ``cryolo_predict.py`` command you write
+Especially CUDA entries from other software packages are a problem. If the ``LD_LIBRARY_PATH`` is not empty, try if the following prefix fixes your problem. In front of the ``cryolo_train.py`` / ``cryolo_predict.py`` command you put ``LD_LIBRARY_PATH=''``, e.g.:
 
 .. prompt:: bash $
 
