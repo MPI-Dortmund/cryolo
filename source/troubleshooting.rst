@@ -12,7 +12,7 @@ It was always related to a problematic setup of the ``LD_LIBRARY_PATH``. Please 
 
     echo $LD_LIBRARY_PATH
 
-If its not empty, try if the following prefix fixes your problems. In front from the train/predict command you write
+If its not empty, try if the following prefix fixes your problems. In front of the train/predict command you write
 
 .. prompt:: bash $
 
