@@ -4,7 +4,7 @@ Troubleshooting
 crYOLO is very slow and does not use the GPUs to the full potential
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-So far, this problem was only reported for CentOS7 but other distributions might be affected as well.
+So far, this problem was only `reported <https://listserv.gwdg.de/pipermail/sphire/2022-August/001001.html>`_ for CentOS7 but other distributions might be affected as well.
 
 It was always related to a problematic setup of the LD_LIBRARY_PATH. Please check if there are many entries in your path:
 
