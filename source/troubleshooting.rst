@@ -1,6 +1,54 @@
 Troubleshooting
 ===============
 
+crYOLO is very slow and does not use the GPUs to the full potential
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+So far, this problem was only reported for CentOS7 but other distributions might be affected as well.
+
+It was always related to a problematic setup of the LD_LIBRARY_PATH. Please check if there are many entries in your path:
+
+.. prompt:: bash $
+
+    echo $LD_LIBRARY_PATH
+
+If its not empty, try if the following prefix fixes your problems. In front from the train/predict command your write
+
+.. prompt:: bash $
+
+    LD_LIBRARY_PATH='' cryolo_train.py -c your_config -w 5
+
+If that is working you can make it permanent with the following instruction. The next commands will set your LD_LIBRARY_PATH to an empty value when activating the cryolo environment. It will restore the old value, once the environment gets deactivated. I assume that your cryolo environment is called cryolo. Do the following:
+
+.. prompt:: bash $
+
+    conda activate cryolo
+    conda env config vars set LD_LIBRARY_PATH=
+    conda deactivate cryolo
+    conda activate cryolo
+
+If you now run
+
+.. prompt:: bash $
+
+    echo $LD_LIBRARY_PATH
+
+it should be empty. If you do
+
+.. prompt:: bash $
+
+    conda deactivate
+
+and run
+
+.. prompt:: bash $
+
+    echo $LD_LIBRARY_PATH
+
+you should see all your libraries again.
+
+Now, the fix should be permanent.
+
 .. _cryolo-glibc-label:
 crYOLO crashed with glibc errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
