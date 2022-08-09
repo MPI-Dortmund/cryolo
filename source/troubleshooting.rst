@@ -47,7 +47,7 @@ and run
 
 you should see all your libraries again.
 
-Now, the fix should be permanent and you don't need to add LD_LIBRARY_PATH='' in front of the crYOLO commands.
+Now, the fix should be permanent and you don't need to add ``LD_LIBRARY_PATH=''`` in front of the crYOLO commands.
 
 .. _cryolo-glibc-label:
 crYOLO crashed with glibc errors
