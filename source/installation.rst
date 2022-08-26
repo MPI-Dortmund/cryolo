@@ -6,8 +6,8 @@ System requirements
 
 At our institute in Dortmund, crYOLO is running on the following operation systems:
 
-* Ubuntu 16.04.4 LTS
 * Ubuntu 18.04 LTS
+* Ubuntu 20.04
 * CentOS 7
 
 We don't test it but it should run on Windows as well.
@@ -40,8 +40,40 @@ have a old cryolo environment installed, first remove the old one with:
 
     conda env remove --name cryolo
 
+With CUDA 11
+""""""""""""
+
+The official tensorflow 1.15x does not support CUDA 11. To get support for it, we need use a custom tensorflow version from nvidia. The following steps do explain how setup crYOLO with this custom nvidia.
+
+The first step is to create a new virtual environment:
+
+.. prompt:: bash $
+
+    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1  adwaita-icon-theme
+
+Activate the environment:
+
+.. prompt:: bash $
+
+    conda activate cryolo
+
+Next you need to install a package that allows the installation of a custom tensorflow version from nvidia:
+
+.. prompt:: bash $
+
+    pip install nvidia-pyindex
+
+To install crYOLO with CUDA 11 support you need to run:
+
+.. prompt:: bash $
+
+    pip install 'cryolo[c11]'
+
 With CUDA 10
 """"""""""""
+
+.. warning::
+    Recent NVIDIA graphic cards (e.g. RTX30XX, A5000)  do not longer support CUDA 10. Only use the CUDA 10 setup if your have specific reason for it.
 
 The first step is to create a new virtual environment:
 
@@ -67,36 +99,6 @@ But if you want to run crYOLO on a CPU run:
 
     pip install 'cryolo[cpu]'
 
-
-With CUDA 11
-""""""""""""
-Some graphic cards (e.g. RTX3090, A5000) need CUDA 11. Unfortunately, the official tensorflow 1.15x does
-not support CUDA 11. To get support for it, we need use a custom tensorflow version from nvidia. The following
-steps do explain how setup crYOLO with this custom nvidia.
-
-The first step is to create a new virtual environment:
-
-.. prompt:: bash $
-
-    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1  adwaita-icon-theme
-
-Activate the environment:
-
-.. prompt:: bash $
-
-    conda activate cryolo
-
-Next you need to install a package that allows the installation of a custom tensorflow version from nvidia:
-
-.. prompt:: bash $
-
-    pip install nvidia-pyindex
-
-To install crYOLO with CUDA 11 support you need to run:
-
-.. prompt:: bash $
-
-    pip install 'cryolo[c11]'
 
 .. warning::
     In case you run into glibc errors, you can find a solution in our :ref:`troubleshooting section <cryolo-glibc-label>`
