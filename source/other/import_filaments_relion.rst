@@ -46,17 +46,17 @@ In this tutorial we describe how to import crYOLO coordinates into Relion 4. I a
 
 2. Change directory into the relion project directory
 
-.. prompt:: bash $
+ .. prompt:: bash $
 
     cd path/to/my/relion/project/directory/
 
 3. Create the autopick star file with the following command:
 
-.. prompt:: bash $
+ .. prompt:: bash $
 
     cryolo_boxmanager_tools.py createAutopick -m path/to/micrographs/*.mrc -c path/to/box/or/star/files/*.star -o ./
 
-It will create a autopick.star file.
+ It will create a autopick.star file.
 
 4. Open Relion and select the :guilabel:`Particle extraction` Job. For :guilabel:`micrograph STAR file`, select the :file:`micrographs.star` file from your CTF estimation. For :guilabel:`Input coordinates` choose the freshly generated :file:`autopick.star`.
 
