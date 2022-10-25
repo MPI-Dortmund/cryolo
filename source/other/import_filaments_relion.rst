@@ -1,7 +1,7 @@
 Import crYOLO filament coordinates into Relion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After the picking of filaments with crYOLO is done, one might want to import them into Relion. In this example I assume the following:
+After the picking of filaments with crYOLO is done, one might want to import them into Relion 3. In this example I assume the following:
 
 The folder :file:`micrographs` contains your images. In this example the filenames are Actin-ADP-BeFx_NUMBER.mrc.
 The folder :file:`picked_boxes` contains your box files in helicon format.
@@ -35,3 +35,25 @@ The following illustrates how you can import the micrographs and box files into 
 7. Select the :guilabel:`Helix` tab, and set :guilabel:`Extract helical segments?` to :guilabel:`Yes` and :guilabel:`Coordinates are start-end only?` to :guilabel:`No`. Also change your :guilabel:`Tube diameter`. Press :guilabel:`Run!`
 
 Now your particles should be extracted!
+
+
+Import coordinates into Relion 4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In this tutorial we describe how to import crYOLO coordinates into Relion 4. I assume that your micrographs are somewhere in the Relion project directory.
+
+1. Move or softlink your coordinates somewhere into the relion project directory:
+
+2. cd into the relion project directory
+
+3. Create the autopick star file with the following command:
+
+.. prompt:: bash $
+
+    cryolo_boxmanager_tools.py createAutopick -m path/to/micrographs/*.mrc -c path/to/box/or/star/files/*.star -o ./
+
+It will create a autopick.star file.
+
+4. Open Relion and select the :guilabel:`Particle extraction` Job. For :guilabel:`micrograph STAR file`, select the :file:`micrographs.star` file from your CTF estimation. For :guilabel:`Input coordinates` choose the freshly generated :guilabel:`autopick.star`.
+
+Now your particles should get extracted!
