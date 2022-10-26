@@ -42,7 +42,7 @@ After picking is done, you can find four folders in your specified output folder
 
     **Import coordinates into Relion 4**
 
-    To import your coordinates into Relion 4 a few additional steps are necessary. You find :ref:`a tutorial how to do that <import-relion-4>`  in the "Other pages" section.
+    To import your coordinates into Relion 4 a few additional steps are necessary. You find :ref:`a tutorial how to do that <import-relion-4-label>`  in the "Other pages" section.
 
 
 .. hint::

@@ -37,7 +37,7 @@ Other pages
 
 ----
 
-.. _import-relion-4:
+.. _import-relion-4-label:
 .. include:: import_relion_4.rst
 
 
