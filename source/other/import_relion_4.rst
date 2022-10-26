@@ -19,7 +19,7 @@ In this tutorial we describe how to import crYOLO coordinates into Relion 4. I a
 
  .. warning::
 
-    Its important to use relatives paths for the :guilabel:`-m` and :guilabel:`-c` option.
+    Its important to use relative paths for the :guilabel:`-m` and :guilabel:`-c` option.
 
 
  It will create the :file:`autopick.star` file in the folder :file:`output`.
