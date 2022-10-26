@@ -40,6 +40,13 @@ After picking is done, you can find four folders in your specified output folder
 
 .. hint::
 
+    **Import coordinates into Relion 4**
+
+    To import your coordinates into Relion 4 a few additional steps are necessary. You find :ref:`a tutorial how to do that <import-relion-4>`  in the "Other pages" section.
+
+
+.. hint::
+
     **Alternative: Run prediction from the command line**
 
     To pick all your images in the directory :file:`full_data` with the model weight file :file:`cryolo_model.h5` (e.g. or :file:`gmodel_phosnet_X_Y.h5` when using the general model) and and a confidence threshold of 0.3 run:

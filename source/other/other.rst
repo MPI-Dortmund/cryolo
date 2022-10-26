@@ -37,5 +37,11 @@ Other pages
 
 ----
 
+.. _import-relion-4:
+.. include:: import_relion_4.rst
+
+
+----
+
 .. include:: general_model_trainingsets.rst
 
