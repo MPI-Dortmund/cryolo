@@ -8,6 +8,9 @@ Version 1.8.5
 *************
 
 * The crYOLO boxmanger 1.4.10 now provides a tool :guilabel:`cryolo_boxmanager_tools.py createAutopick ` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
+* Faster lowpass filter because of more ideal size estimation for FFT.
+* Better windows compatibility (Thanks Jessica Elise Heebner)
+* New cryoSPARC output format makes importing particles in cryoSPARC more easy.
 
 Version 1.8.4
 *************
