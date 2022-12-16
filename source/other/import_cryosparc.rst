@@ -16,7 +16,8 @@ crYOLO 1.9 writes STAR files that can be imported into cryoSPARC. Here is how yo
 6. Click in :guilabel:`Queue Job`. You will see some warnings but can ignore them, its mostly that the STAR files do not include
 
  .. image:: ../img/cryosparc_output.png
-    :width: 300
-    :align: left
+    :width: 600
+
+
 
 
