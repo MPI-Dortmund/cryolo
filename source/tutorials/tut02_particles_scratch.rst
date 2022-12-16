@@ -1,3 +1,4 @@
+.. _tutorial-2-label:
 Tutorial 2: Pick particles by training a model for your data
 ==============================================================
 This tutorial explains you how to train a model specific for you dataset.

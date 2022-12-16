@@ -17,9 +17,6 @@ Other pages
 .. _sparse-picking-label:
 .. include:: sparse.rst
 
-----
-
-.. include:: train_general_model.rst
 
 ----
 
@@ -48,4 +45,13 @@ Other pages
 ----
 
 .. include:: general_model_trainingsets.rst
+
+----
+
+.. include:: train_general_model.rst
+
+----
+
+.. include:: class_2d_train.rst
+
 
