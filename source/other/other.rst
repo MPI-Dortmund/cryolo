@@ -40,6 +40,11 @@ Other pages
 .. _import-relion-4-label:
 .. include:: import_relion_4.rst
 
+----
+
+.. _import-cryosparc-label:
+.. include:: import_cryosparc.rst
+
 
 ----
 
