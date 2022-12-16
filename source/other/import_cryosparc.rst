@@ -13,7 +13,7 @@ crYOLO 1.9 writes STAR files that can be imported into cryoSPARC. Here is how yo
 
 5. Activate :guilabel:`Ignore pose data`
 
-6. Click in :guilabel:`Queue Job`. You will see some warnings but can ignore them, its mostly that the STAR files do not include
+6. Click in :guilabel:`Queue Job`. You will see some warnings but can ignore them, its mostly that the STAR files do not include CTF information. Your output should look similar to this:
 
  .. image:: ../img/cryosparc_output.png
     :width: 600
