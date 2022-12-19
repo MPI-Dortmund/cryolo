@@ -12,7 +12,7 @@ The filaments are placed as follows:
 * Place a filament: Switch to layer control to |pth|. Click with :kbd:`LMB` at the start of the filament. You can click along the filament. Double click to end the picking of filament.
 * Remove filament: Switch to layer control to |arrow| (shortcut key :kbd:`5`). Click on your filament and press :kbd:`DEL`.
 
-You can change the box width in the main window, by changing the number in the text field :guilabel:`boxsize`. Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~2x bigger than
+You can change the box width in the main window, by changing the number in the text field :guilabel:`boxsize`. Press :guilabel:`Enter` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~2x bigger than
 your filament width.
 
 If you have images that do not contain filaments but only contamination / ice you can add them to your training set by activate the checkbox in front of the image.
