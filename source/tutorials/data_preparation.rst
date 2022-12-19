@@ -11,7 +11,7 @@ show up after a while.
 
 .. include:: text_modules/data_prep_pick_particles.rst
 
-If you finished picking from your micrographs, you can export your box files with :guilabel:`File` -> :guilabel:`Save`. Training data is created for all micrographs that have an activated checkbox.  Create a new directory called train_annotation and save it there. Close boxmanager.
+If you finished picking from your micrographs, you can export your box files with :guilabel:`File` -> :guilabel:`Open Folder...`. Training data is created for all micrographs that have an activated checkbox.  Create a new directory called train_annotation and save it there. Close boxmanager.
 
 Optionally, you now create a third folder with the name :file:`train_image`. Now for each box file, copy the corresponding
 image from :file:`full_data` into :file:`train_image`.

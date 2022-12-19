@@ -15,10 +15,10 @@ The next step is to create training data. To do so, we have to pick manually in 
     finally decide whether to add more micrographs to your training set. If you refine a general
     model, even 5 images might be enough.
 
-To create your training data, crYOLO is shipped with a tool called “boxmanager”.
+To create your training data, we developed a dedicated napari plugin called “napari-boxmanager”.
 
 Start the box manager with the following command:
 
 .. prompt:: bash $
 
-    cryolo_boxmanager.py
+    napari_boxmanager
