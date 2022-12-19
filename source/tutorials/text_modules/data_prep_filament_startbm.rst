@@ -1,6 +1,6 @@
 In the following I will assume that your image data is in the folder :file:`images`.
 
-The next step is to create training data. To do so, we have to pick single filaments manually in several images. Ideally, the images are picked to completion. :ref:`However, it is not necessary to pick all particles. crYOLO will still converge if you miss some (or even many)<sparse-picking-label>`.
+The next step is to create training data. To do so, we have to pick manually in several images. Ideally, the images are picked to completion. :ref:`However, it is not necessary to pick all particles. crYOLO will still converge if you miss some (or even many)<sparse-picking-label>`.
 
 .. admonition:: How many images have to be picked?
 
