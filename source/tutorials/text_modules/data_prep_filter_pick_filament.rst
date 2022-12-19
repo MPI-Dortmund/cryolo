@@ -1,9 +1,15 @@
-Before you can start picking filaments, you need to change :guilabel:`Picking` from :guilabel:`Particle` to :guilabel:`Filament`. Then you can pick filaments as follows:
+Here is how to pick filaments:
 
-* Place a filament box: Click with :kbd:`LMB` at the start of the filament and then drag the mouse to the position where the filament box should end and release the :kbd:`LMB`
-* Remove filament box: Hold :kbd:`Control` pressed and click with the :kbd:`LMB` inside the box you want to remove.
+First you need to create a new layer for picking filaments. Switch to the tab :guilabel:`Organize_layer` and click :guilabel:`Create filament layer`. I assume that your only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+` as shown below.
 
-You can change the box width in the main window, by changing the number in the text field :guilabel:`Box size`. Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~2x bigger than
+The filaments are placed as follows:
+
+.. |ico1| image:: ../img/napari/path_icon.png
+
+* Place a filament: Switch to layer control to |ico1|. Click with :kbd:`LMB` at the start of the filament. You can click along the filament. Double click to end the picking of filament.
+* Remove filament: Press short-cut :kpd:`5` to switch layer control to LOGO. Click on your filament and press :kbd:`DEL`.
+
+You can change the box width in the main window, by changing the number in the text field :guilabel:`boxsize`. Press :guilabel:`Set` to apply it to all picked filaments. For training crYOLO, you should the use a box width ~2x bigger than
 your filament width.
 
 If you have images that do not contain filaments but only contamination / ice you can add them to your training set by activate the checkbox in front of the image.
