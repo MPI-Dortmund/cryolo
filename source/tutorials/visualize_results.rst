@@ -1,8 +1,7 @@
 To visualize your results you can use the boxmanager:
 
-.. image:: ../img/thresholding.png
-    :width: 300
-    :align: center
+.. image:: ../img/cryolo_visualize_202003.png
+    :width: 600
 
 As image_dir you select the full_data directory. As :guilabel:`box_dir` you select the :file:`CBOX` folder (or :file:`CBOX_FILAMENT_SEGMENTED` in case of filaments).
 
@@ -11,5 +10,6 @@ CBOX files contain besides the particle coordinates more information like the co
 Moreover, you can change the confidence threshold, minimum and maximum size and see the results in a live preview. If you are done with the filtering, you can then write the new box selection into new box files.
 The video below shows an example.
 
-.. image:: ../img/cryolo_size_adjustment_5.gif
-    :width: 600
+.. image:: ../img/thresholding.gif
+    :width: 300
+    :align: center
