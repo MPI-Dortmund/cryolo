@@ -18,6 +18,6 @@ image from :file:`images` into :file:`train_image`.
 
 .. note::
 
-    While it is nice to keep your files organized, you don't have to copy your training images into a separate folder. In the configuration file (see below) you can also simply specify the full_data directory as “train_image_folder”. CrYOLO will find the correct images using the box files.
+    While it is nice to keep your files organized, you don't have to copy your training images into a separate folder. In the configuration file (see below) you can also simply specify the :file:`images` directory as :guilabel:`train_image_folder`. CrYOLO will find the correct images using the box files.
 
 crYOLO will detect image / box file pairs by taking the box file and searching for an image filename which contains the box filename.
