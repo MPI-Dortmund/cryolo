@@ -1,7 +1,6 @@
 .. include:: text_modules/data_prep_filament_startbm.rst
 
-Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`images` directory. The first image should
-show up after a while.
+Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`images` directory.
 
 .. image:: ../img/napari/boxmanager_2.png
     :width: 300
