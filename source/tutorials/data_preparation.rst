@@ -1,6 +1,6 @@
 .. include:: text_modules/data_prep_filament_startbm.rst
 
-.. image:: ../img/cryolo_boxmanager_filament_202103.png
+.. image:: ../img/napari/boxmanager.png
     :width: 300
     :align: left
 
