@@ -10,6 +10,6 @@ CBOX files contain besides the particle coordinates more information like the co
 Moreover, you can change the confidence threshold, minimum and maximum size and see the results in a live preview. If you are done with the filtering, you can then write the new box selection into new box files.
 The video below shows an example.
 
-.. image:: ../img/thresholding.gif
+.. image:: ../img/napari/thresholding.gif
     :width: 300
     :align: center
