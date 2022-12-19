@@ -10,7 +10,7 @@ Now press :guilabel:`File` -> :guilabel:`Open Folder...` and the select the :fil
 
 .. include:: text_modules/data_prep_filter_pick_filament.rst
 
-.. image:: ../img/boxmanager_filament_example.png
+.. image:: ../img/napari/boxmanager_filament_example.png
     :width: 600
     :align: center
 
