@@ -2,10 +2,6 @@ Here is how to pick particles:
 
 First you need to create a new layer for picking particles. Switch to the tab :guilabel:`Organize_layer` and click :guilabel:`Create particle layer`. I assume that your only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+` as shown below.
 
-.. figure:: ../img/napari/boxmanager_table_plus.png
-    :width: 300
-    :align: center
-
 The basic usage of the boxmanager is as follows:
 
 * Place a box: Press key :kbd:`2` to switch the layer control (left side) to the plus symbol. Then you can place a box with :kbd:`LMB`.
