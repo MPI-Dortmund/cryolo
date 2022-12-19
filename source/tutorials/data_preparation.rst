@@ -1,11 +1,11 @@
 .. include:: text_modules/data_prep_filament_startbm.rst
 
+Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`full_data` directory. The first image should
+show up after a while.
+
 .. image:: ../img/napari/boxmanager.png
     :width: 300
     :align: left
-
-Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`full_data` directory. The first image should
-show up after a while.
 
 .. include:: text_modules/data_prep_filter.rst
 
