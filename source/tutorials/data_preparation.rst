@@ -3,7 +3,7 @@
 Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`full_data` directory. The first image should
 show up after a while.
 
-.. image:: ../img/napari/boxmanager.png
+.. image:: ../img/napari/boxmanager_2.png
     :width: 300
     :align: left
 
