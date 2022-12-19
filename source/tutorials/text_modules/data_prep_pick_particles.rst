@@ -7,7 +7,7 @@ First you need to create a new layer for picking particles. Switch to the tab :g
 
 The basic usage of the boxmanager is as follows:
 
-* Place a box: Press key :kbd:`2` to switch the layer control (left side) to the plus symbol. Then you can place a box with :kdb:`LMB`.
+* Place a box: Press key :kbd:`2` to switch the layer control (left side) to the plus symbol. Then you can place a box with :kbd:`LMB`.
 * Move a box: Press key :kbd:`3` to switch the layer control to selection symbol. Then you can drag a box by holding :kbd:`LMB`.
 * Delete a box: Press key :kbd:`3` to switch the layer control to selection symbol.  Click on a box and press :kbd:`DEL`
 * Zoom: You can use your mouse wheel to zoom in and out.
