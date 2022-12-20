@@ -13,15 +13,8 @@ For opening your tomograms you have to options:
 
 .. include:: text_modules/data_prep_pick_particles.rst
 
-Label your particles in some slices ideally on multiple tomograms. Label them even if the slices do not show
-the centre of the particle but only slice of it.
+Label your particles in some slices ideally on multiple tomograms. Label them even if the slices do not show the centre of the particle but only slice of it.
 
-After you did that press
-
-:guilabel:`File` -> :guilabel:`Save`
-
-It will create three subdirectories, each for one format (:file:`EMAN`, :file:`CBOX`, :file:`STAR`). We will need the :file:`CBOX` files for training.
-
-Create a new folder called :file:`train_annot` and copy the files from :file:`CBOX` into this folder. Alternatively you can also directly specify the :file:`CBOX` folder during the configuration step.
+If you finished picking from your micrographs, you can export your coordinate files in tab :guilabel:`organize_layer`. Set the :guilabel:`Format` to :guilabel:`.cbox` and press :guilabel:`Save to dir`. Training data is created for all slices that have an activated checkbox.  Create a new directory called :file:`train_annot` and save it there. Close boxmanager.
 
 
