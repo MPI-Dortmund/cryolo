@@ -11,7 +11,7 @@ For opening your tomograms you have to options:
 
 .. include:: text_modules/data_prep_filter.rst
 
-.. include:: text_modules/data_prep_filter_pick_particles.rst
+.. include:: text_modules/data_prep_pick_particles.rst
 
 Label your particles in some slices ideally on multiple tomograms. Label them even if the slices do not show
 the centre of the particle but only slice of it.
