@@ -15,6 +15,6 @@ For opening your tomograms you have to options:
 
 Label your particles in some slices ideally on multiple tomograms. Label them even if the slices do not show the centre of the particle but only slice of it.
 
-If you finished picking from your micrographs, you can export your coordinate files in tab :guilabel:`organize_layer`. Set the :guilabel:`Format` to :guilabel:`.cbox` and press :guilabel:`Save to dir`. Training data is created for all slices that have an activated checkbox.  Create a new directory called :file:`train_annot` and save it there. Close boxmanager.
+If you finished picking from your tomogram, you can export your coordinate files in tab :guilabel:`organize_layer`. Set the :guilabel:`Format` to :guilabel:`.cbox` and press :guilabel:`Save to dir`. Create a new directory called :file:`train_annot` and save it there. Close boxmanager.
 
 
