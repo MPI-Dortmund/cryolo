@@ -42,9 +42,9 @@ have a old cryolo environment installed, first remove the old one with:
 
 The installation happens 3 steps:
 
-1. First your need to install crYOLO either for CUDA11 (1A) or CUDA 10 (1B)
-2. Install napari
-3. Link the napari installation into your crYOLO environment for convinience.
+1. First your need to install crYOLO either for CUDA11 (step 1A) or CUDA 10 (step 1B)
+2. Install napari and the boxmanager plugin
+3. Link the napari installation into your crYOLO environment for convenience.
 
 If you want to install the boxmanager locally on your computer without crYOLO, you can skip 1 and step 3.
 
