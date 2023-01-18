@@ -40,8 +40,16 @@ have a old cryolo environment installed, first remove the old one with:
 
     conda env remove --name cryolo
 
-With CUDA 11
-""""""""""""
+The installation happens 3 steps:
+
+1. First your need to install crYOLO either for CUDA11 (1A) or CUDA 10 (1B)
+2. Install napari
+3. Link the napari installation into your crYOLO environment for convinience.
+
+If you want to install the boxmanager locally on your computer without crYOLO, you can skip 1 and step 3.
+
+1A. With CUDA 11
+""""""""""""""""
 
 The official tensorflow 1.15x does not support CUDA 11. To get support for it, we need use a custom tensorflow version from nvidia. The following steps do explain how setup crYOLO with this custom nvidia.
 
@@ -69,8 +77,8 @@ To install crYOLO with CUDA 11 support you need to run:
 
     pip install 'cryolo[c11]'
 
-With CUDA 10
-""""""""""""
+1B With CUDA 10
+"""""""""""""""
 
 .. warning::
     Recent NVIDIA graphic cards (e.g. RTX30XX, A5000)  do not longer support CUDA 10. Only use the CUDA 10 setup if your have specific reason for it.
@@ -105,6 +113,29 @@ But if you want to run crYOLO on a CPU run:
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
+
+2. Install napari and  the boxmanager plugin
+"""""""""""""""""""""""""""""""""""""""""""
+
+.. prompt:: bash $
+
+    mamba create -y -n napari-cryolo -c conda-forge python=3.10
+    conda activate napari-cryolo
+    pip install 'napari[all]'==0.4.17
+    pip install napari-boxmanager==0.3.0b10
+
+3. Link napari
+""""""""""""""
+This is an optional step, but for convenience reasons we link an adapted napari call into the crYOLO environment. With that you don’t need to switch environments when working with crYOLO. While this is optional, I assume during the tutorials that you did this step. Here is what you need to do:
+
+.. prompt:: bash $
+
+    conda activate cryolo
+    napari_link_file=$(realpath $(dirname $(which cryolo_predict.py))/napari_boxmanager)
+    conda activate napari-cryolo
+    echo -e "#\!/usr/bin/bash\nnapari_exe='$(which napari_boxmanager)'\n\${napari_exe} \"\${@}\""> ${napari_link_file}
+    chmod +x ${napari_link_file}
+
 
 **That's it!**
 
