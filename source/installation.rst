@@ -123,7 +123,7 @@ This step creates an environment for napari and installs the boxmanger plugin in
 
     mamba create -y -n napari-cryolo -c conda-forge python=3.10 napari=0.4.17 pyqt pip
     conda activate napari-cryolo
-    pip install napari-boxmanager==0.3.0b10
+    pip install napari-boxmanager==0.3.0b9
 
 3. Link napari
 """"""""""""""
