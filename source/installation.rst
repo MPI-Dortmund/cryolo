@@ -40,7 +40,7 @@ have a old cryolo environment installed, first remove the old one with:
 
     conda env remove --name cryolo
 
-The installation happens 3 steps:
+The installation happens in three steps:
 
 1. First your need to install crYOLO either for CUDA11 (step 1A) or CUDA 10 (step 1B)
 2. Install napari and the boxmanager plugin
@@ -77,7 +77,7 @@ To install crYOLO with CUDA 11 support you need to run:
 
     pip install 'cryolo[c11]'
 
-1B With CUDA 10
+1B. With CUDA 10
 """""""""""""""
 
 .. warning::
@@ -116,6 +116,8 @@ But if you want to run crYOLO on a CPU run:
 
 2. Install napari and  the boxmanager plugin
 """""""""""""""""""""""""""""""""""""""""""
+
+This step creates an environment for napari and installs the boxmanger plugin into it. If you already have a napari environment with the latest version (>=0.4.17), you can also use this and just do the last step of the following commands:
 
 .. prompt:: bash $
 
