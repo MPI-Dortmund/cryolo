@@ -5,7 +5,7 @@ For opening your tomograms you have to options:
     * **Single tomogram**: Press :guilabel:`File` -> :guilabel:`Open File(s)...` and the select one file from the :file:`images` directory.
     * **Folder**: Press :guilabel:`File` -> :guilabel:`Open Folder...` and the select the :file:`images` directory.
 
-.. image:: ../img/cryolo_bm_tomo_folder_202103.png
+.. image:: ../img/napari/boxmanager_tomo_folder.png
     :width: 300
     :align: left
 
