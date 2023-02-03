@@ -68,4 +68,5 @@ html_theme_options = {
 extensions += ['sphinx-prompt']
 
 def setup(app):
+    app.require_sphinx('6.0')
     app.add_javascript("version-alert.js")
