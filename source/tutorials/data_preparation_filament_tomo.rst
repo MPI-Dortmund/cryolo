@@ -1,6 +1,6 @@
 .. include:: text_modules/data_prep_filament_startbm_tomo.rst
 
-.. image:: ../img/cryolo_bm_tomo_folder_202103.png
+.. image:: ../img/napari/boxmanager_tomo_filament_uncollapse.png
     :width: 300
     :align: left
 
