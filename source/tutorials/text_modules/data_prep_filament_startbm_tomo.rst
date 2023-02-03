@@ -21,3 +21,10 @@ Start the box manager with the following command:
 .. prompt:: bash $
 
     napari_boxmanager
+
+.. hint::
+
+    **napari_boxmanager will probably not work via x-forwarding**
+
+    You might be used the use the cryolo_boxmanager via x-forwarding (by connecting via ssh -X or ssh -Y to your server). However, x-forwarding does not support open-gl. In those cases, you need a local installation of the naparai boxmanager. To do that, simply follow step 2 of the installation.
+
