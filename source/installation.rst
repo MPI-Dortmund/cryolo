@@ -49,7 +49,7 @@ The first step is to create a new virtual environment:
 
 .. prompt:: bash $
 
-    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1  adwaita-icon-theme
+    conda create -n cryolo -c conda-forge -c anaconda pyqt=5 python=3 numpy==1.18.5 libtiff wxPython=4.1.1  adwaita-icon-theme 'setuptools<66'
 
 Activate the environment:
 
