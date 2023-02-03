@@ -1,13 +1,12 @@
 .. include:: text_modules/data_prep_filament_startbm_tomo.rst
 
+For opening your tomograms you have two options:
+
+    * **Single tomogram**: Press :guilabel:`File` -> :guilabel:`Open File(s)...` and the select one file from the :file:`images` directory.
+    * **Folder**: Press :guilabel:`File` -> :guilabel:`Open Folder...` and the select the :file:`images` directory.
 .. image:: ../img/napari/boxmanager_tomo_filament_uncollapse.png
     :width: 300
     :align: left
-
-For opening your tomograms you have two options:
-
-    * **Single tomogram**: Press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`File` and the select one file from the :file:`images` directory. The first slice of the tomogram should pop up. You can navigate in the directory tree through the slices.
-    * **Folder**: Press :guilabel:`File` -> :guilabel:`Open` -> :guilabel:`Tomogram` -> :guilabel:`Folder` and the select the :file:`images` directory. The first slice of the first tomogram will pop up. You can find all tomograms organized in subtrees.
 
 .. include:: text_modules/data_prep_filter.rst
 
