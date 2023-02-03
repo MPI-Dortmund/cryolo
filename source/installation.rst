@@ -123,7 +123,14 @@ This step creates an environment for napari and installs the boxmanger plugin in
 
     mamba create -y -n napari-cryolo -c conda-forge python=3.10 napari=0.4.17 pyqt pip
     conda activate napari-cryolo
-    pip install napari-boxmanager==0.3.0b9
+    pip install napari-boxmanager==0.3.0b12
+
+.. hint::
+
+    **napari_boxmanager will probably not work via x-forwarding**
+
+    You might be used to use the cryolo_boxmanager via x-forwarding (by connecting via ``ssh -X`` or ``ssh -Y`` to your server). However, x-forwarding does not support open-gl and therefore it does not work with the napari_boxmanager. In those cases, you need a local installation of the naparai boxmanager. To do that, simply follow step 2 of the installation.
+
 
 3. Link napari
 """"""""""""""
