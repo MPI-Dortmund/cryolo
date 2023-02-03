@@ -13,9 +13,9 @@ For opening your tomograms you have two options:
 
 .. include:: text_modules/data_prep_filter_pick_filament.rst
 
-.. image:: ../img/cryolo_boxmanager_filament_example_202103.png
-    :width: 300
-    :align: left
+.. image:: ../img/napari/boxmanager_filament_example.png
+    :width: 600
+    :align: center
 
 Label your filaments in some slices ideally on multiple tomograms. Label them even if the slices do not show
 the centre of the filaments but only parts of it.
