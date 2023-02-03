@@ -1,6 +1,6 @@
 Here is how to pick filaments:
 
-First you need to create a new layer for picking filaments. Switch to the tab :guilabel:`Organize_layer` and click :guilabel:`Create filament layer`. I assume that your only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+`.
+First you need to create a new layer for picking filaments. Switch to the tab :guilabel:`Organize_layer` and click :guilabel:`Create filament layer`. I assume that you only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+`.
 
 The filaments are placed as follows:
 
