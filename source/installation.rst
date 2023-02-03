@@ -127,9 +127,9 @@ This step creates an environment for napari and installs the boxmanger plugin in
 
 .. hint::
 
-    **napari_boxmanager will probably not work via x-forwarding**
+    **napari_boxmanager will not work via x-forwarding**
 
-    You may be used to using the cryolo_boxmanager via x-forwarding (by connecting via ``ssh -X`` / ``ssh -Y`` to your server). However, x-forwarding does not support open-gl and therefore it does not work with the napari_boxmanager. In those cases, you need a local installation of the naparai boxmanager. To do that, just repeat this step in your local PC.
+    You may be used to using the cryolo_boxmanager via x-forwarding (by connecting via ``ssh -X`` / ``ssh -Y`` to your server). However, x-forwarding does not support OpenGL and therefore it does not work with the napari_boxmanager. In those cases, you need a local installation of the naparai boxmanager. To do that, just repeat this step in your local PC.
 
 
 3. Link napari
