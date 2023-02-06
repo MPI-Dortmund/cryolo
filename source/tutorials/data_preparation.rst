@@ -2,9 +2,6 @@
 
 Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`images` directory.
 
-.. image:: ../img/napari/boxmanager_2.png
-    :width: 300
-
 .. include:: text_modules/data_prep_filter.rst
 
 .. include:: text_modules/data_prep_pick_particles.rst
