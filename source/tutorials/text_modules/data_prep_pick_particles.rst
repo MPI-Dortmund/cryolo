@@ -1,7 +1,8 @@
-Here is how to pick particles:
+Start picking particles
+"""""""""""""""""""""""
 
-First you need to create a new layer for picking particles:
- 1. Switch to the tab :guilabel:`Organize_layer`
+First you need to create a new layer for picking particles
+ 1. Switch to the tab :guilabel:`Organize_layer`.
  2. Click :guilabel:`Create particle layer`. I assume that you only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly.
  3. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+`. You can now navigate in the image tree and start picking.
 
