@@ -11,7 +11,9 @@ Version 1.9 (upcoming)
 * New RELION filament star files with precalculated priors
 * `cryolo_boxmanager_tools` now provide a tool :guilabel:`cryolo_boxmanager_tools.py createAutopick` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
 * Faster lowpass filter because of more ideal size estimation for FFT.
+* For CUDA11 setup: Use nvidia-tensorflow 1.15.5+nv22.2
 * Better windows compatibility (Thanks Jessica Elise Heebner)
+
 
 
 Version 1.8.4
