@@ -4,7 +4,6 @@ Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`
 
 .. image:: ../img/napari/boxmanager_2.png
     :width: 300
-    :align: left
 
 .. include:: text_modules/data_prep_filter.rst
 
