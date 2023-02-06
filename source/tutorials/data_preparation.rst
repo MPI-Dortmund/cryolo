@@ -10,6 +10,10 @@ Now press :guilabel:`File` -> :guilabel:`Open Folder` and the select the :file:`
 
 .. include:: text_modules/data_prep_pick_particles.rst
 
+
+Save to you annotations disk
+""""""""""""""""""""""""""""
+
 If you finished picking from your micrographs, you can export your box files in tab :guilabel:`organize_layer`. The defaults should be fine so you can directly press :guilabel:`Save to dir`. Training data is created for all micrographs that have an activated checkbox.  Create a new directory called train_annotation and save it there. Close boxmanager.
 
 Optionally, you now create a third folder with the name :file:`train_image`. Now for each box file, copy the corresponding
