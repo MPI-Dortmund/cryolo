@@ -1,10 +1,9 @@
 Here is how to pick particles:
 
 First you need to create a new layer for picking particles:
-
-1. Switch to the tab :guilabel:`Organize_layer`
-2. Click :guilabel:`Create particle layer`. I assume that you only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly.
-3. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+`. You can now navigate in the image tree and start picking.
+ 1. Switch to the tab :guilabel:`Organize_layer`
+ 2. Click :guilabel:`Create particle layer`. I assume that you only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly.
+ 3. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+`. You can now navigate in the image tree and start picking.
 
 .. |plus| image:: ../img/napari/plus_icon.png
 .. |arrow| image:: ../img/napari/shape_arrow_icon.png
