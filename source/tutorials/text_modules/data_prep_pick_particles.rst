@@ -7,7 +7,7 @@ First you need to create a new layer for picking particles
 #. Click :guilabel:`Create particle layer`. I assume that you only have one image stack open, in case you don't please adapt :guilabel:`Target image layer` accordingly.
 #. Switch to the :guilabel:`boxmanager` tab. Open the list of coordinates by pressing the little :guilabel:`+`. You can now navigate in the image tree and start picking.
 
-.. image:: ../img/napari/boxmanager_2.png
+.. figure:: ../img/napari/boxmanager_2.png
     :width: 300
     :align: center
 
