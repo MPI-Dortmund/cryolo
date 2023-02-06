@@ -1,5 +1,5 @@
-Start picking particles
-"""""""""""""""""""""""
+Create particle layer
+"""""""""""""""""""""
 
 First you need to create a new layer for picking particles
 
@@ -13,6 +13,9 @@ First you need to create a new layer for picking particles
 
 .. |plus| image:: ../img/napari/plus_icon.png
 .. |arrow| image:: ../img/napari/shape_arrow_icon.png
+
+Start picking particles
+"""""""""""""""""""""""
 
 The basic usage of the boxmanager is as follows:
 
