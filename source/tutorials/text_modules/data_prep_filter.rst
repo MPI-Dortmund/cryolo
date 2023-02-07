@@ -1,3 +1,7 @@
-You might want to run a low pass filter before you start picking. Switch to tab :guilabel:`Filtering` and press :guilabel:`Apply`
-to get a low pass filtered version of your currently selected image. An absolute
-frequency cut-off of 0.1. The allowed values are 0 - 0.5. Lower values means stronger filtering.
+Increase the contrast
+"""""""""""""""""""""""
+
+You might want to run a low pass filter before you start picking to get better contrast.
+
+#. Switch to tab :guilabel:`bandpass_filter` and check if the default :guilabel:`LP resolution` is ok and that the extracted :guilabel:`Pixel size` is correct.
+#. Press :guilabel:`Run` to get a new layer with your low pass filtered images. It will filter the images on-the-fly.

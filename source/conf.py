@@ -14,6 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -28,6 +29,7 @@ author = 'Thorsten Wagner'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_rtd_theme',
 ]
 '''
 extensions = [
@@ -69,4 +71,4 @@ html_theme_options = {
 extensions += ['sphinx-prompt']
 
 def setup(app):
-    app.add_javascript("version-alert.js")
+    app.add_js_file("version-alert.js")

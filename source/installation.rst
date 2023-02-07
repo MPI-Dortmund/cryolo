@@ -40,8 +40,16 @@ have a old cryolo environment installed, first remove the old one with:
 
     conda env remove --name cryolo
 
-With CUDA 11
-""""""""""""
+The installation happens in three steps:
+
+1. First your need to install crYOLO either for CUDA11 (step 1A) or CUDA 10 (step 1B)
+2. Install napari and the boxmanager plugin
+3. Link the napari installation into your crYOLO environment for convenience.
+
+If you want to install the boxmanager locally on your computer without crYOLO, you can skip 1 and step 3.
+
+1A. With CUDA 11
+""""""""""""""""
 
 The official tensorflow 1.15x does not support CUDA 11. To get support for it, we need use a custom tensorflow version from nvidia. The following steps do explain how setup crYOLO with this custom nvidia.
 
@@ -69,8 +77,8 @@ To install crYOLO with CUDA 11 support you need to run:
 
     pip install 'cryolo[c11]'
 
-With CUDA 10
-""""""""""""
+1B. With CUDA 10
+"""""""""""""""
 
 .. warning::
     Recent NVIDIA graphic cards (e.g. RTX30XX, A5000)  do not longer support CUDA 10. Only use the CUDA 10 setup if your have specific reason for it.
@@ -105,6 +113,38 @@ But if you want to run crYOLO on a CPU run:
 
 .. hint::
     You can also integrate crYOLO as :ref:`Environment Module <cryolo-module-label>`
+
+2. Install napari and  the boxmanager plugin
+"""""""""""""""""""""""""""""""""""""""""""
+
+This step creates an environment for napari and installs the boxmanger plugin into it. If you already have a napari environment with the latest version (>=0.4.17), you can also use this and just do the last step of the following commands:
+
+.. prompt:: bash $
+
+    mamba create -y -n napari-cryolo -c conda-forge python=3.10 napari=0.4.17 pyqt pip
+    conda activate napari-cryolo
+    pip install napari-boxmanager==0.3.0b12
+
+.. hint::
+
+    **napari_boxmanager will not work via x-forwarding**
+
+    You may be used to using the cryolo_boxmanager via x-forwarding (by connecting via ``ssh -X`` / ``ssh -Y`` to your server). However, x-forwarding does not support OpenGL and therefore it does not work with the napari_boxmanager. In those cases, you need a local installation of the naparai boxmanager. To do that, just repeat this step in your local PC.
+
+
+3. Link napari
+""""""""""""""
+This is an optional step, but for convenience reasons we link an adapted napari call into the crYOLO environment. With that you don’t need to switch environments when working with crYOLO. While this is optional, I assume during the tutorials that you did this step. Here is what you need to do:
+
+.. prompt:: bash $
+
+    conda activate cryolo
+    cryolo_dir=$(realpath $(dirname $(which cryolo_predict.py)))
+    napari_link_file=${cryolo_dir}/napari_boxmanager)
+    conda activate napari-cryolo
+    echo -e "#\!/usr/bin/bash\nexport NAPARI_EXE=$(which napari)\nnapari_exe='$(which napari_boxmanager)'\n\${napari_exe} \"\${@}\""&gt; ${napari_link_file}
+    chmod +x ${napari_link_file}
+
 
 **That's it!**
 

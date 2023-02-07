@@ -1,6 +1,6 @@
 In the following I will assume that your image data is in the folder :file:`images`.
 
-The next step is to create training data. To do so, we have to pick single filaments manually in several images. Ideally, the images are picked to completion. :ref:`However, it is not necessary to pick all particles. crYOLO will still converge if you miss some (or even many)<sparse-picking-label>`.
+The next step is to create training data. To do so, we have to pick manually in several images. Ideally, the images are picked to completion. :ref:`However, it is not necessary to pick all particles. crYOLO will still converge if you miss some (or even many)<sparse-picking-label>`.
 
 .. admonition:: How many images have to be picked?
 
@@ -15,10 +15,10 @@ The next step is to create training data. To do so, we have to pick single filam
     finally decide whether to add more micrographs to your training set. If you refine a general
     model, even 5 images might be enough.
 
-To create your training data, crYOLO is shipped with a tool called “boxmanager”.
+To create your training data, we developed a dedicated napari plugin called “napari-boxmanager”.
 
 Start the box manager with the following command:
 
 .. prompt:: bash $
 
-    cryolo_boxmanager.py
+    napari_boxmanager
