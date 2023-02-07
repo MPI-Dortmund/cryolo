@@ -4,15 +4,20 @@ Changes
 crYOLO
 ^^^^^^
 
-Version 1.9.0 (upcoming)
+Version 1.9.0
 *************
 
+* New boxmanager based on napari!
+* Updated all tutorials for the new napari option
 * New cryoSPARC output format makes importing particles in cryoSPARC more easy.
 * New RELION filament star files with precalculated priors
-* The crYOLO boxmanger 1.4.10 now provides a tool :guilabel:`cryolo_boxmanager_tools.py createAutopick` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
-* Faster lowpass filter because of more ideal size estimation for FFT.
+* The cryolo_boxmanager_tools 1.5 now provides a tool :guilabel:`cryolo_boxmanager_tools.py createAutopick` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
+* Old cryolo_boxmanager.py now is cryolo_boxmanager_legacy.py.
+Faster lowpass filter because of more ideal size estimation for FFT.
 * Better windows compatibility (Thanks Jessica Elise Heebner)
 * Fix imageio dependency (Thanks to Grigory Sharov)
+* For CUDA11 setup: Use nvidia-tensorflow 1.15.5+nv22.2
+* Fix broken setup instructions (Version setuptools must be < 66)
 
 
 Version 1.8.4
