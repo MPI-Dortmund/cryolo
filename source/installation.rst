@@ -140,10 +140,11 @@ This is an optional step, but for convenience reasons we link an adapted napari 
 
     conda activate cryolo
     cryolo_dir=$(realpath $(dirname $(which cryolo_predict.py)))
-    napari_link_file=${cryolo_dir}/napari_boxmanager)
+    napari_link_file=${cryolo_dir}/napari_boxmanager
     conda activate napari-cryolo
     echo -e "#\!/usr/bin/bash\nexport NAPARI_EXE=$(which napari)\nnapari_exe='$(which napari_boxmanager)'\n\${napari_exe} \"\${@}\""> ${napari_link_file}
     chmod +x ${napari_link_file}
+    conda activate cryolo
 
 
 **That's it!**
