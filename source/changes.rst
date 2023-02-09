@@ -9,7 +9,7 @@ Version 1.9.1
 
 * New boxmanager based on napari!
 * Updated all tutorials for the new napari boxmanager
-* New cryoSPARC output format makes importing particles in cryoSPARC more easy.
+* New cryoSPARC output format makes importing particles/filaments in cryoSPARC more easy.
 * New RELION filament star files with precalculated priors
 * Validity check for lowpass filtered images. For example, if you change the input size in your config.json, you had to delete the filtered images directory manually before. This now happens automatically.
 * The cryolo_boxmanager_tools 1.5 now provides a tool :guilabel:`cryolo_boxmanager_tools.py createAutopick` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
