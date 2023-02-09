@@ -5,6 +5,18 @@ To visualize your results you can use the boxmanager:
 
 As image_dir you select the full_data directory. As :guilabel:`box_dir` you select the :file:`CBOX` folder (or :file:`CBOX_FILAMENT_SEGMENTED` in case of filaments).
 
+.. hint::
+
+    **Alternative: Open it via command line**
+
+    You can also open the results via command line:
+
+    .. prompt:: bash $
+
+     napari_boxmanager 'full_data/*.mrc' 'boxfiles/CBOX/*.cbox'
+
+
+
 .. image:: ../img/napari/thresholding.png
     :width: 300
     :align: left
