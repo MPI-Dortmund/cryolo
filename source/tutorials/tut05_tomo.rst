@@ -74,7 +74,7 @@ e2spt_boxer.py from EMAN2 to visualize the file in :file:`EMAN_3D`.
 
 .. prompt:: bash $
 
-    e2spt_boxer.py /path/to/your/tomogram.mrc
+    napari_boxmanager /path/to/your/tomogram.mrc path/to/CBOX_3D/tomogram.cbox
 
 Then click File -> Read Box Coord
 

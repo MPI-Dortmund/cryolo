@@ -69,7 +69,7 @@ You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within t
 
 .. prompt:: bash $
 
-    napari_boxmanager 'path/to/tomogram.mrc' 'out/CBOX/CBOX_FILAMENTS_TRACED/*.cbox'
+    napari_boxmanager path/to/tomogram.mrc out/CBOX/CBOX_FILAMENTS_TRACED/tomogram.cbox
 
 to start the boxamanger.
 
