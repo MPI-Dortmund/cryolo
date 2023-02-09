@@ -65,5 +65,5 @@ Visualize results
 
 .. prompt:: bash $
 
-    cryolo_boxmanager.py -i unseen_examples/ -b my_results/CBOX/
+    napari_boxmanager 'unseen_examples/*.mrc' 'my_results/CBOX/*.cbox'
 
