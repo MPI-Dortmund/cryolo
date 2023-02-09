@@ -65,11 +65,11 @@ Now press the :guilabel:`Start` button to start the pick your tomogram. The outp
 
 6. Visualize the results
 ^^^^^^^^^^^^^^^^^^^^^^^^
-You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within the cryolo boxmanager. Just type
+You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within the cryolo boxmanager. Just type e.g.
 
 .. prompt:: bash $
 
-    cryolo_boxmanager.py
+    napari_boxmanager 'path/to/tomogram.mrc' 'out/CBOX/CBOX_FILAMENTS_TRACED/*.cbox'
 
 to start the boxamanger.
 
