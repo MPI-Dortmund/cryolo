@@ -7,7 +7,7 @@ When you are working with RELION, you should have such a file.
 .. note::
     Support for **cryoSPARC** :file:`.cs` files will follow soon!
 
-With the cryolo boxmanager 1.9 you can create training data based on this star file.
+With the cryolo_boxmanager_tools 1.5 you can create training data based on this star file.
 
 To create the training annotation based on good 2D classes your need to extract star files per micrograph. You can do that with the following command:
 
