@@ -4,10 +4,8 @@ Train crYOLO based on good classes
 Here I assume you that you have star file :file:`particles.star` that contain the columns :guilabel:`_rlnMicrographName`, :guilabel:`_rlnCoordinateX` and :guilabel:`_rlnCoordinateY`.
 When you are working with RELION, you should have such a file.
 
-.. hint::
-    **cryoSPARC**
-
-    Support for cryoSPARC .cs files will follow soon!
+.. note::
+    Support for **cryoSPARC** :file:`.cs` files will follow soon!
 
 With the cryolo boxmanager 1.9 you can create training data based on this star file.
 
