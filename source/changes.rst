@@ -11,11 +11,10 @@ Version 1.9.1
 * Updated all tutorials for the new napari boxmanager
 * New cryoSPARC output format makes importing particles/filaments in cryoSPARC more easy.
 * New RELION filament star files with precalculated priors
-* Validity check for lowpass filtered images. For example, if you change the input size in your config.json, you had to delete the filtered images directory manually before. This now happens automatically.
 * The cryolo_boxmanager_tools 1.5 now provides two new tool commands:
     * :guilabel:`cryolo_boxmanager_tools.py createAutopick` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
     * :guilabel: With `cryolo_boxmanager_tools.py class2Dextract` you can extract the coordinates of good 2D classes from RELION to make them usable for training with crYOLO.
-* The cryolo_boxmanager
+* Validity check for lowpass filtered images. For example, if you change the input size in your config.json, you had to delete the filtered images directory manually before. This now happens automatically.
 * Old cryolo_boxmanager.py now is cryolo_boxmanager_legacy.py.
 * Faster lowpass filter because of more ideal size estimation for FFT.
 * Improved windows compatibility (Picking Tomograms + Filament picking does not work yet...).  (Thanks Jessica Elise Heebner)
