@@ -15,7 +15,7 @@ In this tutorial we describe how to import crYOLO coordinates into Relion 4. I a
 
  .. prompt:: bash $
 
-    cryolo_boxmanager_tools.py createAutopick -m path/to/micrographs/*.mrc -c path/to/box/or/star/files/*.star -o output/
+    cryolo_boxmanager_tools.py createAutopick -m 'path/to/micrographs/*.mrc' -c 'path/to/box/or/star/files/*.star' -o output/
 
  .. warning::
 

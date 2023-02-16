@@ -199,6 +199,18 @@ Version 1.6.0
 Boxmanager
 ^^^^^^^^^^
 
+Version 1.5.1
+**************
+    * Adapt `cryolo_boxmanager_tools.py createAutopick`  so that accepted wildcard arguments in single parenthesis to avoid "too long argument list" errors (Thanks to Kelly McGuire and Grigory Sharov)
+
+Version 1.5.0
+**************
+
+    * Renamed `cryolo_boxmanager.py` to `cryolo_boxmanager_legacy.py`
+    * Added two new commands to `cryolo_boxmanager_tools.py`
+        * :guilabel:`cryolo_boxmanager_tools.py createAutopick` to create the necessary autopick.star for extraction in relion 4. See our :ref:`tutorial <import-relion-4-label>` for more information.
+        * :guilabel:`cryolo_boxmanager_tools.py class2Dextract` to extract the coordinates of good 2D classes from RELION to make them usable for training with crYOLO.
+
 Version 1.4.10
 ***************
     * Add `coords2cbox` to `cryolo_boxmanager_tools.py`. Converts coords to CBOX.
