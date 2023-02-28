@@ -7,7 +7,7 @@ crYOLO
 Version 1.9.2
 *************
 
-* Fix issue that filament tracing get stuck in certain situations when doing special non maximum suppression for filaments. ( Thanks to Alicia Peschel )
+* Fix issue that filament tracing get stuck in certain situations when doing non maximum suppression for filaments. ( Thanks to Alicia Peschel )
 * Fix minor issue when reading helicon format containing integer coordinates only
 * Don't check md5sum of h5 weights during setup when download fails
 * Change requirements to install cryoloBM 1.5.1
