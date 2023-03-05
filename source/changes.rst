@@ -4,6 +4,11 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.9.3
+*************
+
+* Fix exception during standard training introduced with 1.9.3 ( Thanks to Grigory Sharov )
+
 Version 1.9.2
 *************
 
