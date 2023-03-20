@@ -4,6 +4,12 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.9.4
+*************
+
+* Fix bug during writing cryosparc filament coordinates when picking did not found any filaments (Thanks to Jonathan Bouvette).
+* Clear error message when no micrograph - annotation pairs can be found.
+
 Version 1.9.3
 *************
 

@@ -74,7 +74,7 @@ Training section
 
 * :samp:`train_times`: How often each image is presented to the network during one epoch. Default is 10 and should be kept until you have many training images.
 
-* :samp:`pretrained_weights`: Path to h5 file that is used for initialization. Until you want to use weights from a previous dataset as initialization, the filename specified here should be same as saved_weights_name.
+* :samp:`pretrained_weights`: Path to h5 file that is used for initialization. Specify it if you want to use weights from a previous dataset as initialization.
 
 * :samp:`batch_size`: Specified the number of images crYOLO process in parallel during training. Strongly depending on the memory of your graphic card. 4 should be fine for GPUs with 8GB memory. You can increase in case you have more memory or decrease if you have memory problems. Bigger batches tend to improve convergence and even the final error.
 
