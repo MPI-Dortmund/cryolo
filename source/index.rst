@@ -23,24 +23,14 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
 
    Please read the :doc:`Complimentary Science Software License <other/license>` before using crYOLO. If you are interested in using crYOLO in a commercial context please contact stefan.raunser@mpi-dortmund.mpg.de
 
-|sphire_badge| |f1000_badge| |stats_total| |stats_month|
-
-.. |sphire_badge| figure:: img/badge_sphire.png
+.. figure:: img/badge_sphire.png
    :target: https://sphire.mpg.de/
    :height: 30
    :align: left
 
-.. |f1000_badge| figure:: https://s3.amazonaws.com/cdn.f1000.com/images/badges/badgef1000.gif
+.. figure:: https://s3.amazonaws.com/cdn.f1000.com/images/badges/badgef1000.gif
    :target: https://f1000.com/prime/733517098?bd=1
    :height: 30
-
-.. |stats_total| figure::  https://static.pepy.tech/badge/cryolo
-   :target: https://pepy.tech/project/cryolo
-
-.. |stats_month| figure:: https://static.pepy.tech/badge/cryolo/month
-   :target: https://pepy.tech/project/cryolo
-
-
 
 User Guide: full table of contents
 ==================================
@@ -77,6 +67,20 @@ Citation
 **Comment:**
 
    Wagner, T., Raunser, S. The evolution of SPHIRE-crYOLO particle picking and its application in automated cryo-EM processing workflows. Commun Biol 3, 61 (2020). https://doi.org/10.1038/s42003-020-0790-y
+
+
+Stats
+====
+
+.. figure::  https://static.pepy.tech/badge/cryolo
+   :target: https://pepy.tech/project/cryolo
+
+.. figure:: https://static.pepy.tech/badge/cryolo/month
+   :target: https://pepy.tech/project/cryolo
+
+.. figure:: https://static.pepy.tech/badge/cryolo/week
+   :target: https://pepy.tech/project/cryolo
+
 
 Help
 ====
