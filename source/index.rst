@@ -32,6 +32,13 @@ It's based on convolutional neural networks and utilizes the popular You Only Lo
    :target: https://f1000.com/prime/733517098?bd=1
    :height: 30
 
+.. figure::  https://static.pepy.tech/badge/cryolo
+   :target: https://pepy.tech/project/cryolo
+
+.. figure:: https://static.pepy.tech/badge/cryolo/month
+   :target: https://pepy.tech/project/cryolo
+
+
 
 User Guide: full table of contents
 ==================================
