@@ -7,13 +7,15 @@ crYOLO
 Version 1.9.4
 *************
 
-* Fix bug during writing cryosparc filament coordinates when picking did not found any filaments (Thanks to Jonathan Bouvette).
-* Clear error message when no micrograph - annotation pairs can be found.
+* Fixed an error when writing cryosparc filament coordinates if no filaments were found during selection (thanks to Jonathan Bouvette).
+* Clearer error message when no pairs of micrographs and annotations can be found.
+* Fixed a bug where crYOLO stalls during prediction for certain micrograph names. (Thanks to Jacob Anderson)
+* Write again star start-end coordinates.
 
 Version 1.9.3
 *************
 
-* Fix exception during standard training introduced with 1.9.3 ( Thanks to Grigory Sharov )
+* Fix exception during standard training introduced with 1.9.2 ( Thanks to Grigory Sharov )
 
 Version 1.9.2
 *************
