@@ -22,7 +22,7 @@ For opening your tomograms you have two options:
 Label your filaments in some slices ideally on multiple tomograms. Label them even if the slices do not show
 the centre of the filaments but only parts of it.
 
-.. include:: text_modules/data_prep_filamant_save.rst
+.. include:: text_modules/data_prep_filament_save.rst
 
 In the folder :file:`boxes` you just created, you will find three subdirectories :file:`CBOX_FILAMENT`. One file for each tomogram. Each file contains filament coordinates segmented (according :guilabel:`box distance`) into several boxes.
 
