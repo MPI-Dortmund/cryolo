@@ -24,7 +24,7 @@ the centre of the filaments but only parts of it.
 
 .. include:: text_modules/data_prep_filament_save.rst
 
-In the folder :file:`boxes` you just created, you will find three subdirectories :file:`CBOX_FILAMENT`. One file for each tomogram. Each file contains filament coordinates segmented (according :guilabel:`box distance`) into several boxes.
+In the folder :file:`boxes` you just created, you will find three subdirectories :file:`CBOX_FILAMENT`. One file for each tomogram. Each file contains filament coordinates segmented (according :guilabel:`inter-box distance`) into several boxes.
 
 Create a new folder called :file:`train_annot` and copy the files from :file:`CBOX_FILAMENT` into this folder. Alternatively you can also directly specify the :file:`CBOX_FILAMENT` folder during the configuration step.
 
