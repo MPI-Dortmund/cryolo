@@ -4,6 +4,11 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.9.5
+*************
+
+* Fixed reading method for eman filament start-end files (Thanks to Yang Li)
+
 Version 1.9.4
 *************
 
