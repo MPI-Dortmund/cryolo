@@ -62,6 +62,19 @@ Press the :guilabel:`Start` button to start the picking.
 
 .. hint::
 
+    **Evaluate directional estimates**
+
+    You can check how well crYOLO did in estimating the directionality, which is crucial for the subsequent filament tracing.
+    To do this for a given threshold (e.g. 0.3), you can run
+
+    .. prompt:: bash $
+
+        cryolo_boxmanager_tools.py cbox_directions -m full_data/  -c output_boxes/CBOX/ -t 0.3 -o output_boxes/directions/
+
+    You will find a png plot for each micrograph in :file:`output_boxes/directions/` after the script has finished.
+
+.. hint::
+
     **Alternative: Run prediction in command line**
 
     Let's assume you want to pick a filament, the box size

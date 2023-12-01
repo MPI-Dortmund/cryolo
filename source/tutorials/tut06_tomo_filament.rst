@@ -63,6 +63,20 @@ Now press the :guilabel:`Start` button to start the pick your tomogram. The outp
 * :file:`COORDS_TRACED_FID`: Same as :file:`COORDS_TRACED` but with a additional column for filament width. Those files are only an intermediate solution and will be replaced in a future version.
 * :file:`DISTR`: Contains size distribution information. Not informative in this case. Only helpful with a general model, which does not yet exist for filaments.
 
+.. hint::
+
+    **Evaluate directional estimates**
+
+    You can check how well crYOLO did in estimating the directionality, which is crucial for the subsequent filament tracing.
+    To do this for a given threshold (e.g. 0.3), you can run
+
+    .. prompt:: bash $
+
+        cryolo_boxmanager_tools.py cbox_directions -m full_data/tomo.mrc  -c output_boxes/CBOX/tomo.cbox -t 0.3 -o output_boxes/directions/
+
+    You will find a tiff stack in :file:`output_boxes/directions/` after the script has finished. Open it for example with ImageJ.
+
+
 6. Visualize the results
 ^^^^^^^^^^^^^^^^^^^^^^^^
 You can open all files (except :file:`COORDS_TRACED` and :file:`DISTR`) within the cryolo boxmanager. Just type e.g.
