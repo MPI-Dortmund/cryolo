@@ -4,7 +4,12 @@ version: 2
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
   builder: html
-  configuration: source/conf.py 
+  configuration: source/conf.py
+
+build:
+  os: ubuntu-20.04  # <- add this line
+  tools:
+    python: "3.8"
 
 python:
   version: 3.8
