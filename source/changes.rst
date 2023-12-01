@@ -4,6 +4,13 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.9.7
+*************
+
+* Optimization of the weight of the loss component responsible for estimating the filament direction.
+* Optimization of default parameters when tracing filaments in 3D. Especially tilted and short filaments were lost before this optimization.
+* Fixed a bug that removed boxes at the end of each 3D filament trace.
+
 Version 1.9.6
 *************
 
@@ -225,6 +232,10 @@ Version 1.6.0
 
 Boxmanager
 ^^^^^^^^^^
+
+Version 1.6.1
+**************
+    * Add command `cryolo_boxmanager_tools.py cbox_directions`
 
 Version 1.5.1
 **************
