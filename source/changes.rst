@@ -4,6 +4,11 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.9.8
+*************
+
+* Fix a bug in the resampling of filaments before training. The bug can lead to unwanted sparse training (Thanks to Zhexin Wang)
+
 Version 1.9.7
 *************
 
