@@ -4,6 +4,12 @@ Changes
 crYOLO
 ^^^^^^
 
+Version 1.9.9
+*************
+
+* Fix potential crash during 3D particle tracing.
+* Add print which tomogram is traced.
+
 Version 1.9.8
 *************
 
