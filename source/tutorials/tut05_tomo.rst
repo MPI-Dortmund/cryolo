@@ -69,14 +69,13 @@ The files in :file:`coords` contain files that can directly used in IMOD.
 
 6. Visualization
 ^^^^^^^^^^^^^^^^
-The current state of the boxmanager can't visualize the 3D boxes properly. We recommend to use
-e2spt_boxer.py from EMAN2 to visualize the file in :file:`EMAN_3D`.
+You can visualize the 3D boxes using the napari boxmanager. The command is:
 
 .. prompt:: bash $
 
     napari_boxmanager /path/to/your/tomogram.mrc path/to/CBOX_3D/tomogram.cbox
 
-Then click File -> Read Box Coord
+
 
 
 
