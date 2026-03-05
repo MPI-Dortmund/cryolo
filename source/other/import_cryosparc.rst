@@ -5,15 +5,17 @@ crYOLO 1.9 writes STAR files that can be imported into cryoSPARC. Here is how yo
 
 1. Create a new job :guilabel:`Import Particle Stack`
 
-2. Choose as :guilabel:`Particle meta path` the :file:`cryosparc.star` file written by crYOLO.
+2. Choose as :guilabel:`Source Exposures` a set of micrographs, for example from :guilabel:`CTF Estimation` or :guilabel:`Motion correction`, or the equivalent.
 
-3. In case you didn't pick on micrographs  that were motion corrected by cryoSPARC, plase activate :guilabel:`Remove leading UID in input micrograph path`
+3. Choose as :guilabel:`Particle meta path` the :file:`cryosparc.star` file written by crYOLO.
 
-4. Activate :guilabel:`Ignore raw data`
+4. In case you didn't pick on micrographs  that were motion corrected by cryoSPARC, please activate :guilabel:`Remove leading UID in input micrograph path`
 
-5. Activate :guilabel:`Ignore pose data`
+5. Activate :guilabel:`Ignore raw data`
 
-6. Click in :guilabel:`Queue Job`. You will see some warnings but can ignore them, its mostly that the STAR files do not include CTF information. Your output should look similar to this:
+6. Activate :guilabel:`Ignore pose data`
+
+7. Click in :guilabel:`Queue Job`. You will see some warnings but can ignore them, its mostly that the STAR files do not include CTF information. Your output should look similar to this:
 
  .. image:: ../img/cryosparc_output.png
     :width: 600
